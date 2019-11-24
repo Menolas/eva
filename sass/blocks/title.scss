@@ -1,0 +1,57 @@
+.title {
+	@include font-header(26px, 35px);
+}
+
+.title__secondary {
+	@include font-header(18px, 50px);
+}
+
+.title__third {
+	@include font-header(16px, 26px);
+	font-weight: 300;
+}
+
+@media (min-width: 768px) {
+	.title {
+		@include font-header(50px, 50px);
+	}
+
+	.title__secondary {
+		@include font-header(22px, 50px);
+	}
+
+	.title__third {
+		@include font-header(16px, 26px);
+		font-weight: 400;
+	}
+}
+
+@media (min-width: 1000px) {
+  .title {
+  	@include font-header(45px, 60px);
+  }
+
+  .title__secondary {
+		@include font-header(30px, 40px);
+	}
+
+	.title__third {
+		@include font-header(20px, 32px);
+		font-weight: 300;
+	}
+}
+
+@media (min-width: 1600px) {
+	.title {
+		@include font-header(60px, 72px);
+	}
+
+	.title__secondary {
+		@include font-header(40px, 65px);
+	}
+
+	.title__third {
+		@include font-header(26px, 38px);
+		font-weight: 300;
+	}
+}

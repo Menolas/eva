@@ -1,0 +1,101 @@
+.main-nav__toggler {
+	position: relative;
+  padding: 13px 16px;
+  padding-left: 43px;
+	background-color: $green;
+	border-radius: 4px;
+}
+
+.main-nav__toggler-label {
+	position: relative;
+	display: block;
+	color: $white;
+	font-weight: 700;
+	line-height: 14px;
+
+	&::before {
+		@include element-style(100%, 1px, $white);
+		left: 0;
+		bottom: -3px;
+	}
+}
+
+.main-nav__toggler-element {
+	position: absolute;
+	display: block;
+	top: 15px;
+	left: 16px;
+	width: 20px;
+	height: 2px;
+	background-color: $white;
+
+	&::before {
+		@include element-style(20px, 2px, $white);
+		top: 6px;
+		left: 0;
+	}
+
+	&::after {
+		@include element-style(20px, 2px, $white);
+		top: 12px;
+		left: 0;
+	}
+}
+
+.main-nav__toggler--close .main-nav__toggler-element {
+  top: 50%;
+  transform: rotate(45deg);
+
+  &::before {
+  	top: 0;
+  	transform: rotate(-90deg);
+  }
+
+  &::after {
+  	display: none;
+  }
+}
+
+.main-nav__list {
+	display: none;
+}
+
+.main-nav__list--shown {
+	@include list-style;
+	position: absolute;
+	top: 56px;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 0 8px;
+	border: 1px solid rgb(208, 208, 208);
+	border-radius: 4px;
+	background-color: $white;
+	box-sizing: border-box;
+	z-index: 10;
+}
+
+.main-nav__link {
+	@include link-style;
+	display: inline-block;
+	padding: 8px 0;
+	text-align: left;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.main-nav__link--active {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background-color: $green;
+	}
+}
