@@ -129,11 +129,43 @@ textarea {
     /*min-width: 1600px;
 		max-width: 1600px;*/ } }
 
+.logo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.logo-block__name {
+  margin-left: 6px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left; }
+
+.logo-block__description {
+  display: none; }
+
+.logo-block svg {
+  width: 39px;
+  height: 40px;
+  fill: #ffffff; }
+
 .title {
   font-size: 49px;
   line-height: 56px;
   font-weight: 700;
-  font-family: "Roboto"; }
+  font-family: "Roboto";
+  margin-bottom: 35px;
+  text-align: center; }
 
 .title__secondary {
   font-size: 28px;
@@ -234,42 +266,15 @@ textarea {
           justify-content: space-between;
   margin-bottom: 32px; }
 
-.main-header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.main-header__logo-name {
-  margin-left: 6px;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: left; }
-
 .main-header__logo svg {
-  width: 39px;
-  height: 40px;
   fill: #19744C; }
 
-.main-header__logo-description,
 .main-header__title,
 .main-header__greeting {
   display: none; }
 
 .main-header__title--mobile {
-  display: block;
-  margin-bottom: 53px;
-  text-align: center; }
+  display: block; }
 
 .main-header__greeting--mobile {
   display: block;
@@ -279,7 +284,7 @@ textarea {
   line-height: 33px; }
 
 .main-header__picture-wrap {
-  margin-bottom: 53px; }
+  margin-bottom: 35px; }
 
 .main-nav__toggler {
   position: relative;
@@ -400,3 +405,11 @@ textarea {
 
 .teachers {
   padding: 0 16px; }
+
+.main-footer {
+  padding: 16px;
+  color: #ffffff;
+  background-color: #101010; }
+
+.main-footer__logo {
+  margin-bottom: 21px; }

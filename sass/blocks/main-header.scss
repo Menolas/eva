@@ -12,28 +12,10 @@
 	margin-bottom: 32px;
 }
 
-.main-header__logo {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.main-header__logo-name {
-	margin-left: 6px;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 24px;
-	text-align: left;
-}
-
 .main-header__logo svg {
-	width: 39px;
-	height: 40px;
 	fill: $green;
 }
 
-.main-header__logo-description,
 .main-header__title,
 .main-header__greeting {
 	display: none;
@@ -41,8 +23,6 @@
 
 .main-header__title--mobile {
 	display: block;
-	margin-bottom: 53px;
-	text-align: center;
 }
 
 .main-header__greeting--mobile {
@@ -54,5 +34,5 @@
 }
 
 .main-header__picture-wrap {
-	margin-bottom: 53px;
+	margin-bottom: 35px;
 }

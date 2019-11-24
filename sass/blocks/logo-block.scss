@@ -1,0 +1,24 @@
+.logo-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.logo-block__name {
+	margin-left: 6px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+}
+
+.logo-block__description {
+	display: none;
+}
+
+.logo-block svg {
+	width: 39px;
+	height: 40px;
+	fill: $white;
+}
