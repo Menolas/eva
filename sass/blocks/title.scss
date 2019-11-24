@@ -1,9 +1,10 @@
 .title {
-	@include font-header(26px, 35px);
+	@include font-header(49px, 56px);
 }
 
 .title__secondary {
-	@include font-header(18px, 50px);
+	@include font-header(28px, 32px);
+	margin-bottom: 21px;
 }
 
 .title__third {

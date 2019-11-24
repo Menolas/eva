@@ -1,0 +1,13 @@
+.btn {
+	@include link-style;
+	display: inline-block;
+	margin-top: 21px;
+	margin-bottom: 21px;
+	padding: 16px;
+	color: $white;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 700;
+	background-color: $green;
+	border-radius: 4px;
+}
