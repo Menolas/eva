@@ -1,0 +1,43 @@
+.subscribing {
+	position: relative;
+	padding: $block-padding-mobile;
+	background-color: $medium-background;
+}
+
+.subscribing__control-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 94%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.subscribing__title {
+	display: none;
+}
+
+.subscribing__list {
+	@include list-style;
+	margin: 0 auto;
+	width: 240px;
+}
+
+.subscribing__item {
+	display: none;
+	padding: 30px 20px;
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid $green;
+}
+
+.subscribing__item--active {
+	display: block;
+}
+
+.subscribing__price {
+	font-size: 29px;
+	line-height: 40px;
+	font-weight: 700;
+	color: $green;
+}

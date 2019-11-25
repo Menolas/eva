@@ -1,0 +1,26 @@
+.social-block__list {
+  @include list-style;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-block__item {
+	margin-left: 9px;
+
+	&:first-of-type {
+		margin-left: 0;
+	}
+}
+
+.social-block__link {
+	@include link-style;
+	font-size: 0;
+	width: 18px;
+	height: 18px;
+}
+
+.social-block__link svg {
+	width: 18px;
+	height: 18px;
+	fill: $green;
+}

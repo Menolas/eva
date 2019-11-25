@@ -1,5 +1,5 @@
 .title {
-	@include font-header(49px, 56px);
+	@include font-header(42px, 50px);
 	margin-bottom: 35px;
 	text-align: center;
 }
@@ -10,8 +10,8 @@
 }
 
 .title__third {
-	@include font-header(16px, 26px);
-	font-weight: 300;
+	@include font-header(20px, 26px);
+	margin-bottom: 18px;
 }
 
 @media (min-width: 768px) {

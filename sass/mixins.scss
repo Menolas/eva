@@ -4,13 +4,16 @@
   font-weight: $base-font-weight;
   color: $text-on-white;
   font-family: $base-font-family;
+  font-style: normal;
 }
 
 @mixin font-header ($size, $height) {
 	font-size: $size;
 	line-height: $height;
 	font-weight: 700;
+	color: $text-on-white;
 	font-family: $base-font-family;
+	font-style: normal;
 }
 
 @mixin list-style {

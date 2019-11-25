@@ -1,0 +1,22 @@
+.short-schedule {
+	padding: 30px 0;
+	padding-bottom: 0;
+}
+
+.short-schedule__title {
+	color: $white;
+}
+
+.short-schedule__table {
+	width: 100%;
+
+}
+
+.short-schedule__table tr {
+	border-bottom: 1px solid $white;
+}
+
+.short-schedule__table td {
+	padding: 5px 0;
+	width: 40%;
+}
