@@ -556,6 +556,48 @@ textarea {
 .control-handlers__handler--faded::before {
   opacity: 0.4; }
 
+.schedule {
+  position: relative;
+  padding: 50px 16px;
+  padding-top: 25px;
+  background-color: #19744C; }
+
+.schedule__handler {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%); }
+  .schedule__handler::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    left: 30%;
+    bottom: 5px;
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+    border-top: none;
+    border-left: none;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.schedule__title {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500; }
+
+.schedule__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none; }
+
 .reviews {
   padding: 50px 16px; }
 

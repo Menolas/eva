@@ -1,0 +1,38 @@
+.schedule {
+	position: relative;
+	padding: $block-padding-mobile;
+	padding-top: 25px;
+	background-color: $green;
+}
+
+.schedule__handler {
+	position: absolute;
+	bottom: 7px;
+	left: 50%;
+	width: 45px;
+	height: 45px;
+	transform: translate(-50%);
+
+	&::before {
+		@include element-style(18px, 18px, transparent);
+		left: 30%;
+		bottom: 5px;
+		border-radius: 2px;
+		border: 2px solid $white;
+		border-top: none;
+		border-left: none;
+		transform: rotate(45deg);
+	}
+}
+
+.schedule__title {
+	margin: 0;
+	text-align: center;
+	color: $white;
+	font-weight: 500;
+}
+
+.schedule__list {
+	@include list-style;
+	display: none;
+}
