@@ -66,3 +66,13 @@ blogHandlerBack.addEventListener('click', function () {
 		}
 	}
 });
+
+// schedule block animation
+
+var scheduleTab = document.querySelector('.schedule');
+var scheduleHandler = scheduleTab.querySelector('.schedule__handler');
+var weekDays = scheduleTab.querySelector('.schedule__list');
+
+scheduleHandler.addEventListener('click', function () {
+	weekDays.style.display = 'grid';
+});
