@@ -1,35 +1,41 @@
 .schedule {
-	position: relative;
 	padding: $block-padding-mobile;
-	padding-top: 25px;
-	background-color: $green;
+	padding-bottom: 0;
+}
+
+.schedule__title {
+	text-align: center;
+	font-weight: 500;
 }
 
 .schedule__handler {
-	position: absolute;
-	bottom: 7px;
-	left: 50%;
-	width: 45px;
-	height: 45px;
-	transform: translate(-50%);
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: $green;
+	border-radius: 4px;
 
 	&::before {
 		@include element-style(18px, 18px, transparent);
-		left: 30%;
-		bottom: 5px;
+		left: 50%;
+		bottom: 10px;
 		border-radius: 2px;
 		border: 2px solid $white;
 		border-top: none;
 		border-left: none;
-		transform: rotate(45deg);
+		transform: rotate(45deg) translate(-50%);
 	}
 }
 
-.schedule__title {
-	margin: 0;
-	text-align: center;
-	color: $white;
-	font-weight: 500;
+.schedule__handler--close {
+
+	&::before {
+		bottom: 5px;
+		border-top: 2px solid $white;
+		border-left: 2px solid $white;
+		border-bottom: none;
+		border-right: none;
+	}
 }
 
 .schedule__list,
@@ -38,24 +44,78 @@
 	display: none;
 }
 
-.schedule__list {
+.schedule__list--sown {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto auto auto auto auto auto;
 	grid-row-gap: 15px;
 	padding: 25px;
+	padding-bottom: 0;
 	border-radius: 4px;
 	background-color: $white;
 }
 
 .schedule__item {
+	position: relative;
+	margin: 0;
+	padding: 10px 25px;
+	text-align: center;
+	@include font-header(20px, 26px);
+	color: $green;
 	border-radius: 4px;
 	border: 1px solid $green;
 }
 
-.schedule__item-title {
-	margin: 0;
-	text-align: center;
-	color: $green;
+.schedule__class-list-per-day--shown {
+	display: grid;
+	grid-row-gap: 15px;
+}
+
+.schedule__class-item {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	grid-row-gap: 8px;
+	border-bottom: 1px solid $green;
+	padding-bottom: 15px;
+
+	&:first-of-type {
+	  padding-top: 15px;
+	}
+
+	&:last-of-type {
+		padding-bottom: 0;
+		border: none;
+	}
+}
+
+.schedule__class-item span {
+	display: block;
+	@include font-base(16px, 22px);
+	font-weight: 500;
+}
+
+.schedule__item-handler {
+	position: absolute;
+	right: 15px;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	z-index: 20;
+
+	&::before {
+		@include element-style(18px, 2px, $green);
+		top: 65%;
+		left: 50%;
+		transform: rotate(45deg) translate(-50%);
+	}
+
+	&::after {
+		@include element-style(18px, 2px, $green);
+		top: 25%;
+		left: 50%;
+		transform: rotate(-45deg) translate(-50%);
+	}
 }
 

@@ -15,7 +15,6 @@ var similarSubscribElements = document.querySelector('.subscribing__list');
 var blogHandlerForward = subscribtionBlock.querySelector('.control-handlers__handler--right');
 var blogHandlerBack = subscribtionBlock.querySelector('.control-handlers__handler--left');
 var subscribtions = subscribtionBlock.querySelectorAll('.subscribing__item');
-console.log(subscribtions);
 
 var findActiveItem = function () {
 	for (var i = 0; i < subscribtions.length; i++) {
@@ -71,8 +70,31 @@ blogHandlerBack.addEventListener('click', function () {
 
 var scheduleTab = document.querySelector('.schedule');
 var scheduleHandler = scheduleTab.querySelector('.schedule__handler');
+var week = scheduleTab.querySelector('.schedule__list');
 var weekDays = scheduleTab.querySelector('.schedule__list');
+var allDaysSchedules = scheduleTab.querySelectorAll('.schedule__class-list-per-day');
+console.log(weekDays);
+
+var hideDaySchedule = function () {
+	for (var i = 0; i < allDaysSchedules.length; i++) {
+    	if (allDaysSchedules[i].classList.contains('schedule__class-list-per-day--shown')) {
+    		allDaysSchedules[i].classList.remove('schedule__class-list-per-day--shown');
+    	}
+    }
+};
 
 scheduleHandler.addEventListener('click', function () {
-	weekDays.style.display = 'grid';
+	week.classList.toggle('schedule__list--sown');
+	scheduleHandler.classList.toggle('schedule__handler--close');
 });
+
+
+weekDays.addEventListener('click', function (evt) {
+    var target = event.target;
+    
+    hideDaySchedule();
+    var daySchedule = target.querySelector('.schedule__class-list-per-day');
+    daySchedule.classList.add('schedule__class-list-per-day--shown');
+});
+
+
