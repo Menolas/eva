@@ -426,7 +426,7 @@ textarea {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 0 8px;
+  padding: 15px;
   border: 1px solid #d0d0d0;
   border-radius: 4px;
   background-color: #ffffff;
@@ -442,7 +442,8 @@ textarea {
   padding: 8px 0;
   text-align: left;
   font-size: 16px;
-  line-height: 26px; }
+  line-height: 26px;
+  font-weight: 500; }
 
 .main-nav__link--active {
   position: relative; }
@@ -504,6 +505,9 @@ textarea {
   line-height: 40px;
   font-weight: 700;
   color: #19744C; }
+
+.subscribing__longer-description {
+  display: none; }
 
 .control-handlers {
   display: -webkit-box;
@@ -595,6 +599,7 @@ textarea {
   border-right: none; }
 
 .schedule__list,
+.schedule__item-handler,
 .schedule__class-list-per-day {
   margin: 0;
   padding: 0;
@@ -653,34 +658,35 @@ textarea {
   font-style: normal;
   font-weight: 500; }
 
-.schedule__item-handler {
+.schedule__item-handler--shown {
+  display: block;
   position: absolute;
-  right: 15px;
-  top: 0;
-  width: 30px;
-  height: 30px;
+  right: 22px;
+  top: 18px;
+  width: 13px;
+  height: 13px;
   background-color: transparent;
   z-index: 20; }
-  .schedule__item-handler::before {
+  .schedule__item-handler--shown::before {
     content: "";
     display: block;
     position: absolute;
     width: 18px;
     height: 2px;
     background-color: #19744C;
-    top: 65%;
-    left: 50%;
+    top: 80%;
+    left: 30%;
     -webkit-transform: rotate(45deg) translate(-50%);
             transform: rotate(45deg) translate(-50%); }
-  .schedule__item-handler::after {
+  .schedule__item-handler--shown::after {
     content: "";
     display: block;
     position: absolute;
     width: 18px;
     height: 2px;
     background-color: #19744C;
-    top: 25%;
-    left: 50%;
+    top: -12%;
+    left: 30%;
     -webkit-transform: rotate(-45deg) translate(-50%);
             transform: rotate(-45deg) translate(-50%); }
 

@@ -39,6 +39,7 @@
 }
 
 .schedule__list,
+.schedule__item-handler,
 .schedule__class-list-per-day {
 	@include list-style;
 	display: none;
@@ -95,26 +96,27 @@
 	font-weight: 500;
 }
 
-.schedule__item-handler {
+.schedule__item-handler--shown {
+	display: block;
 	position: absolute;
-	right: 15px;
-	top: 0;
-	width: 30px;
-	height: 30px;
+	right: 22px;
+	top: 18px;
+	width: 13px;
+	height: 13px;
 	background-color: transparent;
 	z-index: 20;
 
 	&::before {
 		@include element-style(18px, 2px, $green);
-		top: 65%;
-		left: 50%;
+		top: 80%;
+		left: 30%;
 		transform: rotate(45deg) translate(-50%);
 	}
 
 	&::after {
 		@include element-style(18px, 2px, $green);
-		top: 25%;
-		left: 50%;
+		top: -12%;
+		left: 30%;
 		transform: rotate(-45deg) translate(-50%);
 	}
 }
