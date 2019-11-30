@@ -118,7 +118,9 @@ console.log(subscribingDescriptions);
 subscribing.addEventListener('click', function (evt) {
     var target = event.target;
 
-    
+    if (target.classList.contains('subscribing__btn')) {
+    	
+    }
 });
 
 
