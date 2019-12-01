@@ -87,7 +87,8 @@
 	font-weight: 500;
 }
 
-.main-nav__link--active {
+.main-nav__link--active,
+.main-nav__link:hover {
 	position: relative;
 
 	&::after {

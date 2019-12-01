@@ -1,0 +1,27 @@
+.main-contact {
+	padding: $block-padding-mobile;
+}
+
+.main-contact__greeting {
+  display: block;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.main-contact .contact,
+.main-contact .short-schedule {
+	padding: 16px;
+}
+
+.main-contact .contact__title,
+.main-contact .short-schedule__title {
+	color: $text-on-white;
+}
+
+.main-contact .contact p {
+	color: $green;
+	font-weight: 500;
+}

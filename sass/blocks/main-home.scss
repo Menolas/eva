@@ -1,0 +1,27 @@
+.main-home {
+	padding-top: 35px;
+}
+
+.main-home__title,
+.main-home__greeting {
+	display: none;
+	padding: 0 16px;
+}
+
+.main-home__title--mobile {
+	display: block;
+}
+
+.main-home__greeting--mobile {
+	display: block;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.main-home__picture-wrap {
+	margin: 0 auto;
+	width: 338px;
+}

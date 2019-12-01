@@ -1,0 +1,18 @@
+.main-schedule {
+	padding: $block-padding-mobile;
+}
+
+.main-schedule .schedule {
+	padding: 0;
+}
+
+.main-schedule .schedule__list {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-row-gap: 15px;
+	padding: 25px;
+	padding-bottom: 0;
+	border-radius: 4px;
+	background-color: $white;
+}

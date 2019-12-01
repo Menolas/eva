@@ -28,10 +28,10 @@
 						<ul class="main-nav__list">
 							<li class="main-nav__item">
 								<a class="main-nav__link" href="index.html">Главная</a>
+							</li><li class="main-nav__item">
+								<a class="main-nav__link  main-nav__link--active">Новости</a>
 							</li>
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="news.html">Новости</a>
-							</li>
+
 							<li class="main-nav__item">
 								<a class="main-nav__link" href="branches.html">Направления</a>
 							</li>
@@ -41,22 +41,52 @@
 							<li class="main-nav__item">
 								<a class="main-nav__link" href="schedule.html">Расписание</a>
 							</li>
-							<li class="main-nav__item"> 
-								<a class="main-nav__link  main-nav__link--active">Контакты</a>
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="contact.html">Контакты</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 			</header>
-			<main class="main-contact">
-				<h1 class="main-contact__title  title">Контакты</h1>
-				<p class="main-contact__greeting">У вас есть вопросы по поводу нашей йога студии или классов, которые мы проводим?<br><br>Мы всегда рады ответить на ваши вопросы и выслушать предложения о том, как бы мы могли сделать нашу студию еще лучше и комфортнее</p>
-				
+			<main>
+				<section class="news">
+					<h2 class="news__title  title__secondary">Наши события</h2>
+					<ul class="news__list">
+						<li class="news__item">
+								<article class="news__article">
+									<div class="news__picture"><img src="img/news-illustration-2-mobile.jpg" alt="Иллюстрация новости"></div>
+									<h3 class="news__article-title  title__third">От поз стоя до прогибов</h3>
+									<p class="news__date">3 декабря - (12.00 - 15.00)</p>
+									<p class="news__text">Олег Ковальчук поделится свои опытом...</p>
+									<a class="news__link" href="#">Читать всю новость</a>
+								</article>
+						</li>
+						<li class="news__item">
+								<article class="news__article">
+									<div class="news__picture"><img src="img/news-illustration-1-mobile.jpg" alt="Иллюстрация новости"></div>
+									<h3 class="news__article-title  title__third">Мастер-класс по йоге Айенгара</h3>
+									<p class="news__date">30 ноября - (12.00 - 15.00)</p>
+									<p class="news__text">Ева Гуменюк, впечатленная обучением в Индии, проведёт трёхчасовой интенсив...</p>
+									<a class="news__link" href="#">Читать всю новость</a>
+								</article>
+						</li>
+					</ul>
+				</section>
+			</main>
+
+			<footer class="main-footer">
+				<div class="main-footer__logo  logo-block">
+					<a class="logo-block__link">
+						<svg><use xlink:href="#logo-om"></use></svg>
+						<p class="logo-block__name">Шанти</p>
+						<p class="logo-block__description">Студия йоги</p>
+					</a>
+				</div>
 				<section class="contact">
-					<h2 class="contact__title  title__secondary">Всегда на связи</h2>
+					<h3 class="contact__title  title__third">Наши контакты</h3>
 					<p  class="contact__address">
 						Адрес: пр.Центральный, 6а
-					    54030, г.Николаев</p>
+                        54030, г.Николаев</p>
 					<p class="contact__phone">Тел: +38(063) 762 8515</p>
 					<p class="contact__email">email: om.shanti.niko@gmail.com</p>
 				</section>
@@ -88,15 +118,6 @@
 						</tr>
 					</table>
 				</section>
-			</main>
-		    <footer class="main-footer">
-				<div class="main-footer__logo  logo-block">
-					<a class="logo-block__link" href="index.html">
-						<svg><use xlink:href="#logo-om"></use></svg>
-						<p class="logo-block__name">Шанти</p>
-						<p class="logo-block__description">Студия йоги</p>
-					</a>
-				</div>
 				<div class="main-footer__social-block  social-block">
 					<ul class="social-block__list">
 						<li class="social-block__item">
