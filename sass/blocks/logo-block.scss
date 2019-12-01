@@ -1,4 +1,5 @@
-.logo-block {
+.logo-block__link {
+	@include link-style;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;

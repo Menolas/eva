@@ -16,21 +16,3 @@
 .main-header__logo svg {
 	fill: $green;
 }
-
-.main-header__title,
-.main-header__greeting {
-	display: none;
-}
-
-.main-header__title--mobile {
-	display: block;
-}
-
-.main-header__greeting--mobile {
-	display: block;
-	margin-bottom: 15px;
-	text-align: center;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 28px;
-}
