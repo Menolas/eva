@@ -108,7 +108,7 @@
 
 	&::before {
 		@include element-style(18px, 2px, $green);
-		top: 80%;
+		top: 82%;
 		left: 30%;
 		transform: rotate(45deg) translate(-50%);
 	}
@@ -118,6 +118,35 @@
 		top: -12%;
 		left: 30%;
 		transform: rotate(-45deg) translate(-50%);
+	}
+}
+
+@media (min-width: 768px) {
+  .schedule {
+  	padding: $block-padding-tablet;
+  }
+
+	.schedule__handler {
+		display: none;
+	}
+
+	.schedule__list,
+	.schedule__class-list-per-day {
+		display: grid;
+	}
+
+	.schedule__list {
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto auto;
+	}
+
+	.schedule__item {
+		color: $white;
+		background-color: $green;
+	}
+
+	.schedule__class-list-per-day {
+		background-color: $white;
 	}
 }
 

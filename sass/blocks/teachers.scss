@@ -1,3 +1,48 @@
 .teachers {
 	padding: $block-padding-mobile;
 }
+
+.teachers__illustration {
+	width: 338px;
+}
+
+@media (min-width: 768px) {
+	.teachers {
+		display: grid;
+		grid-template-columns: auto 338px;
+		grid-template-rows: auto auto 58px;
+		grid-column-gap: 30px;
+		padding: $block-padding-tablet;
+	}
+
+	.teachers__title {
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+
+	.teachers__text {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
+
+	.teachers__illustration {
+		grid-column-start: 2;
+		grid-column-end: -1;
+		grid-row-start: 2;
+		grid-row-end: -1;
+	}
+
+	.teachers__btn {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 3;
+		grid-row-end: -1;
+		justify-self: start;
+		align-self: end;
+		margin-bottom: 0;
+	}
+}

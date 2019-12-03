@@ -7,7 +7,17 @@
 	color: $white;
 	font-size: 14px;
 	line-height: 14px;
-	font-weight: 700;
+	font-weight: 500;
 	background-color: $green;
 	border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+	.btn {
+		margin-bottom: 40px;
+		margin-top: 40px;
+		font-size: 18px;
+		line-height: 22px;
+		padding: 18px;
+	}
 }

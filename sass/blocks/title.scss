@@ -17,16 +17,18 @@
 
 @media (min-width: 768px) {
 	.title {
-		@include font-header(50px, 50px);
+		@include font-header(45px, 60px);
+		margin-bottom: 30px;
 	}
 
 	.title__secondary {
-		@include font-header(22px, 50px);
+		@include font-header(30px, 45px);
+		margin-bottom: 35px;
 	}
 
 	.title__third {
-		@include font-header(16px, 26px);
-		font-weight: 400;
+		@include font-header(20px, 26px);
+		font-weight: 500;
 	}
 }
 

@@ -25,3 +25,30 @@
 	margin: 0 auto;
 	width: 338px;
 }
+
+@media (min-width: 768px) {
+	.main-home {
+		padding-top: 65px;
+	}
+
+	.main-home__title,
+  .main-home__greeting {
+	  display: block;
+	  padding: 0 30px;
+  }
+
+  .main-home__greeting {
+  	margin-bottom: 30px;
+  	text-align: center;
+  	font-size: 20px;
+  }
+
+  .main-home__title--mobile,
+  .main-home__greeting--mobile {
+  	display: none;
+  }
+
+  .main-home__picture-wrap {
+	  width: 708px;
+  }
+}

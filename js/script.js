@@ -61,7 +61,6 @@ blogHandlerBack.addEventListener('click', function () {
 var subscribing = document.querySelector('.subscribing');
 var subscribingButtons = subscribing.querySelectorAll('.subscribing__btn');
 var subscribingDescriptions = subscribing.querySelectorAll('.subscribing__longer-description');
-console.log(subscribingDescriptions);
 
 subscribing.addEventListener('click', function (evt) {
     var target = event.target;

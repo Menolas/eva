@@ -15,3 +15,15 @@
 .main-header__logo svg {
 	fill: $green;
 }
+
+@media (min-width: 768px) {
+	.main-header {
+		padding: $block-padding-tablet;
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+
+	.main-header__logo {
+		margin-right: 50px;
+	}
+}
