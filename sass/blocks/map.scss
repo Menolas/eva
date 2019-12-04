@@ -1,1 +1,17 @@
+.map {
+	width: 370px;
+	height: 290px;
+	background-image: url('../img/map-370.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 370px 291px;
+}
 
+@media (min-width: 768px) {
+	.map {
+		width: 800px;
+		height: 380px;
+		background-image: url('../img/map-800.jpg');
+		background-size: 800px 476px;
+	}
+}

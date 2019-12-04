@@ -59,12 +59,15 @@
 .schedule__item {
 	position: relative;
 	margin: 0;
-	padding: 10px 25px;
 	text-align: center;
-	@include font-header(20px, 26px);
-	color: $green;
 	border-radius: 4px;
 	border: 1px solid $green;
+}
+
+.schedule__item-title {
+	margin-bottom: 0;
+	padding: 10px 25px;
+  color: $green;
 }
 
 .schedule__class-list-per-day--shown {
@@ -124,6 +127,7 @@
 @media (min-width: 768px) {
   .schedule {
   	padding: $block-padding-tablet;
+  	padding-bottom: 0;
   }
 
 	.schedule__handler {
@@ -138,15 +142,27 @@
 	.schedule__list {
 		grid-template-columns: auto auto auto;
 		grid-template-rows: auto auto;
+		grid-column-gap: 25px;
+		grid-row-gap: 25px;
+		padding: 0;
 	}
 
-	.schedule__item {
+	.schedule__item-title {
 		color: $white;
 		background-color: $green;
 	}
 
 	.schedule__class-list-per-day {
 		background-color: $white;
+	}
+
+	.schedule__class-item {
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		&:last-of-type {
+			padding-bottom: 15px;
+		}
 	}
 }
 

@@ -13,10 +13,15 @@
 }
 
 .short-schedule__table tr {
+	padding: 10px 0;
 	border-bottom: 1px solid $white;
+
+	&:first-of-type {
+		padding-top: 0;
+	}
 }
 
 .short-schedule__table td {
-	padding: 5px 0;
+	display: inline-block;
 	width: 40%;
 }

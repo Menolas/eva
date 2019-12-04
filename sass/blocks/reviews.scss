@@ -82,3 +82,53 @@
 	width: 15px;
 	height: 15px;
 }
+
+@media (min-width: 768px) {
+	.reviews {
+		padding: $block-padding-tablet;
+	}
+
+	.reviews__item {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+		grid-column-gap: 25px; 
+	}
+
+	.reviews__item-personal-block {
+		grid-template-columns: 50px auto;
+		grid-template-rows: auto auto auto;
+		margin-bottom: 0;
+	}
+
+	.reviews__reviewer-potret {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		margin-bottom: 5px;
+	}
+
+	.reviews__reviewer-name {
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
+
+	.reviews__date {
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row-start: 3;
+		grid-row-end: -1;
+	}
+
+	.reviews__reviewer-social-block {
+		grid-column-start: 2;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		justify-self: center;
+		margin-top: 5px;
+	}
+}

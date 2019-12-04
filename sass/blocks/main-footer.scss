@@ -12,3 +12,46 @@
 .main-footer__social-block svg {
 	fill: $white;
 }
+
+@media (min-width: 768px) {
+	.main-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+	  padding: $block-padding-tablet;
+	  padding-top: 35px;
+	}
+
+	.main-footer__logo {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		margin-bottom: 15px;
+	}
+
+	.main-footer__contact {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 2;
+		grid-row-end: 2;
+		margin: 0;
+	}
+
+	.main-footer__short-schedule {
+		grid-column-start: 2;
+		grid-column-end: -1;
+		grid-row-start: 2;
+		grid-row-end: -1;
+		padding: 0;
+	}
+
+	.main-footer__social-block {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 2;
+		grid-row-end: -1;
+		align-self: end;
+		margin-bottom: 5px;
+	}
+}
