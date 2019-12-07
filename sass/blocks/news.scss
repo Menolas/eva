@@ -117,3 +117,10 @@
 		justify-self: end;
 	}
 }
+
+@media (min-width: 1000px) {
+	.news {
+		padding: $block-padding-desktop;
+		padding-bottom: 0;
+	}
+}

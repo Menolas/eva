@@ -59,13 +59,6 @@ textarea {
 
 @media (min-width: 768px) {
   body {
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-
-@media (min-width: 1600px) {
-  body {
     font-size: $base-font-size;
     line-height: $base-line-height;
   }

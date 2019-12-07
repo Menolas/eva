@@ -46,3 +46,15 @@
 		margin-bottom: 0;
 	}
 }
+
+@media (min-width: 1000px) {
+	.teachers {
+		grid-template-columns: auto 487px;
+		grid-column-gap: 50px;
+		padding: $block-padding-desktop;
+	}
+
+	.teachers__illustration {
+		width: 487px;
+	}
+}

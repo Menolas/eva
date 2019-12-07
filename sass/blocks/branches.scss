@@ -49,3 +49,15 @@
 		margin-bottom: 0;
 	}
 }
+
+@media (min-width: 1000px) {
+	.branches {
+		grid-template-columns: auto 487px;
+		padding: $block-padding-desktop;
+		padding-bottom: 0;
+	}
+
+	.branches__illustration {
+		width: 487px;
+	}
+}

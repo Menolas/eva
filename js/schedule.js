@@ -34,7 +34,6 @@ var openDaySchedule = function (evt) {
 for (var i = 0; i < allWeekDays.length; i++) {
     allWeekDays[i].addEventListener('click', function (evt) {
         var target = event.currentTarget;
-        console.log(target);
         var daySchedule = target.querySelector('.schedule__class-list-per-day');
         var dayScheduleHandler = target.querySelector('.schedule__item-handler');
 

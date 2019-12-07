@@ -34,30 +34,16 @@
 
 @media (min-width: 1000px) {
   .title {
-  	@include font-header(45px, 60px);
+  	@include font-header(50px, 65px);
+  	margin-bottom: 45px;
   }
 
   .title__secondary {
-		@include font-header(30px, 40px);
+		@include font-header(40px, 50px);
+		margin-bottom: 45px;
 	}
 
 	.title__third {
-		@include font-header(20px, 32px);
-		font-weight: 300;
-	}
-}
-
-@media (min-width: 1600px) {
-	.title {
-		@include font-header(60px, 72px);
-	}
-
-	.title__secondary {
-		@include font-header(40px, 65px);
-	}
-
-	.title__third {
-		@include font-header(26px, 38px);
-		font-weight: 300;
+		@include font-header(24px, 32px);
 	}
 }
