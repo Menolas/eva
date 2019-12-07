@@ -7,21 +7,14 @@
 	color: $white;
 }
 
-.short-schedule__table {
-	width: 100%;
-
+.short-schedule__list {
+	@include list-style;
 }
 
-.short-schedule__table tr {
-	padding: 10px 0;
-	border-bottom: 1px solid $white;
-
-	&:first-of-type {
-		padding-top: 0;
-	}
+.short-schedule__item:last-of-type {
+	display: flex;
 }
 
-.short-schedule__table td {
-	display: inline-block;
-	width: 40%;
+.short-schedule__item:last-of-type .short-schedule__days {
+	margin-right: 5px;
 }

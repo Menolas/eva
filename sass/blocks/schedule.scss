@@ -167,6 +167,11 @@
 }
 
 @media (min-width: 1000px) {
+	.schedule {
+		padding: 0;
+		padding-top: 65px;
+	}
+	
 	.schedule__list {
 		grid-template-columns:  repeat(6, 16.6%);
 		grid-template-rows: auto;
