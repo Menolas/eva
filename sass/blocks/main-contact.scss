@@ -13,7 +13,15 @@
 
 .main-contact .contact,
 .main-contact .short-schedule {
-	padding: 16px;
+	width: 100%;
+}
+
+.main-contact .contact {
+	padding-top: 35px;
+}
+
+.main-contact .short-schedule {
+	padding-bottom: 0;
 }
 
 .main-contact .contact__title,
@@ -24,4 +32,11 @@
 .main-contact .contact p {
 	color: $green;
 	font-weight: 500;
+	font-size: 18px;
+}
+
+@media (min-width: 768px) {
+	.main-contact {
+		padding: $block-padding-tablet;
+	}
 }

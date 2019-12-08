@@ -4,13 +4,39 @@ var scheduleTab = document.querySelector('.schedule');
 var scheduleHandler = scheduleTab.querySelector('.schedule__handler');
 var weekDays = scheduleTab.querySelector('.schedule__list');
 var allWeekDays = scheduleTab.querySelectorAll('.schedule__item');
-//var dayScheduleHandler = scheduleTab.querySelector('.schedule__item-handler');
-//var daySchedule = scheduleTab.querySelector('.schedule__class-list-per-day');
+var allDaysSchedules = scheduleTab.querySelectorAll('.schedule__class-list-per-day');
 
+var hideDaySchedule = function () {
+    for (var i = 0; i < allWeekDays.length; i++) {
+        var crossElement = allWeekDays[i].querySelector('.schedule__item-handler');
+        var daySchedule = allWeekDays[i].querySelector('.schedule__class-list-per-day');
 
-scheduleHandler.addEventListener('click', function () {
-	weekDays.classList.toggle('schedule__list--sown');
-	scheduleHandler.classList.toggle('schedule__handler--close');
+        if (crossElement.classList.contains('schedule__item-handler--shown')) {
+            crossElement.classList.remove('schedule__item-handler--shown');
+        }
+        if (daySchedule.classList.contains('schedule__class-list-per-day--shown')) {
+
+            daySchedule.classList.remove('schedule__class-list-per-day--shown');
+        }
+    }
+};
+
+var closeSchedule = function () {
+    hideDaySchedule();
+    weekDays.classList.remove('schedule__list--sown');
+    scheduleHandler.classList.remove('schedule__handler--close');
+};
+
+scheduleHandler.addEventListener('click', function (evt) {
+    var target = event.target;
+    target.classList.add('schedule__handler--close');
+	weekDays.classList.add('schedule__list--sown');
+    
+    scheduleHandler.addEventListener('click', function () {
+        hideDaySchedule();
+        weekDays.classList.remove('schedule__list--sown');
+        scheduleHandler.classList.remove('schedule__handler--close');
+    });
 });
 
 var closeDaySchedule = function (evt) {
@@ -49,15 +75,3 @@ for (var i = 0; i < allWeekDays.length; i++) {
         
     });
 };
-
-/*var hideDaySchedule = function () {
-    for (var i = 0; i < allDaysSchedules.length; i++) {
-        if (allDaysSchedules[i].classList.contains('schedule__class-list-per-day--shown')) {
-            allDaysSchedules[i].classList.remove('schedule__class-list-per-day--shown');
-            var crossElement = allDaysSchedules[i].querySelector('.schedule__item-handler');
-            if (crossElement.classList.contains('schedule__item-handler--shown')) {
-                crossElement.classList.remove('schedule__item-handler--shown');
-            }
-        }
-    }
-};*/

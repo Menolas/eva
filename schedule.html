@@ -53,7 +53,7 @@
 				<section class="schedule">
 					<ul class="schedule__list">
 						<li class="schedule__item">
-							Понедельник
+							<h2 class="schedule__item-title  title__third">Понедельник</h2>
 							<div class="schedule__item-handler"></div>
 							<ul class="schedule__class-list-per-day">
 								<li class="schedule__class-item">
@@ -79,7 +79,7 @@
                             </ul>
 						</li>
 						<li class="schedule__item">
-							Вторник
+							<h2 class="schedule__item-title  title__third">Вторник</h2>
 							<div class="schedule__item-handler"></div>
 							<ul class="schedule__class-list-per-day">
 								<li class="schedule__class-item">
@@ -105,7 +105,7 @@
                             </ul>
 						</li>
 						<li class="schedule__item">
-							Среда
+							<h2 class="schedule__item-title  title__third">Среда</h2>
 							<div class="schedule__item-handler"></div>
 							<ul class="schedule__class-list-per-day">
 								<li class="schedule__class-item">
@@ -131,7 +131,7 @@
                             </ul>
 						</li>
 						<li class="schedule__item">
-							Четверг
+							<h2 class="schedule__item-title  title__third">Четверг</h2>
 							<div class="schedule__item-handler"></div>
 							<ul class="schedule__class-list-per-day">
 								<li class="schedule__class-item">
@@ -157,7 +157,7 @@
                             </ul>
 						</li>
 						<li class="schedule__item">
-							Пятница
+							<h2 class="schedule__item-title  title__third">Пятница</h2>
 							<div class="schedule__item-handler"></div>
 							<ul class="schedule__class-list-per-day">
 								<li class="schedule__class-item">
@@ -183,7 +183,7 @@
                             </ul>
 						</li>
 						<li class="schedule__item">
-							Суббота
+							<h2 class="schedule__item-title  title__third">Суббота</h2>
 							<div class="schedule__item-handler"></div>
 							<ul class="schedule__class-list-per-day">
 								<li class="schedule__class-item">
@@ -225,31 +225,24 @@
 				</section>
 				<section class="short-schedule">
 					<h3 class="short-schedule__title  title__third">Рабочие часы</h3>
-					<table class="short-schedule__table">
-						<tr>
-							<td>
-								Понедельник<br>
-								Среда<br>
-								Пятница
-							</td>
-							<td>7<sup>30</sup> - 21<sup>00</sup></td>
-						</tr>
-						<tr>
-							<td>
-								Вторник<br>
-								Четверг
-							</td>
-							<td>7<sup>30</sup> - 20<sup>00</sup></td>
-						</tr>
-						<tr>
-							<td>Суббота</td>
-							<td>10<sup>00</sup> - 19<sup>00</sup></td>
-						</tr>
-						<tr>
-							<td>Воскресенье</td>
-							<td>Выходной</td>
-						</tr>
-					</table>
+					<ul class="short-schedule__list">
+						<li class="short-schedule__item">
+							<div class="short-schedule__days">Понедельник, Среда, Пятница</div>
+							<span class="short-schedule__time">7<sup>30</sup> - 21<sup>00</sup></span>
+						</li>
+						<li class="short-schedule__item">
+							<div class="short-schedule__days">Вторник, Четверг</div>
+							<span class="short-schedule__time">7<sup>30</sup> - 20<sup>00</sup></span>
+						</li>
+						<li class="short-schedule__item">
+							<div class="short-schedule__days">Суббота</div>
+							<span class="short-schedule__time">10<sup>00</sup> - 19<sup>00</sup></span>
+						</li>
+						<li class="short-schedule__item">
+							<div class="short-schedule__days">Воскресенье -</div>
+							<span class="short-schedule__time">Выходной</span>
+						</li>
+					</ul>
 				</section>
 				<div class="main-footer__social-block  social-block">
 					<ul class="social-block__list">
@@ -319,5 +312,6 @@
 			</symbol>
         </svg>
         <script src="js/main-menu.js"></script>
+        <script src="js/schedule-page.js"></script>
 	</body>
 </html>

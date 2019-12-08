@@ -143,6 +143,7 @@
 	}
 
 	.main-nav__link--active {
+		display: none;
 		font-weight: 700;
 
 		&:after {
@@ -155,5 +156,9 @@
 @media (min-width: 1000px) {
 	.main-nav__link {
 		font-size: 20px;
+	}
+
+	.main-nav__link--active {
+		display: block;
 	}
 }
