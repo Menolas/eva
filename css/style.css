@@ -1426,3 +1426,23 @@ textarea {
   grid-column-end: -1;
   grid-row-start: 3;
   grid-row-end: -1; }
+
+.main-branches {
+  padding: 50px 16px; }
+
+.main-branches__greeting {
+  text-align: center; }
+
+.branches-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 40px; }
+
+.branches-list__item {
+  margin-bottom: 35px; }
+  .branches-list__item:last-of-type {
+    margin-bottom: 0; }
+
+.branches-list__article-picture {
+  margin-bottom: 25px; }
