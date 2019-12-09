@@ -4,6 +4,14 @@
 
 .teachers-list__item {
 	margin-bottom: 35px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid $green;
+
+	&:last-of-type {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border: none;
+	}
 }
 
 .teachers-list__article {
@@ -31,7 +39,6 @@
 	margin-top: 10px;
 	margin-bottom: 0;
 	color: $green;
-	width: 70%;
 }
 
 .teachers-list__social-block {
