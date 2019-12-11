@@ -1,3 +1,29 @@
 .main-news .news {
 	padding-bottom: 50px;
 }
+
+.main-news .news__article {
+	display: grid;
+	grid-template-columns: 120px auto;
+	grid-template-rows: 52px 22px auto auto;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+}
+
+.main-news .news__picture {
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: -2;
+}
+
+.main-news  .news__date {
+	align-self: start;
+}
+
+.main-news  .news__text {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 4;
+	grid-row-end: -1;
+}
