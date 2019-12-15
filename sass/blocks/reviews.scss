@@ -1,10 +1,24 @@
 .reviews {
 	position: relative;
+	display: grid;
+	grid-template-columns: 338px;
+	grid-template-rows: auto auto auto;
 	padding: $block-padding-mobile;
+}
+
+.reviews__title {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: 1;
 }
 
 .reviews__list {
 	@include list-style;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 2;
+	grid-row-end: 2;
 	display: grid;
 	grid-row-gap: 25px;
 }
@@ -89,10 +103,20 @@
 }
 
 .reviews__btn--read {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 3;
+	grid-row-end: -1;
+	justify-self: start;
 	margin-right: auto;
 }
 
 .reviews__btn--message {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 3;
+	grid-row-end: -1;
+	justify-self: end;
 	margin-left: auto;
 	margin-right: 0;
 }

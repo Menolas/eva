@@ -8,10 +8,29 @@
 	width: 338px;
 	padding: $block-padding-mobile;
 	background-color: $white;
+	z-index: 50;
 }
 
 .review-form--shown {
 	display: grid;
+}
+
+.review-form__close-button {
+	position: absolute;
+	top: 25px;
+	right: 18px;
+	width: 25px;
+	height: 25px;
+
+	&::before {
+		@include element-style(25px, 2px, $green);
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		@include element-style(25px, 2px, $green);
+		transform: rotate(-45deg);
+	}
 }
 
 .review-form__input-wrap {

@@ -37,10 +37,20 @@ var similarReviews = document.querySelector('.reviews__list');
 var reviewTemplate = document.querySelector('template').content.querySelector('.reviews__item');
 var openReviewFormButton = document.querySelector('.reviews__btn--message');
 var reviewForm = document.querySelector('.review-form');
+var overlay = document.querySelector('.container');
+var reviewFormcloseButton = document.querySelector('.review-form__close-button');
 
 openReviewFormButton.addEventListener('click', function () {
-    reviewForm.classList.toggle('review-form--shown');
+    reviewForm.classList.add('review-form--shown');
+    overlay.classList.add('container--shown-overlay');
+
+    reviewFormcloseButton.addEventListener('click', function () {
+        reviewForm.classList.remove('review-form--shown');
+        overlay.classList.remove('container--shown-overlay');
+    });
 });
+
+
 
 var renderReview = function (reviewsItem) {
     var reviewElement = reviewTemplate.cloneNode(true);
