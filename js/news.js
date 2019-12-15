@@ -14,20 +14,11 @@ var news = [
         illustration: "img/news-illustration-4-mobile.jpg",
         facebook: "https://www.facebook.com/events/1185783384949867/",
         link: "news2.html"
-    },
-    {
-        header: "",
-        dates: "",
-        text: "",
-        illustration: "",
-        facebook: "",
-        link: ""
     }
-
 ];
 
 var similarNews = document.querySelector('.main-news .news__list');
-var newsTemplate = document.querySelector('template').content.querySelector('li');
+var newsTemplate = document.querySelector('template').content.querySelector('.news__item');
 var renderNews = function (newsItem) {
     var newsElement = newsTemplate.cloneNode(true);
 

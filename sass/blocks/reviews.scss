@@ -1,4 +1,5 @@
 .reviews {
+	position: relative;
 	padding: $block-padding-mobile;
 }
 
@@ -81,6 +82,19 @@
 .reviews__reviewer-social-block .social-block__link svg {
 	width: 15px;
 	height: 15px;
+}
+
+.reviews__btn {
+	margin-bottom: 0;
+}
+
+.reviews__btn--read {
+	margin-right: auto;
+}
+
+.reviews__btn--message {
+	margin-left: auto;
+	margin-right: 0;
 }
 
 @media (min-width: 768px) {
