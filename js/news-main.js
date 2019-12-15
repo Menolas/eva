@@ -14,16 +14,7 @@ var news = [
         illustration: "img/news-illustration-4-mobile.jpg",
         facebook: "https://www.facebook.com/events/1185783384949867/",
         link: "news2.html"
-    },
-    {
-        header: "",
-        dates: "",
-        text: "",
-        illustration: "",
-        facebook: "",
-        link: ""
     }
-
 ];
 
 var similarNewsMain = document.querySelector('.main-home .news__list');
@@ -44,7 +35,7 @@ var renderNews = function (newsItem) {
 var renderAllNews = function (news) {
     var fragment = document.createDocumentFragment();
 
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < news.length; i++) {
         fragment.appendChild(renderNews(news[i]));
     }
     similarNewsMain.appendChild(fragment);

@@ -1617,3 +1617,8 @@ textarea {
 
 .branches-list__article-picture {
   margin-bottom: 25px; }
+
+.main-reviews .reviews__btn--message {
+  justify-self: center;
+  margin-left: 0;
+  margin-right: 0; }
