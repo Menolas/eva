@@ -23,20 +23,13 @@ var hideDaySchedule = function () {
 
 var closeSchedule = function () {
     hideDaySchedule();
-    weekDays.classList.remove('schedule__list--sown');
+    weekDays.classList.remove('schedule__list--shown');
     scheduleHandler.classList.remove('schedule__handler--close');
 };
 
-scheduleHandler.addEventListener('click', function (evt) {
-    var target = event.target;
-    target.classList.add('schedule__handler--close');
-	weekDays.classList.add('schedule__list--sown');
-    
-    scheduleHandler.addEventListener('click', function () {
-        hideDaySchedule();
-        weekDays.classList.remove('schedule__list--sown');
-        scheduleHandler.classList.remove('schedule__handler--close');
-    });
+scheduleHandler.addEventListener('click', function () {
+    scheduleHandler.classList.toggle('schedule__handler--close');
+	weekDays.classList.toggle('schedule__list--shown');
 });
 
 var closeDaySchedule = function (evt) {
@@ -53,8 +46,12 @@ var openDaySchedule = function (evt) {
 
     daySchedule.classList.add('schedule__class-list-per-day--shown');
     dayScheduleHandler.classList.add('schedule__item-handler--shown');
+    weekDays.classList.add('schedule__list--faded');
 
-    dayScheduleHandler.addEventListener('click', closeDaySchedule);
+    dayScheduleHandler.addEventListener('click', function () {
+        closeDaySchedule();
+        weekDays.classList.remove('schedule__list--faded');
+    });
 };
 
 for (var i = 0; i < allWeekDays.length; i++) {
@@ -65,12 +62,14 @@ for (var i = 0; i < allWeekDays.length; i++) {
 
         daySchedule.classList.add('schedule__class-list-per-day--shown');
         dayScheduleHandler.classList.add('schedule__item-handler--shown');
+        weekDays.classList.add('schedule__list--faded');
 
         dayScheduleHandler.addEventListener('click', function (evt) {
             event.stopPropagation();
             var target = event.target;
             target.classList.remove('schedule__item-handler--shown');
             daySchedule.classList.remove('schedule__class-list-per-day--shown');
+            weekDays.classList.remove('schedule__list--faded');
         });
         
     });

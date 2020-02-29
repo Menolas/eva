@@ -6,9 +6,7 @@
 
 .main-header__block-wrap {
 	position: relative;
-	display: grid;
-	grid-template-columns: auto auto;
-	align-items: center;
+	display: flex;
 	justify-content: space-between;
 }
 
@@ -21,10 +19,6 @@
 		padding: $block-padding-tablet;
 		padding-top: 30px;
 		padding-bottom: 0;
-	}
-
-	.main-header__logo {
-		margin-right: 50px;
 	}
 }
 

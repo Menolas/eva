@@ -99,7 +99,7 @@ textarea {
 .container {
   position: relative;
   margin: 0 auto;
-  max-width: 370px;
+  width: 370px;
   /*min-width: 320px;
 	max-width: 370px;*/ }
 
@@ -116,13 +116,13 @@ textarea {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 800px;
+    width: 768px;
     /*min-width: 768px;
 		max-width: 800px;*/ } }
 
 @media (min-width: 1000px) {
   .container {
-    max-width: 1024px;
+    width: 1000px;
     /*min-width: 1000px;
 		max-width: 1024px;*/ } }
 
@@ -313,11 +313,9 @@ textarea {
 
 .main-header__block-wrap {
   position: relative;
-  display: grid;
-  grid-template-columns: auto auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -329,9 +327,7 @@ textarea {
   .main-header {
     padding: 65px 30px;
     padding-top: 30px;
-    padding-bottom: 0; }
-  .main-header__logo {
-    margin-right: 50px; } }
+    padding-bottom: 0; } }
 
 @media (min-width: 1000px) {
   .main-header {
@@ -968,22 +964,46 @@ textarea {
   list-style: none;
   display: none; }
 
-.schedule__list--sown {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto auto;
-  grid-row-gap: 15px;
+.schedule__list--shown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
   padding: 25px;
-  padding-bottom: 0;
+  padding-top: 0;
   border-radius: 4px;
   background-color: #ffffff; }
 
+.schedule__list {
+  position: relative; }
+
+.schedule__list--faded {
+  padding-top: 25px; }
+  .schedule__list--faded::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #19744C;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    z-index: 0; }
+
 .schedule__item {
   position: relative;
-  margin: 0;
+  margin-bottom: 25px;
   text-align: center;
   border-radius: 4px;
-  border: 1px solid #19744C; }
+  border: 1px solid #19744C;
+  background-color: #ffffff; }
+  .schedule__item:last-of-type {
+    margin-bottom: 0; }
 
 .schedule__item-title {
   margin-bottom: 0;
@@ -991,24 +1011,24 @@ textarea {
   color: #19744C; }
 
 .schedule__class-list-per-day--shown {
-  display: grid;
-  grid-row-gap: 15px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .schedule__class-item {
+  margin-bottom: 15px;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   grid-row-gap: 8px;
   border-bottom: 1px solid #19744C;
-  padding-bottom: 15px; }
-  .schedule__class-item:first-of-type {
-    padding-top: 15px; }
-  .schedule__class-item:last-of-type {
-    padding-bottom: 0;
-    border: none; }
-
-.schedule__class-item span {
-  display: block;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -1016,6 +1036,35 @@ textarea {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500; }
+  .schedule__class-item:first-of-type {
+    padding-top: 15px; }
+  .schedule__class-item:last-of-type {
+    margin-bottom: 0;
+    border: none; }
+
+.schedule__class-item span {
+  display: block; }
+
+.schedule__timing-block {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  align-self: center;
+  justify-self: start; }
+
+.schedule__class-name {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 1; }
+
+.schedule__teacher-name {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: -1;
+  color: #19744C; }
 
 .schedule__item-handler--shown {
   display: block;
@@ -1044,7 +1093,7 @@ textarea {
     width: 18px;
     height: 2px;
     background-color: #19744C;
-    top: -12%;
+    top: -13.59%;
     left: 30%;
     -webkit-transform: rotate(-45deg) translate(-50%);
             transform: rotate(-45deg) translate(-50%); }
@@ -1053,20 +1102,18 @@ textarea {
   .schedule {
     padding: 65px 30px;
     padding-bottom: 0; }
-  .schedule__handler {
-    display: none; }
-  .schedule__list,
-  .schedule__class-list-per-day {
-    display: grid; }
-  .schedule__list {
+  .schedule__list--shown {
+    display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
     padding: 0; }
-  .schedule__item-title {
-    color: #ffffff;
-    background-color: #19744C; }
+  .schedule__item {
+    margin-bottom: -1px;
+    margin-left: -1px; }
+    .schedule__item:first-of-type {
+      margin-left: 0; }
+    .schedule__item:nth-of-type(4) {
+      margin-left: 0; }
   .schedule__class-list-per-day {
     background-color: #ffffff; }
   .schedule__class-item {
@@ -1089,33 +1136,44 @@ textarea {
     line-height: 20px;
     font-weight: 500; } }
 
+@media (min-width: 1600px) {
+  .schedule__handler {
+    display: none; }
+  .schedule__list,
+  .schedule__class-list-per-day {
+    display: grid; }
+  .schedule__list {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    padding: 0; }
+  .schedule__item-title {
+    color: #ffffff;
+    background-color: #19744C; } }
+
 .reviews {
   position: relative;
-  display: grid;
-  grid-template-columns: 338px;
-  grid-template-rows: auto auto auto;
   padding: 50px 16px; }
-
-.reviews__title {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 1;
-  grid-row-end: 1; }
 
 .reviews__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  display: grid;
-  grid-row-gap: 25px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .reviews__item {
+  margin-bottom: 25px;
   padding-bottom: 10px;
   border-bottom: 1px solid #19744C; }
+  .reviews__item:last-of-type {
+    margin-bottom: 0; }
 
 .reviews__item-personal-block {
   display: grid;
@@ -1183,25 +1241,21 @@ textarea {
   width: 15px;
   height: 15px; }
 
+.reviews__btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 21px; }
+
 .reviews__btn {
-  margin-bottom: 0; }
-
-.reviews__btn--read {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 3;
-  grid-row-end: -1;
-  justify-self: start;
-  margin-right: auto; }
-
-.reviews__btn--message {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 3;
-  grid-row-end: -1;
-  justify-self: end;
-  margin-left: auto;
-  margin-right: 0; }
+  margin: 0; }
 
 @media (min-width: 768px) {
   .reviews {
@@ -1237,7 +1291,14 @@ textarea {
     grid-row-start: 1;
     grid-row-end: 1;
     justify-self: center;
-    margin-top: 5px; } }
+    margin-top: 5px; }
+  .reviews__btn--read {
+    margin-right: 30px; }
+  .reviews__btn-wrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 30px; } }
 
 @media (min-width: 1000px) {
   .reviews {
@@ -1361,14 +1422,14 @@ textarea {
 
 @media (min-width: 768px) {
   .map {
-    width: 800px;
+    width: 768px;
     height: 380px;
     background-image: url("../img/map-800.jpg");
     background-size: 800px 476px; } }
 
 @media (min-width: 1000px) {
   .map {
-    width: 1024px;
+    width: 1000px;
     height: 450px;
     background-image: url("../img/map-1000.jpg");
     background-size: 1024px 548px; } }
