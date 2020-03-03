@@ -12,12 +12,14 @@ for (var i = 0; i < allWeekDays.length; i++) {
 
         daySchedule.classList.add('schedule__class-list-per-day--shown');
         dayScheduleHandler.classList.add('schedule__item-handler--shown');
+        weekDays.classList.add('schedule__list--faded');
 
         dayScheduleHandler.addEventListener('click', function (evt) {
             event.stopPropagation();
             var target = event.target;
             target.classList.remove('schedule__item-handler--shown');
             daySchedule.classList.remove('schedule__class-list-per-day--shown');
+            weekDays.classList.remove('schedule__list--faded');
         });
         
     });

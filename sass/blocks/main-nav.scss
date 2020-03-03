@@ -103,6 +103,10 @@
 }
 
 @media (min-width: 768px) {
+	
+}
+
+@media (min-width: 1000px) {
 	.main-nav__toggler {
 		display: none;
 	}
@@ -125,9 +129,9 @@
 	}
 
 	.main-nav__link {
-		font-weight: 400;
+		font-size: 20px;
 	}
-
+	
 	.main-nav__link:hover {
 		color: $green;
 
@@ -143,22 +147,12 @@
 	}
 
 	.main-nav__link--active {
-		display: none;
+		
 		font-weight: 700;
+		color: $green;
 
 		&:after {
 			display: none;
 		}
-	}
-	
-}
-
-@media (min-width: 1000px) {
-	.main-nav__link {
-		font-size: 20px;
-	}
-
-	.main-nav__link--active {
-		display: block;
 	}
 }

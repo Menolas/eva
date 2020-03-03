@@ -184,7 +184,15 @@
 		padding: 0;
 	}
 
+	.schedule__list--faded {
+		&::before {
+			height: 480px;
+			z-index: 10;
+		}
+	}
+
 	.schedule__item {
+		position: relative;
 		margin-bottom: -1px;
 		margin-left: -1px;
 
@@ -197,8 +205,18 @@
 		}
 	}
 
-	.schedule__class-list-per-day {
+	.schedule__item--active {
+		position: absolute;
+		top: 30px;
+		left: 50%;
+		width: 280px;
 		background-color: $white;
+		transform: translate(-50%);
+		z-index: 10;
+	}
+
+	.schedule__class-list-per-day {
+		
 	}
 
 	.schedule__class-item {

@@ -59,7 +59,8 @@ for (var i = 0; i < allWeekDays.length; i++) {
         var target = event.currentTarget;
         var daySchedule = target.querySelector('.schedule__class-list-per-day');
         var dayScheduleHandler = target.querySelector('.schedule__item-handler');
-
+        
+        target.classList.add('schedule__item--active');
         daySchedule.classList.add('schedule__class-list-per-day--shown');
         dayScheduleHandler.classList.add('schedule__item-handler--shown');
         weekDays.classList.add('schedule__list--faded');
@@ -70,6 +71,11 @@ for (var i = 0; i < allWeekDays.length; i++) {
             target.classList.remove('schedule__item-handler--shown');
             daySchedule.classList.remove('schedule__class-list-per-day--shown');
             weekDays.classList.remove('schedule__list--faded');
+            for (var i = 0; i < allWeekDays.length; i++) {
+                if (allWeekDays[i].classList.contains('schedule__item--active')) {
+                    allWeekDays[i].classList.remove('schedule__item--active');
+                }
+            }
         });
         
     });

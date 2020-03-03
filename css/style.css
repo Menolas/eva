@@ -44,6 +44,9 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+* {
+  outline: 1px solid red; }
+
 body {
   margin: 0 auto;
   font-size: 14px;
@@ -126,9 +129,9 @@ textarea {
     /*min-width: 1000px;
 		max-width: 1024px;*/ } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .container {
-    width: 1600px;
+    width: 1440px;
     /*min-width: 1600px;
 		max-width: 1600px;*/ } }
 
@@ -318,7 +321,10 @@ textarea {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .main-header__logo svg {
   fill: #19744C; }
@@ -333,7 +339,15 @@ textarea {
   .main-header {
     padding: 80px 60px;
     padding-top: 40px;
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .main-header__block-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
 
 .main-nav__toggler {
   position: relative;
@@ -449,7 +463,7 @@ textarea {
     height: 1px;
     background-color: #19744C; }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .main-nav__toggler {
     display: none; }
   .main-nav__list {
@@ -469,7 +483,7 @@ textarea {
     .main-nav__item:first-of-type {
       margin-left: 0; }
   .main-nav__link {
-    font-weight: 400; }
+    font-size: 20px; }
   .main-nav__link:hover {
     color: #19744C; }
     .main-nav__link:hover:after {
@@ -481,16 +495,10 @@ textarea {
       height: 1px;
       background-color: #19744C; }
   .main-nav__link--active {
-    display: none;
-    font-weight: 700; }
+    font-weight: 700;
+    color: #19744C; }
     .main-nav__link--active:after {
       display: none; } }
-
-@media (min-width: 1000px) {
-  .main-nav__link {
-    font-size: 20px; }
-  .main-nav__link--active {
-    display: block; } }
 
 .main-home {
   padding-top: 35px; }
@@ -533,6 +541,8 @@ textarea {
     width: 708px; } }
 
 @media (min-width: 1000px) {
+  .main-home {
+    padding: 80px 60px; }
   .main-home__title,
   .main-home__greeting {
     padding: 0 60px; }
@@ -640,9 +650,7 @@ textarea {
     grid-row-start: 3;
     grid-row-end: -1; }
   .news__social-block .social-block__link {
-    width: auto;
-    font-size: 12px;
-    color: #19744C; } }
+    width: auto; } }
 
 @media (min-width: 1000px) {
   .news {
@@ -732,7 +740,7 @@ textarea {
     grid-row-end: -1;
     justify-self: start;
     align-self: end;
-    margin-bottom: 0; } }
+    margin: 0; } }
 
 @media (min-width: 1000px) {
   .teachers {
@@ -1107,15 +1115,26 @@ textarea {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     padding: 0; }
+  .schedule__list--faded::before {
+    height: 480px;
+    z-index: 10; }
   .schedule__item {
+    position: relative;
     margin-bottom: -1px;
     margin-left: -1px; }
     .schedule__item:first-of-type {
       margin-left: 0; }
     .schedule__item:nth-of-type(4) {
       margin-left: 0; }
-  .schedule__class-list-per-day {
-    background-color: #ffffff; }
+  .schedule__item--active {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 280px;
+    background-color: #ffffff;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    z-index: 10; }
   .schedule__class-item {
     padding-top: 15px;
     padding-bottom: 15px; }
@@ -1554,10 +1573,13 @@ textarea {
   padding: 0; }
 
 .main-schedule .schedule__list {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto auto;
-  grid-row-gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 25px;
   padding-bottom: 0;
   border-radius: 4px;
