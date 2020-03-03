@@ -55,15 +55,15 @@
 
 @media (min-width: 1000px) {
 	.main-home {
-		padding: $block-padding-desktop;
+		padding-top: 80px;
 	}
-	
+
 	.main-home__title,
   .main-home__greeting {
 	  padding: 0 60px;
   }
 
   .main-home__picture-wrap {
-	  width: 904px;
+	  width: 880px;
   }
 }

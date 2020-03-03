@@ -44,9 +44,10 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+/*
 * {
-  outline: 1px solid red; }
-
+  outline: 1px solid red;
+}*/
 body {
   margin: 0 auto;
   font-size: 14px;
@@ -321,10 +322,7 @@ textarea {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+          justify-content: space-between; }
 
 .main-header__logo svg {
   fill: #19744C; }
@@ -338,16 +336,15 @@ textarea {
 @media (min-width: 1000px) {
   .main-header {
     padding: 80px 60px;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 0; }
   .main-header__block-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; } }
+            flex-direction: column; }
+  .main-header__logo {
+    margin-bottom: 35px; } }
 
 .main-nav__toggler {
   position: relative;
@@ -475,6 +472,9 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     border: none;
     background-color: transparent; }
@@ -542,12 +542,12 @@ textarea {
 
 @media (min-width: 1000px) {
   .main-home {
-    padding: 80px 60px; }
+    padding-top: 80px; }
   .main-home__title,
   .main-home__greeting {
     padding: 0 60px; }
   .main-home__picture-wrap {
-    width: 904px; } }
+    width: 880px; } }
 
 .news {
   padding: 50px 16px;
@@ -923,9 +923,7 @@ textarea {
       grid-row-end: 1;
       justify-self: center;
       -webkit-transform: none;
-              transform: none;
-      -webkit-box-shadow: none;
-              box-shadow: none; } }
+              transform: none; } }
 
 .schedule {
   padding: 50px 16px;
@@ -1705,3 +1703,15 @@ textarea {
   justify-self: center;
   margin-left: 0;
   margin-right: 0; }
+
+.front-page__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
