@@ -1,9 +1,7 @@
 .container {
 	position: relative;
 	margin: 0 auto;
-	width: 370px;
-	/*min-width: 320px;
-	max-width: 370px;*/
+	width: 320px;
 }
 
 .container--shown-overlay {
@@ -13,6 +11,13 @@
 		left: 0;
 		z-index: 30;
 	}
+}
+
+@media (min-width: 375px) {
+
+  .container {
+	width: 375px;
+  }
 }
 
 @media (min-width: 768px) {
