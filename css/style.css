@@ -1729,6 +1729,8 @@ textarea {
   grid-row-end: 1;
   margin-bottom: 0;
   color: #ffffff;
+  font-size: 45px;
+  line-height: 1;
   text-transform: uppercase; }
 
 .front-page__link {
@@ -1743,6 +1745,7 @@ textarea {
   grid-row-end: 2;
   align-self: start;
   justify-self: start;
+  margin-top: 45px;
   z-index: 5; }
 
 .front-page__link--fitness {
@@ -1752,11 +1755,14 @@ textarea {
   grid-row-end: -1;
   align-self: end;
   justify-self: end;
+  margin-bottom: 60px;
   z-index: 5; }
 
 .front-page__title-secondary {
   margin-bottom: 0;
   color: #ffffff;
+  font-size: 35px;
+  line-height: 1;
   text-transform: uppercase;
   opacity: 0.5; }
 
@@ -1800,7 +1806,8 @@ textarea {
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
-    align-self: end; }
+    align-self: end;
+    margin-top: 0; }
   .front-page__contacts,
   .front-page__schedule {
     display: block; }
@@ -1830,7 +1837,8 @@ textarea {
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 3;
-    grid-row-end: -1; }
+    grid-row-end: -1;
+    margin-bottom: 0; }
   .front-page__link--contacts {
     display: -webkit-box;
     display: -ms-flexbox;
