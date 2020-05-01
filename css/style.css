@@ -1214,21 +1214,8 @@ textarea {
   font-style: italic;
   color: #101010; }
 
-.reviews__btn-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 21px; }
-
 .reviews__btn {
-  margin: 0; }
+  margin-bottom: 0; }
 
 @media (min-width: 768px) {
   .reviews {
@@ -1259,12 +1246,7 @@ textarea {
     grid-row-start: 3;
     grid-row-end: -1; }
   .reviews__btn--read {
-    margin-right: 30px; }
-  .reviews__btn-wrap {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin-top: 30px; } }
+    margin-right: 30px; } }
 
 @media (min-width: 1000px) {
   .reviews {

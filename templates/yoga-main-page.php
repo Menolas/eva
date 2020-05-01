@@ -30,7 +30,7 @@
 				</li>
 			<?php endforeach; ?>
 		</ul>
-		<a class="news__btn btn" href="news.html">Читать все новости</a>
+		<a class="news__btn btn" href="news.php">Читать все новости</a>
 	</section>
 	<section class="branches">
 		<h2 class="branches__title  title__secondary">Направления</h2>
@@ -277,30 +277,30 @@
 				</li>
 			<?php endforeach; ?>
 		</ul>
-		<div class="reviews__btn-wrap">
-			<a class="reviews__btn  reviews__btn--read  btn" href="reviews.html">Прочитать все отзывы</a>
-			<button class="reviews__btn  reviews__btn--message  btn" href="reviews.html">Оставить отзыв</button>
-		</div>
-		<form class="review-form">
-			<div class="review-form__close-button"></div>
-			<div class="review-form__input-wrap  review-form__input-wrap--file">
-				<input type="file" name="file" id="file">
-				<label for="file">Загрузите свой аватар</label>
-			</div>
-			<div class="review-form__input-wrap  review-form__input-wrap--name">
-				<input type="text" name="name" id="name" placeholder="Имя" required>
-			</div>
-			<div class="review-form__input-wrap  review-form__input-wrap--surname">
-				<input type="text" name="surname" id="surname" placeholder="Фамилия" required>
-			</div>
-			<div class="review-form__input-wrap  review-form__input-wrap--card">
-				<input type="text" name="card-number" id="card-number" placeholder="Номер вашей клубной карты" required>
-			</div>
-			<div class="review-form__input-wrap  review-form__input-wrap--message">
-				<textarea id="text" rows="7">Текст вашего сообщения</textarea>
-			</div>
-			<input class="btn" type="submit" name="" value="Добавить отзыв">
-		</form>
+		<a class="reviews__btn btn" href="reviews.php">Прочитать все отзывы</a>
 	</section>
 	<div class="map"></div>
 </main>
+<script src="js/subscribing.js"></script>
+<script src="js/schedule.js"></script>
+
+<form class="review-form">
+	<div class="review-form__close-button"></div>
+	<div class="review-form__input-wrap  review-form__input-wrap--file">
+		<input type="file" name="file" id="file">
+		<label for="file">Загрузите свой аватар</label>
+	</div>
+	<div class="review-form__input-wrap  review-form__input-wrap--name">
+		<input type="text" name="name" id="name" placeholder="Имя" required>
+	</div>
+	<div class="review-form__input-wrap  review-form__input-wrap--surname">
+		<input type="text" name="surname" id="surname" placeholder="Фамилия" required>
+	</div>
+	<div class="review-form__input-wrap  review-form__input-wrap--card">
+		<input type="text" name="card-number" id="card-number" placeholder="Номер вашей клубной карты" required>
+	</div>
+	<div class="review-form__input-wrap  review-form__input-wrap--message">
+		<textarea id="text" rows="7">Текст вашего сообщения</textarea>
+	</div>
+	<input class="btn" type="submit" name="" value="Добавить отзыв">
+</form>

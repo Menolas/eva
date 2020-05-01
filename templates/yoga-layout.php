@@ -105,7 +105,5 @@
 			</footer>
 		</div>
       <script src="js/main-menu.js"></script>
-      <script src="js/subscribing.js"></script>
-      <script src="js/schedule.js"></script>
 	</body>
 </html>

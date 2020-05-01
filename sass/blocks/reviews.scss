@@ -56,15 +56,8 @@
 	color: $dark-background;
 }
 
-.reviews__btn-wrap {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-top: 21px;
-}
-
 .reviews__btn {
-	margin: 0;
+	margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -109,11 +102,6 @@
 
 	.reviews__btn--read {
 		margin-right: 30px;
-	}
-
-	.reviews__btn-wrap {
-		justify-content: flex-start;
-		margin-top: 30px;
 	}
 }
 
