@@ -2,6 +2,7 @@
 	<section class="reviews">
 		<h2 class="reviews__title  title__secondary">Отзывы</h2>
 		<ul class="reviews__list">
+			<?php foreach ($reviews as $reviews_element): ?>
 			<li class="reviews__item">
 				<div class="reviews__item-personal-block">
 					<div class="reviews__reviewer-potret"><img src="img/reviewer-portret-mobile.jpg" alt="фото персоны, оставившей отзыв"></div>

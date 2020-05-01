@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 	    <meta charset="utf-8">
-	    <title>Йога студия - ОмШанти - Николаев</title>
+	    <title>"Спарта" - клуб досуга и релакса</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="Keywords" content="фитнес,йога,николаев,спорт,здоровье,танцы,хатха,айенгар,пилатес,беллиденс,восточные танцы,trx,боди-памп,степ,слайд,тренировки">
 	    <meta name="Description" content="Предоставляем комплексные тренировки по йоге и фитнесу с использованием различного оборудования и вспомогательных материалов, проводим семинары, индивидуальные занятия, танцевальные классы. Находимся в городе Николаеве, Украина.">
@@ -12,7 +12,7 @@
 		<div class="container">
 			<div class="front-page">
 				<h1 class="front-page__title  title">Спарта</h1>
-				<a class="front-page__link  front-page__link--yoga" href="om-shanti.html">
+				<a class="front-page__link  front-page__link--yoga" href="yoga.php">
 				  <h2 class="front-page__title-secondary  title__secondary">Йога</h2>
 				</a>
 				<div class="front-page__contacts">
