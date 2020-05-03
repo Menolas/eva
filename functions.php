@@ -103,7 +103,7 @@ function get_news_element ($con, $id) {
 }
 
 /**
- * Получить все новости из базы.
+ * Получить расписание тренировок по йоге из базы.
  *
  * @param object $con Ссылка для подключения к базе данных *
  * @param string $request SQL запрос
@@ -112,6 +112,21 @@ function get_news_element ($con, $id) {
  */
 function get_schedule ($con) {
   $sql = "SELECT * FROM schedule ORDER BY id ASC;";
+
+  $schedule = db_run_query($con, $sql);
+  return $schedule;
+}
+
+/**
+ * Получить расписание фитнес тренировок из базы.
+ *
+ * @param object $con Ссылка для подключения к базе данных *
+ * @param string $request SQL запрос
+ *
+ * @return array
+ */
+function get_fitness_schedule($con) {
+  $sql = "SELECT * FROM fitness_schedule ORDER BY id ASC;";
 
   $schedule = db_run_query($con, $sql);
   return $schedule;

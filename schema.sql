@@ -36,8 +36,21 @@ CREATE TABLE schedule (
   created_at DATETIME DEFAULT NOW() NOT NULL,
   title CHAR(128) NOT NULL,
   instructor CHAR(64) NOT NULL,
-  timing CHAR(64),
-  branch CHAR(64)
+  timing CHAR(64) NOT NULL,
+  branch CHAR(64) NOT NULL,
+  week_day CHAR(64) NOT NULL,
+  number INT(1) NOT NULL
+);
+
+CREATE TABLE fitness_schedule (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  created_at DATETIME DEFAULT NOW() NOT NULL,
+  title CHAR(128) NOT NULL,
+  instructor CHAR(64) NOT NULL,
+  timing CHAR(64) NOT NULL,
+  branch CHAR(64) NOT NULL,
+  week_day CHAR(64) NOT NULL,
+  number INT(1) NOT NULL
 );
 
 CREATE TABLE instructors (

@@ -37,9 +37,9 @@
 /* font-styles */
 /* colors */
 /* measurements */
-* {
-  outline: 1px solid red; }
-
+/** {
+  outline: 1px solid red;
+}*/
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -1332,24 +1332,42 @@ textarea {
   padding: 16px; }
 
 .map {
+  width: 320px;
+  height: 300px;
   background-image: url("../img/map-370.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 370px 291px; }
+
+.map iframe {
+  width: 320px;
+  height: 300px; }
+
+@media (min-width: 375px) {
+  .map {
+    width: 375px; }
+  .map iframe {
+    width: 375px; } }
 
 @media (min-width: 768px) {
   .map {
     width: 768px;
     height: 380px;
     background-image: url("../img/map-800.jpg");
-    background-size: 800px 476px; } }
+    background-size: 800px 476px; }
+  .map iframe {
+    width: 768px;
+    height: 380px; } }
 
 @media (min-width: 1000px) {
   .map {
     width: 1000px;
-    height: 450px;
+    height: 400px;
     background-image: url("../img/map-1000.jpg");
-    background-size: 1024px 548px; } }
+    background-size: 1024px 548px; }
+  .map iframe {
+    width: 1000px;
+    height: 400px; } }
 
 .short-schedule {
   padding: 30px 0;

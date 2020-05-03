@@ -38,7 +38,7 @@
 				<svg class="front-page__decor  front-page__decor--sun">
 					<use xlink:href="img/svg/svg-sprite.svg#sun"></use>
 				</svg>
-				<a class="front-page__link  front-page__link--fitness" href="fitness.html">
+				<a class="front-page__link  front-page__link--fitness" href="fitness.php">
 				  <h2 class="front-page__title-secondary  title__secondary">Фитнес</h2>
 				</a>
 			</div>
