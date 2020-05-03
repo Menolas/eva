@@ -101,3 +101,37 @@ function get_news_element ($con, $id) {
   $news_element = db_run_query($con, $sql);
   return $news_element;
 }
+
+/**
+ * Получить все новости из базы.
+ *
+ * @param object $con Ссылка для подключения к базе данных *
+ * @param string $request SQL запрос
+ *
+ * @return array
+ */
+function get_schedule ($con) {
+  $sql = "SELECT * FROM schedule ORDER BY id ASC;";
+
+  $schedule = db_run_query($con, $sql);
+  return $schedule;
+}
+
+/**
+ * Получить расписание занятий для конкретного дня недели
+ * @param string $day день недели
+ * @param array $array массив - список существующих занятий
+ *
+ * @return array
+ */
+function get_day_schedule ($day, $array) {
+  $day_schedule = [];
+
+  foreach ($array as $array_element) {
+    if ($array_element['week_day'] === $day) {
+      array_push($day_schedule, $array_element);
+    }
+  }
+
+  return $day_schedule;
+}

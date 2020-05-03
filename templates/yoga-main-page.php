@@ -53,8 +53,8 @@
 		<a class="teachers__btn  btn" href="teachers.html">Посмотреть всех )</a>
 		<div class="branches__illustration">
 			<picture>
-				<source media="(min-width: 1000px)" srcset="img/illustration-teachers-1000.jpg">
-					<img src="img/illustration-teachers-370.jpg" alt="Направления - иллюстрация">
+				<source media="(min-width: 768px)" srcset="img/teachers-tablet.jpg">
+					<img src="img/teachers-mobile.jpg" alt="Направления - иллюстрация">
 			</picture>
 		</div>
 	</section>
@@ -106,163 +106,7 @@
 			</li>
 		</ul>
 	</section>
-	<section class="schedule">
-		<h2 class="schedule__title  title__secondary">Расписание занятий</h2>
-		<div class="schedule__handler"></div>
-		<ul class="schedule__list">
-			<li class="schedule__item">
-				<h2 class="schedule__item-title  title__third">Понедельник</h2>
-				<div class="schedule__item-handler"></div>
-				<ul class="schedule__class-list-per-day">
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">7.30 - 8.30</span>
-						<span class="schedule__class-name">Йога-утро</span>
-						<span class="schedule__teacher-name">Наташа Т.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">16.00 - 17.30</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Ева</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">17.45 - 19.15</span>
-						<span class="schedule__class-name">Хатха-Йога</span>
-						<span class="schedule__teacher-name">Наташа Т.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">19.20 - 20.50</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Наташа Т.</span>
-					</li>
-                </ul>
-			</li>
-			<li class="schedule__item">
-				<h2 class="schedule__item-title  title__third">Вторник</h2>
-				<div class="schedule__item-handler"></div>
-				<ul class="schedule__class-list-per-day">
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">7.30 - 8.30</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Наташа Х.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">9.00 - 10.45</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Ева</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">15.30 - 17.00</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Наталья Х.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">18.15 - 19.45</span>
-						<span class="schedule__class-name">Хатха-Йога</span>
-						<span class="schedule__teacher-name">Ириша С.</span>
-					</li>
-  </ul>
-			</li>
-			<li class="schedule__item">
-				<h2 class="schedule__item-title  title__third">Среда</h2>
-				<div class="schedule__item-handler"></div>
-				<ul class="schedule__class-list-per-day">
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">7.30 - 8.30</span>
-						<span class="schedule__class-name">Йога-утро</span>
-						<span class="schedule__teacher-name">Наташа Т.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">16.00 - 17.30</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Ева</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">17.45 - 19.15</span>
-						<span class="schedule__class-name">Хатха-Йога</span>
-						<span class="schedule__teacher-name">Наташа Т.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">19.20 - 20.50</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Наташа Т.</span>
-					</li>
-  </ul>
-			</li>
-			<li class="schedule__item">
-				<h2 class="schedule__item-title  title__third">Четверг</h2>
-				<div class="schedule__item-handler"></div>
-				<ul class="schedule__class-list-per-day">
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">7.30 - 8.30</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Наташа Х.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">9.00 - 10.45</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Ева</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">15.30 - 17.00</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Наталья Х.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">18.15 - 19.45</span>
-						<span class="schedule__class-name">Хатха-Йога</span>
-						<span class="schedule__teacher-name">Ириша С.</span>
-					</li>
-  </ul>
-			</li>
-			<li class="schedule__item">
-				<h2 class="schedule__item-title  title__third">Пятница</h2>
-				<div class="schedule__item-handler"></div>
-				<ul class="schedule__class-list-per-day">
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">7.30 - 8.30</span>
-						<span class="schedule__class-name">Йога-утро</span>
-						<span class="schedule__teacher-name">Наташа Т.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">16.00 - 17.30</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Ева</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">17.45 - 19.15</span>
-						<span class="schedule__class-name">Хатха-Йога</span>
-						<span class="schedule__teacher-name">Наташа Т.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">19.20 - 20.50</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Наташа Т.</span>
-					</li>
-                </ul>
-			</li>
-			<li class="schedule__item">
-				<h2 class="schedule__item-title  title__third">Суббота</h2>
-				<div class="schedule__item-handler"></div>
-				<ul class="schedule__class-list-per-day">
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">10.00 - 12.00</span>
-						<span class="schedule__class-name">Совместная практика</span>
-						<span class="schedule__teacher-name">Ева</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">15.30 - 17.00</span>
-						<span class="schedule__class-name">Йога Айенгара</span>
-						<span class="schedule__teacher-name">Наталья Х.</span>
-					</li>
-					<li class="schedule__class-item">
-						<span class="schedule__timing-block">17.00 - 18.30</span>
-						<span class="schedule__class-name">Хатха-Йога</span>
-						<span class="schedule__teacher-name">Наташа Т.</span>
-					</li>
-                </ul>
-			</li>
-		</ul>
-	</section>
+	<?=$schedule; ?>
 	<section class="reviews">
 		<h2 class="reviews__title  title__secondary">Отзывы</h2>
 		<ul class="reviews__list">
@@ -271,7 +115,7 @@
 					<div class="reviews__item-personal-block">
 						<div class="reviews__reviewer-potret"><img src="img/<?=$reviews_element['avatar'];?>" alt="фото персоны, оставившей отзыв"></div>
 						<span class="reviews__reviewer-name"><?=$reviews_element['name'];?></span>
-						<span class="reviews__date"><?=$reviews_element['created_at'];?></span>
+						<span class="reviews__date"><?=$reviews_element['date'];?></span>
 					</div>
 					<p class="reviews__text"><?=$reviews_element['review_context'];?></p>
 				</li>

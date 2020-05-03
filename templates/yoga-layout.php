@@ -15,7 +15,7 @@
 					<div class="main-header__logo  logo-block">
 						<a class="logo-block__link" href="#">
 							<svg>
-								<use xlink:href="img/svg/svg-sprite.svg#logo-om"></use>
+								<use xlink:href="img/svg/svg-sprite.svg#om"></use>
 							</svg>
 							<p class="logo-block__name">Шанти</p>
 							<p class="logo-block__description">Студия йоги</p>
@@ -53,7 +53,7 @@
 			<footer class="main-footer">
 				<div class="main-footer__logo  logo-block">
 					<a class="logo-block__link">
-						<svg><use xlink:href="#logo-om"></use></svg>
+						<svg><use xlink:href="img/svg/svg-sprite.svg#om"></use></svg>
 						<p class="logo-block__name">Шанти</p>
 						<p class="logo-block__description">Студия йоги</p>
 					</a>
