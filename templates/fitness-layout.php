@@ -129,8 +129,5 @@
 				Photo by Polina Tankilevitch from Pexels
 			</footer>
 		</div>
-      <script src="js/main-menu.js"></script>
-      <script src="js/subscribing.js"></script>
-		</div>
 	</body>
 </html>

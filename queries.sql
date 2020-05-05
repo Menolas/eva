@@ -270,3 +270,93 @@ timing = '17.00 - 17.50',
 branch = 'Фитнес',
 week_day = 'Суббота',
 number = 4;
+
+INSERT INTO subscribtions SET
+branch = 'Хатха Йога',
+number_of_sessions = '12 занятий',
+price = 600;
+
+INSERT INTO subscribtions SET
+branch = 'Хатха Йога',
+number_of_sessions = '10 занятий',
+price = 550;
+
+INSERT INTO subscribtions SET
+branch = 'Хатха Йога',
+number_of_sessions = '8 занятий',
+price = 500;
+
+INSERT INTO subscribtions SET
+branch = 'Хатха Йога',
+number_of_sessions = '6 занятий',
+price = 450;
+
+INSERT INTO subscribtions SET
+branch = 'Хатха Йога',
+number_of_sessions = '1 занятие',
+price = 80;
+
+INSERT INTO subscribtions SET
+branch = 'Хатха Йога',
+number_of_sessions = 'Индивидуальное занятие:<br> 1 ч. - ',
+price = 200;
+
+INSERT INTO subscribtions SET
+branch = 'Йога Айенгара',
+number_of_sessions = '12 занятий',
+price = 750;
+
+INSERT INTO subscribtions SET
+branch = 'Йога Айенгара',
+number_of_sessions = '10 занятий',
+price = 700;
+
+INSERT INTO subscribtions SET
+branch = 'Йога Айенгара',
+number_of_sessions = '8 занятий',
+price = 650;
+
+INSERT INTO subscribtions SET
+branch = 'Йога Айенгара',
+number_of_sessions = '6 занятий',
+price = 550;
+
+INSERT INTO subscribtions SET
+branch = 'Йога Айенгара',
+number_of_sessions = '1 занятие',
+price = 100;
+
+INSERT INTO subscribtions SET
+branch = 'Йога Айенгара',
+number_of_sessions = 'Индивидуальное занятие:<br> 1 ч. - ',
+price = 300;
+
+INSERT INTO subscribtions SET
+branch = 'Фитнес, TRX, Пилатес, Танцы',
+number_of_sessions = '12 занятий',
+price = 550;
+
+INSERT INTO subscribtions SET
+branch = 'Фитнес, TRX, Пилатес, Танцы',
+number_of_sessions = '10 занятий',
+price = 500;
+
+INSERT INTO subscribtions SET
+branch = 'Фитнес, TRX, Пилатес, Танцы',
+number_of_sessions = '8 занятий',
+price = 450;
+
+INSERT INTO subscribtions SET
+branch = 'Фитнес, TRX, Пилатес, Танцы',
+number_of_sessions = '6 занятий',
+price = 400;
+
+INSERT INTO subscribtions SET
+branch = 'Фитнес, TRX, Пилатес, Танцы',
+number_of_sessions = '1 занятие',
+price = 70;
+
+INSERT INTO subscribtions SET
+branch = 'Фитнес, TRX, Пилатес, Танцы',
+number_of_sessions = 'Индивидуальное занятие:<br> 1 ч. - ',
+price = 200;

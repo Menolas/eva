@@ -165,3 +165,18 @@ function get_day_schedule ($day, $array) {
 
   return $day_schedule;
 }
+
+/**
+ * Получить виды абонементов из базы.
+ *
+ * @param object $con Ссылка для подключения к базе данных *
+ * @param string $request SQL запрос
+ *
+ * @return array
+ */
+function get_subscribtions($con) {
+    $sql = "SELECT * FROM subscribtions ORDER BY id ASC;";
+
+    $subscribtions = db_run_query($con, $sql);
+    return $subscribtions;
+}

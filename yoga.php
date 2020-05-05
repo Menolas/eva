@@ -9,6 +9,7 @@ $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $reviews_list = get_reviews($link);
 $news_list = get_news($link);
+$subscribtions = get_subscribtions($link);
 $schedule_list = get_schedule($link);
 
 $main_menu = include_template('yoga-main-menu.php', [
@@ -16,6 +17,9 @@ $main_menu = include_template('yoga-main-menu.php', [
 
 $news = include_template('news.php', [
     'news_list' => $news_list]);
+
+$subscribing = include_template('subscribing.php', [
+    'subscribtions' => $subscribtions]);
 
 $schedule = include_template('schedule.php', [
     'schedule_list' => $schedule_list,
@@ -28,6 +32,7 @@ $page_content = include_template('yoga-main-page.php', [
     'reviews_list' => $reviews_list,
     'reviews' => $reviews,
     'news' => $news,
+    'subscribing' => $subscribing,
     'schedule' => $schedule]);
 
 $layout_content = include_template('layout.php', [

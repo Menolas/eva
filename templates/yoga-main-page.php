@@ -45,54 +45,7 @@
 			</picture>
 		</div>
 	</section>
-	<section class="subscribing">
-		<div class="subscribing__control-block  control-handlers">
-			<div class="control-handlers__handler  control-handlers__handler--left  control-handlers__handler--faded"></div>
-			<div class="control-handlers__handler  control-handlers__handler--right"></div>
-		</div>
-		<h2 class="subscribing__title  title__secondary">Абонементы</h2>
-		<ul class="subscribing__list">
-			<li class="subscribing__item  subscribing__item--active">
-				<h3 class="subscribing__item-title  title__third">Хатха Йога</h3>
-				<div class="subscribing__description">
-					<p>12 занятий - <span class="subscribing__price">600 &#8372;</span></p>
-					<p>10 занятий - <span class="subscribing__price">550 &#8372;</span></p>
-					<p>8 занятий - <span class="subscribing__price">500 &#8372;</span></p>
-					<p>6 занятий - <span class="subscribing__price">450 &#8372;</span></p>
-					<p>1 занятие - <span class="subscribing__price">80 &#8372;</span></p>
-					<p>Индивидуальное занятие:<br> 1 ч. - 
-					<span class="subscribing__price">200 &#8372;</span>
-					/чел, 1-3 чел.</p>
-				</div>
-			</li>
-			<li class="subscribing__item">
-				<h3 class="subscribing__item-title  title__third">Йога Айенгара</h3>
-				<div class="subscribing__description">
-				  <p>12 занятий - <span class="subscribing__price">750 &#8372;</span></p>
-					<p>10 занятий - <span class="subscribing__price">700 &#8372;</span></p>
-					<p>8 занятий - <span class="subscribing__price">650 &#8372;</span></p>
-					<p>6 занятий - <span class="subscribing__price">550 &#8372;</span></p>
-					<p>1 занятие - <span class="subscribing__price">100 &#8372;</span></p>
-					<p>Индивидуальное занятие:<br> 1 ч. - 
-						<span class="subscribing__price">300 &#8372;</span>
-						/чел, 1-3 чел.</p>
-			  </div>
-			</li>
-			<li class="subscribing__item">
-				<h3 class="subscribing__item-title  title__third">Фитнес, TRX, Пилатес, Танцы</h3>
-				<div class="subscribing__description">
-				  <p>12 занятий - <span class="subscribing__price">550 &#8372;</span></p>
-					<p>10 занятий - <span class="subscribing__price">500 &#8372;</span></p>
-					<p>8 занятий - <span class="subscribing__price">450 &#8372;</span></p>
-					<p>6 занятий - <span class="subscribing__price">400 &#8372;</span></p>
-					<p>1 занятие - <span class="subscribing__price">70 &#8372;</span></p>
-					<p>Индивидуальное занятие:<br> 1 ч. - 
-						<span class="subscribing__price">200 &#8372;</span>
-						/чел, 1-3 чел.</p>
-			  </div>
-			</li>
-		</ul>
-	</section>
+	<?=$subscribing; ?>
 	<?=$schedule; ?>
 	<section class="reviews">
 		<h2 class="reviews__title  title__secondary">Отзывы</h2>
@@ -105,26 +58,3 @@
 		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2722.61223878996!2d31.96220711592559!3d46.96930817914761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YHQv9Cw0YDRgtCw!5e0!3m2!1sen!2sua!4v1588501238683!5m2!1sen!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</div>
 </main>
-<script src="js/subscribing.js"></script>
-<script src="js/schedule.js"></script>
-
-<form class="review-form">
-	<div class="review-form__close-button"></div>
-	<div class="review-form__input-wrap  review-form__input-wrap--file">
-		<input type="file" name="file" id="file">
-		<label for="file">Загрузите свой аватар</label>
-	</div>
-	<div class="review-form__input-wrap  review-form__input-wrap--name">
-		<input type="text" name="name" id="name" placeholder="Имя" required>
-	</div>
-	<div class="review-form__input-wrap  review-form__input-wrap--surname">
-		<input type="text" name="surname" id="surname" placeholder="Фамилия" required>
-	</div>
-	<div class="review-form__input-wrap  review-form__input-wrap--card">
-		<input type="text" name="card-number" id="card-number" placeholder="Номер вашей клубной карты" required>
-	</div>
-	<div class="review-form__input-wrap  review-form__input-wrap--message">
-		<textarea id="text" rows="7">Текст вашего сообщения</textarea>
-	</div>
-	<input class="btn" type="submit" name="" value="Добавить отзыв">
-</form>

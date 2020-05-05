@@ -8,6 +8,7 @@ $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $news_list = get_news($link);
+$subscribtions = get_subscribtions($link);
 $schedule_list = get_fitness_schedule($link);
 $reviews_list = get_fitness_reviews($link);
 
@@ -16,6 +17,9 @@ $main_menu = include_template('fitness-main-menu.php', [
 
 $news = include_template('news.php', [
     'news_list' => $news_list]);
+
+$subscribing = include_template('subscribing.php', [
+    'subscribtions' => $subscribtions]);
 
 $schedule = include_template('schedule.php', [
     'schedule_list' => $schedule_list,
@@ -27,6 +31,7 @@ $reviews = include_template('reviews.php', [
 $page_content = include_template('fitness-main-page.php', [
     'reviews' => $reviews,
     'news' => $news,
+    'subscribing' => $subscribing,
     'schedule' => $schedule]);
 
 $layout_content = include_template('layout.php', [

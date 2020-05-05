@@ -71,3 +71,11 @@ CREATE TABLE instructors (
   branch CHAR(64),
   specification CHAR(64)
 );
+
+CREATE TABLE subscribtions (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  created_at DATETIME DEFAULT NOW() NOT NULL,
+  branch CHAR(64) NOT NULL,
+  number_of_sessions CHAR(64) NOT NULL,
+  price INT NOT NULL
+);

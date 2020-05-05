@@ -20,4 +20,5 @@
 	    <?php endforeach; ?>
 	</ul>
 </section>
+<script src="js/schedule.js"></script>
 		
