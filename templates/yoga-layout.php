@@ -12,15 +12,7 @@
 		<div class="container">
 			<header class="main-header">
 				<div class="main-header__block-wrap">
-					<div class="main-header__logo  logo-block">
-						<a class="logo-block__link" href="#">
-							<svg>
-								<use xlink:href="img/svg/svg-sprite.svg#om"></use>
-							</svg>
-							<p class="logo-block__name">Шанти</p>
-							<p class="logo-block__description">Студия йоги</p>
-						</a>
-					</div>
+					<?=$logo; ?>
 					<nav class="main-nav">
 						<div class="main-nav__toggler">
 							<span class="main-nav__toggler-element"></span>

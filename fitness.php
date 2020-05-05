@@ -3,18 +3,24 @@
 require('init.php');
 
 $title = '"Спарта" - студия фитнеса';
-$reviews = get_reviews($link);
-$news = get_news($link);
+$news_list = get_news($link);
 $schedule_list = get_fitness_schedule($link);
+$reviews_list = get_fitness_reviews($link);
 
-$fitness_schedule = include_template('schedule-fitness.php', [
+$news = include_template('news.php', [
+    'news_list' => $news_list]);
+
+$schedule = include_template('schedule.php', [
     'schedule_list' => $schedule_list,
     'week_days' => $week_days]);
+
+$reviews = include_template('reviews.php', [
+    'reviews_list' => $reviews_list]);
 
 $page_content = include_template('fitness-main-page.php', [
     'reviews' => $reviews,
     'news' => $news,
-    'fitness_schedule' => $fitness_schedule]);
+    'schedule' => $schedule]);
 
 $layout_content = include_template('fitness-layout.php', [
     'title' => $title,

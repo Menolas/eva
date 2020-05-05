@@ -31,6 +31,15 @@ CREATE TABLE reviews (
   avatar CHAR(128)
 );
 
+CREATE TABLE fitness_reviews (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  created_at DATETIME DEFAULT NOW() NOT NULL,
+  email CHAR(64) NOT NULL,
+  name CHAR(64) NOT NULL,
+  review__context TEXT NOT NULL,
+  avatar CHAR(128)
+);
+
 CREATE TABLE schedule (
   id INT AUTO_INCREMENT PRIMARY KEY,
   created_at DATETIME DEFAULT NOW() NOT NULL,

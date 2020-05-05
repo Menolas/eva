@@ -59,7 +59,7 @@ function include_template($name, $data) {
 }
 
 /**
- * Получить все отзывы из базы.
+ * Получить отзывы о йога студии из базы.
  *
  * @param object $con Ссылка для подключения к базе данных *
  * @param string $request SQL запрос
@@ -71,6 +71,21 @@ function get_reviews ($con) {
 
   $reviews = db_run_query($con, $sql);
   return $reviews;
+}
+
+/**
+ * Получить отзывы о фитнес студии из базы.
+ *
+ * @param object $con Ссылка для подключения к базе данных *
+ * @param string $request SQL запрос
+ *
+ * @return array
+ */
+function get_fitness_reviews($con) {
+  $sql = "SELECT * FROM fitness_reviews ORDER BY id ASC;";
+
+  $fitness_reviews = db_run_query($con, $sql);
+  return $fitness_reviews;
 }
 
 /**

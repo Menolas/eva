@@ -1,3 +1,12 @@
+INSERT INTO fitness_reviews SET
+name = 'Елена Кунина',
+review_context = 'Студия Ом Шанти имеет все условия для приятной 
+    практики, все преподаватели имеют свой неповторимый стиль и 
+    обаяние. Каждый класс здесь как семинар - вдохновляет и направляет. 
+    Спасибо за прекрасный опыт.',
+avatar = 'reviewer-portret-mobile',
+date = '23 января 2020 г';
+
 INSERT INTO fitness_schedule SET
 title = 'Петли TRX (по записи)',
 instructor = 'Виктория Кравченко',

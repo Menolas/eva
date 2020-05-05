@@ -1,3 +1,7 @@
+.main-nav {
+	margin-right: 10px;
+}
+
 .main-nav__toggler {
 	position: relative;
   padding: 13px 16px;
@@ -59,14 +63,13 @@
 .main-nav__list {
 	@include list-style;
 	position: absolute;
-	top: 56px;
+	top: 65px;
 	left: 0;
 	width: 100%;
 	flex-direction: column;
 	justify-content: flex-start;
 	padding: 15px;
 	border: 1px solid rgb(208, 208, 208);
-	border-radius: 4px;
 	background-color: $white;
 	box-sizing: border-box;
 	z-index: 10;

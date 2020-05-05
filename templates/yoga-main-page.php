@@ -5,30 +5,17 @@
 	<p class="main-home__greeting  main-home__greeting--mobile">Семинары и регулярные занятия для души и тела</p>
 	<div class="main-home__picture-wrap">
 		<picture>
-  <source media="(min-width: 1000px)" srcset="img/illustration-studio-1000.jpg">
-	<source media="(min-width: 768px)" srcset="img/illustration-studio-800.jpg">
-  <img src="img/illustration-studio-370.jpg" alt="Наша студия">
+			<source media="(min-width: 1440px)" srcset="img/main-illustration-wide-desktop.jpg">
+            <source media="(min-width: 1024px)" srcset="img/main-illustration-desktop.jpg">
+	        <source media="(min-width: 768px)" srcset="img/main-illustration-tablet.jpg">
+	        <source media="(min-width: 375px)" srcset="img/main-illustration-mobile-wide.jpg">
+            <img src="img/main-illustration-mobile.jpg" alt="Наша студия">
 		</picture>
 	</div>
 	<section class="news">
 		<h2 class="news__title  title__secondary">Наши события</h2>
 		<ul class="news__list">
-			<?php foreach ($news as $news_element): ?>
-				<li class="news__item">
-					<article class="news__article">
-						<div class="news__picture"><img src="img/<?=$news_element['image'];?>" alt="Иллюстрация новости"></div>
-						<a class="news__article-link" href="news-element.php?id=<?=$news_element['id'];?>">
-						    <h3 class="news__article-title  title__third"><?=$news_element['title'];?></h3>
-						</a>
-						<p class="news__date"><?=$news_element['timing'];?></p>
-						<p class="news__text"><?=$news_element['news_context'];?></p>
-						<a class="news__article-link-fb" href="https://www.facebook.com/groups/1540126396290409/">
-							Прочитать новость в Фейсбуке
-							<svg><use xlink:href="#facebook"></use></svg>
-						</a>
-					</article>
-				</li>
-			<?php endforeach; ?>
+			<?=$news; ?>
 		</ul>
 		<a class="news__btn btn" href="news.php">Читать все новости</a>
 	</section>
@@ -50,7 +37,7 @@
 		<p class="teachers__text">
 			Наши преподаватели люди с разными судьбами, стилем жизни и образованием, но всех их объединяет одно - они очень любят свою работу, так что вы обязательно попадете к профессионалам своего дела, которые будут вас поддерживать и направлять.
 		</p>
-		<a class="teachers__btn  btn" href="teachers.html">Посмотреть всех )</a>
+		<a class="teachers__btn  btn" href="yoga-teachers.php">Посмотреть всех )</a>
 		<div class="branches__illustration">
 			<picture>
 				<source media="(min-width: 768px)" srcset="img/teachers-tablet.jpg">
@@ -110,16 +97,7 @@
 	<section class="reviews">
 		<h2 class="reviews__title  title__secondary">Отзывы</h2>
 		<ul class="reviews__list">
-			<?php foreach ($reviews as $reviews_element): ?>
-				<li class="reviews__item">
-					<div class="reviews__item-personal-block">
-						<div class="reviews__reviewer-potret"><img src="img/<?=$reviews_element['avatar'];?>" alt="фото персоны, оставившей отзыв"></div>
-						<span class="reviews__reviewer-name"><?=$reviews_element['name'];?></span>
-						<span class="reviews__date"><?=$reviews_element['date'];?></span>
-					</div>
-					<p class="reviews__text"><?=$reviews_element['review_context'];?></p>
-				</li>
-			<?php endforeach; ?>
+			<?=$reviews; ?>
 		</ul>
 		<a class="reviews__btn btn" href="reviews.php">Прочитать все отзывы</a>
 	</section>

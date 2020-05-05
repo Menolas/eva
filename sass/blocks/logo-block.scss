@@ -3,7 +3,11 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	padding: 13px 21px;
 	align-items: center;
+	color: $white;
+	border-radius: 4px;
+	background-color: $green;
 }
 
 .logo-block__name {
@@ -21,6 +25,7 @@
 .logo-block svg {
 	width: 39px;
 	height: 40px;
+	fill: $white;
 }
 
 @media (min-width: 1000px) {
