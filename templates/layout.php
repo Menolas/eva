@@ -11,7 +11,7 @@
 	<body>
 		<div class="container">
 			<header class="main-header">
-				<div class="main-header__block-wrap">
+				<div class="main-header__block-wrap  <?=$header_background_color; ?>">
 					<div class="main-header__logo  logo-block">
 						<a class="logo-block__link" href="<?=$logo_link; ?>">
 							<svg>
@@ -21,32 +21,7 @@
 							<p class="logo-block__description"><?=$logo_full_name; ?></p>
 						</a>
 					</div>
-					<nav class="main-nav">
-						<div class="main-nav__toggler">
-							<span class="main-nav__toggler-element"></span>
-							<span class="main-nav__toggler-label">Меню</span>
-						</div>
-						<ul class="main-nav__list">
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="index.html">Главная</a>
-							</li>
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="news.html">Новости</a>
-							</li>
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="branches.html">Направления</a>
-							</li>
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="teachers.html">Преподаватели</a>
-							</li>
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="schedule.html">Расписание</a>
-							</li>
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="contact.html">Контакты</a>
-							</li>
-						</ul>
-					</nav>
+					<?=$main_menu; ?>
 				</div>
 			</header>
             <?=$page_content;?>
@@ -103,6 +78,5 @@
 				</div>
 			</footer>
 		</div>
-      <script src="js/main-menu.js"></script>
 	</body>
 </html>

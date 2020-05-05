@@ -5,9 +5,11 @@
 	<p class="main-home__greeting  main-home__greeting--mobile">Семинары и регулярные занятия для души и тела</p>
 	<div class="main-home__picture-wrap">
 		<picture>
-			<source media="(min-width: 1000px)" srcset="img/illustration-studio-1000.jpg">
-			<source media="(min-width: 768px)" srcset="img/illustration-studio-800.jpg">
-			<img src="img/illustration-studio-370.jpg" alt="Наша студия">
+			<source media="(min-width: 1440px)" srcset="img/fitness-main-illustration-desktop-wide.jpg">
+			<source media="(min-width: 1024px)" srcset="img/fitness-main-illustration-desktop.jpg">
+			<source media="(min-width: 768px)" srcset="img/fitness-main-illustration-tablet.jpg">
+		    <source media="(min-width: 375px)" srcset="img/fitness-main-illustration-mobile-wide.jpg">
+			<img src="img/fitness-main-illustration-mobile.jpg" alt="Наша студия">
 		</picture>
 	</div>
 		<?=$news; ?>
@@ -19,8 +21,9 @@
 			<a class="branches__btn  btn" href="branches.html">Подробнее</a>
 			<div class="branches__illustration">
 				<picture>
-					  <source media="(min-width: 1000px)" srcset="img/illustration-branches-1000.jpg">
-						<img src="img/illustration-branches-370.jpg" alt="Направления - иллюстрация">
+					  <source media="(min-width: 1024px)" srcset="img/fitness-branches-desktop.jpg">
+					  <source media="(min-width: 768px)" srcset="img/fitness-branches-tablet.jpg">
+						<img src="img/fitness-branches-mobile.jpg" alt="Направления - иллюстрация">
 				</picture>
 			</div>
 		</section>

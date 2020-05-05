@@ -153,8 +153,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   color: #ffffff;
-  border-radius: 4px;
-  background-color: #19744C; }
+  border-radius: 4px; }
 
 .logo-block__name {
   margin-left: 6px;
@@ -322,8 +321,13 @@ textarea {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: center; }
+
+.main-header__block-wrap--yoga {
   background-color: #19744C; }
+
+.main-header__block-wrap--fitness {
+  background-color: #6f148c; }
 
 @media (min-width: 768px) {
   .main-header {
@@ -350,9 +354,7 @@ textarea {
 .main-nav__toggler {
   position: relative;
   padding: 13px 16px;
-  padding-left: 43px;
-  background-color: #19744C;
-  border-radius: 4px; }
+  padding-left: 43px; }
 
 .main-nav__toggler-label {
   position: relative;

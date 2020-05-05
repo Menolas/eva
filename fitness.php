@@ -3,12 +3,16 @@
 require('init.php');
 
 $title = '"Спарта" - студия фитнеса';
+$header_background_color = 'main-header__block-wrap--fitness';
 $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $news_list = get_news($link);
 $schedule_list = get_fitness_schedule($link);
 $reviews_list = get_fitness_reviews($link);
+
+$main_menu = include_template('fitness-main-menu.php', [
+    'title' => $title]);
 
 $news = include_template('news.php', [
     'news_list' => $news_list]);
@@ -27,9 +31,11 @@ $page_content = include_template('fitness-main-page.php', [
 
 $layout_content = include_template('layout.php', [
     'title' => $title,
+    'header_background_color' => $header_background_color,
     'logo_svg' => $logo_svg,
     'logo_name' => $logo_name,
     'logo_full_name' => $logo_full_name,
+    'main_menu' => $main_menu,
     'page_content' => $page_content]);
 
 print($layout_content);
