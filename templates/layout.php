@@ -12,7 +12,15 @@
 		<div class="container">
 			<header class="main-header">
 				<div class="main-header__block-wrap">
-					<?=$logo; ?>
+					<div class="main-header__logo  logo-block">
+						<a class="logo-block__link" href="<?=$logo_link; ?>">
+							<svg>
+								<use xlink:href="img/svg/svg-sprite.svg#<?=$logo_svg; ?>"></use>
+							</svg>
+							<p class="logo-block__name"><?=$logo_name; ?></p>
+							<p class="logo-block__description"><?=$logo_full_name; ?></p>
+						</a>
+					</div>
 					<nav class="main-nav">
 						<div class="main-nav__toggler">
 							<span class="main-nav__toggler-element"></span>
@@ -45,9 +53,8 @@
 			<footer class="main-footer">
 				<div class="main-footer__logo  logo-block">
 					<a class="logo-block__link">
-						<svg><use xlink:href="img/svg/svg-sprite.svg#om"></use></svg>
-						<p class="logo-block__name">Шанти</p>
-						<p class="logo-block__description">Студия йоги</p>
+						<svg><use xlink:href="img/svg/svg-sprite.svg#<?=$logo_svg; ?>"></use></svg>
+						<p class="logo-block__name"><?=$logo_name; ?></p>
 					</a>
 				</div>
 				<section class="main-footer__contact  contact">

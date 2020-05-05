@@ -1,6 +1,6 @@
 <main class="main-home">
 	<h1 class="main-home__title  title">"Спарта" - клуб досуга и релакса, расположенный в г. Николаеве</h1>
-	<h1 class="main-home__title  main-home__title--mobile  title">Cтудия йоги</h1>
+	<h1 class="main-home__title  main-home__title--mobile  title">Cтудия фитнеса</h1>
 	<p class="main-home__greeting">В нашей замечательной студии мы проводим семинары и регулярные занятия для души и тела.</p>
 	<p class="main-home__greeting  main-home__greeting--mobile">Семинары и регулярные занятия для души и тела</p>
 	<div class="main-home__picture-wrap">

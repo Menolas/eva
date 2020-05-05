@@ -3,12 +3,12 @@
 require('init.php');
 
 $title = '"Ом Шанти" - студия йоги';
+$logo_svg = 'om';
+$logo_name = 'Шанти';
+$logo_full_name = 'Студия йоги';
 $reviews_list = get_reviews($link);
 $news_list = get_news($link);
 $schedule_list = get_schedule($link);
-
-$logo = include_template('logo-shanti.php', [
-    'title' => $title]);
 
 $news = include_template('news.php', [
     'news_list' => $news_list]);
@@ -26,9 +26,11 @@ $page_content = include_template('yoga-main-page.php', [
     'news' => $news,
     'schedule' => $schedule]);
 
-$layout_content = include_template('yoga-layout.php', [
+$layout_content = include_template('layout.php', [
     'title' => $title,
-    'logo' => $logo,
+    'logo_svg' => $logo_svg,
+    'logo_name' => $logo_name,
+    'logo_full_name' => $logo_full_name,
     'page_content' => $page_content]);
 
 print($layout_content);

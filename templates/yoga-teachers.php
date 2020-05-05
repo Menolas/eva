@@ -14,13 +14,13 @@
 					<ul class="social-block__list">
 						<li class="social-block__item">
 							<a class="social-block__link" href="https://www.facebook.com/profile.php?id=100003416145331">
-								<svg><use xlink:href="#facebook"></use></svg>
+								<svg><use xlink:href="img/svg/svg-sprite.svg#facebook"></use></svg>
 								Ссылка на профиль в Фейсбуке
 							</a>
 						</li>
 						<li class="social-block__item">
 							<a class="social-block__link" href="https://www.instagram.com/sparta_omshanti/">
-								<svg><use xlink:href="#instagram"></use></svg>
+								<svg><use xlink:href="img/svg/svg-sprite.svg#instagram"></use></svg>
 								Ссылка на профиль в Инстаграме
 							</a>
 						</li>
@@ -57,13 +57,13 @@
 					<ul class="social-block__list">
 						<li class="social-block__item">
 							<a class="social-block__link" href="https://www.facebook.com/profile.php?id=100008703513702">
-								<svg><use xlink:href="#facebook"></use></svg>
+								<svg><use xlink:href="img/svg/svg-sprite.svg#facebook"></use></svg>
 								Ссылка на профиль в Фейсбуке
 							</a>
 						</li>
 						<li class="social-block__item">
 							<a class="social-block__link" href="https://www.instagram.com/sparta_omshanti/">
-								<svg><use xlink:href="#instagram"></use></svg>
+								<svg><use xlink:href="img/svg/svg-sprite.svg#instagram"></use></svg>
 								Ссылка на профиль в Инстаграме
 							</a>
 						</li>
@@ -91,13 +91,13 @@
 					<ul class="social-block__list"> 
 						<li class="social-block__item">
 							<a class="social-block__link" href="https://www.facebook.com/natalia.trofimova.96">
-								<svg><use xlink:href="#facebook"></use></svg>
+								<svg><use xlink:href="img/svg/svg-sprite.svg#facebook"></use></svg>
 								Ссылка на профиль в Фейсбуке
 							</a>
 						</li>
 						<li class="social-block__item">
 							<a class="social-block__link" href="https://www.instagram.com/sparta_omshanti/">
-								<svg><use xlink:href="#instagram"></use></svg>
+								<svg><use xlink:href="img/svg/svg-sprite.svg#instagram"></use></svg>
 								Ссылка на профиль в Инстаграме
 							</a>
 						</li>
@@ -131,13 +131,13 @@
 					<ul class="social-block__list">
 						<li class="social-block__item">
 							<a class="social-block__link" href="https://www.facebook.com/profile.php?id=100001827748211">
-								<svg><use xlink:href="#facebook"></use></svg>
+								<svg><use xlink:href="img/svg/svg-sprite.svg#facebook"></use></svg>
 								Ссылка на профиль в Фейсбуке
 							</a>
 						</li>
 						<li class="social-block__item">
 							<a class="social-block__link" href="https://www.instagram.com/sparta_omshanti/">
-								<svg><use xlink:href="#instagram"></use></svg>
+								<svg><use xlink:href="img/svg/svg-sprite.svg#instagram"></use></svg>
 								Ссылка на профиль в Инстаграме
 							</a>
 						</li>
