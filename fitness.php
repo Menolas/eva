@@ -3,7 +3,10 @@
 require('init.php');
 
 $title = '"Спарта" - студия фитнеса';
-$header_background_color = 'main-header__block-wrap--fitness';
+$fitness_background_color = 'background-fitness';
+$text_color_fitness = 'text-color-fitness';
+$border_color_fitness = 'border-color-fitness';
+$pseudo_element_fitness = 'pseudo-element-fitness';
 $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
@@ -16,19 +19,32 @@ $main_menu = include_template('fitness-main-menu.php', [
     'title' => $title]);
 
 $news = include_template('news.php', [
+	'fitness_background_color' => $fitness_background_color,
+	'text_color_fitness' => $text_color_fitness,
+	'border_color_fitness' => $border_color_fitness,
     'news_list' => $news_list]);
 
 $subscribing = include_template('subscribing.php', [
+	'fitness_background_color' => $fitness_background_color,
+	'text_color_fitness' => $text_color_fitness,
+	'border_color_fitness' => $border_color_fitness,
     'subscribtions' => $subscribtions]);
 
 $schedule = include_template('schedule.php', [
+	'fitness_background_color' => $fitness_background_color,
+	'text_color_fitness' => $text_color_fitness,
     'schedule_list' => $schedule_list,
     'week_days' => $week_days]);
 
 $reviews = include_template('reviews.php', [
+	'fitness_background_color' => $fitness_background_color,
+	'text_color_fitness' => $text_color_fitness,
+	'border_color_fitness' => $border_color_fitness,
     'reviews_list' => $reviews_list]);
 
 $page_content = include_template('fitness-main-page.php', [
+	'fitness_background_color' => $fitness_background_color,
+	'text_color_fitness' => $text_color_fitness,
     'reviews' => $reviews,
     'news' => $news,
     'subscribing' => $subscribing,
@@ -36,7 +52,8 @@ $page_content = include_template('fitness-main-page.php', [
 
 $layout_content = include_template('layout.php', [
     'title' => $title,
-    'header_background_color' => $header_background_color,
+    'fitness_background_color' => $fitness_background_color,
+    'text_color_fitness' => $text_color_fitness,
     'logo_svg' => $logo_svg,
     'logo_name' => $logo_name,
     'logo_full_name' => $logo_full_name,

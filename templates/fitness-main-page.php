@@ -18,7 +18,7 @@
 		<p class="branches__text">
 			В нашей студии проводятся разные классы для любого уровня подготовки, возраста и потребностей. Вы можете прочитать подробнее в специальном разделе.
 		</p>
-		<a class="branches__btn  btn" href="branches.html">Подробнее</a>
+		<a class="branches__btn  btn  <?=$fitness_background_color; ?>" href="branches.html">Подробнее</a>
 		<div class="branches__illustration">
 			<picture>
 				  <source media="(min-width: 1024px)" srcset="img/fitness-branches-desktop.jpg">
@@ -32,7 +32,7 @@
 		<p class="teachers__text">
 			Наши преподаватели люди с разными судьбами, стилем жизни и образованием, но всех их объединяет одно - они очень любят свою работу, так что вы обязательно попадете к профессионалам своего дела, которые будут вас поддерживать и направлять.
 		</p>
-		<a class="teachers__btn  btn" href="teachers.html">Посмотреть всех )</a>
+		<a class="teachers__btn  btn  <?=$fitness_background_color; ?>" href="teachers.html">Посмотреть всех )</a>
 		<div class="branches__illustration">
 			<picture>
 				<source media="(min-width: 1000px)" srcset="img/illustration-teachers-1000.jpg">
@@ -42,12 +42,6 @@
 	</section>
 	<?=$subscribing; ?>
 	<?=$schedule; ?>
-	<section class="reviews">
-		<h2 class="reviews__title  title__secondary">Отзывы</h2>
-		<ul class="reviews__list">
-			<?=$reviews; ?>
-		</ul>
-		<a class="reviews__btn btn" href="reviews.php">Прочитать все отзывы</a>
-	</section>
+	<?=$reviews; ?>
 	<div class="map"></div>
 </main>

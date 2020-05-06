@@ -38,7 +38,11 @@
 	grid-column-end: -1;
 	grid-row-start: 1;
 	grid-row-end: 1;
+	@include link-style;
 	margin-bottom: 0;
+}
+
+.news__article-title {
 	font-size: 18px;
 	color: $green;
 }
@@ -61,6 +65,9 @@
 	grid-column-end: -1;
 	grid-row-start: 3;
 	grid-row-end: -1;
+	@include link-style;
+	color: $green;
+	font-weight: 500;
 }
 
 

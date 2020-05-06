@@ -10,8 +10,8 @@
 	</head>
 	<body>
 		<div class="container">
-			<header class="main-header">
-				<div class="main-header__block-wrap  <?=$header_background_color; ?>">
+			<header class="main-header  <?=$fitness_background_color; ?>">
+				<div class="main-header__block-wrap ">
 					<div class="main-header__logo  logo-block">
 						<a class="logo-block__link" href="<?=$logo_link; ?>">
 							<svg>
@@ -25,7 +25,7 @@
 				</div>
 			</header>
             <?=$page_content;?>
-			<footer class="main-footer">
+			<footer class="main-footer  <?=$fitness_background_color; ?>">
 				<div class="main-footer__logo  logo-block">
 					<a class="logo-block__link">
 						<svg><use xlink:href="img/svg/svg-sprite.svg#<?=$logo_svg; ?>"></use></svg>

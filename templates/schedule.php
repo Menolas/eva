@@ -1,6 +1,6 @@
 <section class="schedule">
 	<h2 class="schedule__title  title__secondary">Расписание занятий</h2>
-	<div class="schedule__handler"></div>
+	<div class="schedule__handler  <?=$fitness_background_color; ?>"></div>
 	<ul class="schedule__list">
 		<?php foreach ($week_days as $week_day): ?>
 			<li class="schedule__item">

@@ -1,17 +1,13 @@
+.main-header {
+	padding: 13px 21px;
+	background-color: $green;
+}
+
 .main-header__block-wrap {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
-}
-
-.main-header__block-wrap--yoga {
-	background-color: $green;
-}
-
-.main-header__block-wrap--fitness {
-	background-color: $violet;
 }
 
 @media (min-width: 768px) {

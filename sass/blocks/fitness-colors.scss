@@ -1,0 +1,16 @@
+.background-fitness {
+	background-color: $violet;
+}
+
+.text-color-fitness {
+	color: $violet;
+}
+
+.border-color-fitness {
+	border-color: $violet;
+}
+
+.pseudo-element-fitness::before,
+.pseudo-element-fitness::after {
+    background-color: $violet;
+}
