@@ -19,28 +19,58 @@
 	<section class="branches">
 		<h2 class="branches__title  title__secondary">Направления</h2>
 		<p class="branches__text">
-			В нашей студии проводятся разные классы для любого уровня подготовки, возраста и потребностей. Вы можете прочитать подробнее в специальном разделе.
+			Мы много эксперементировали и практиковали самые разные направления и сегодня в нашей студии мы предлагаем то, что на наш взгляд наиболее практично и полезно для вас.
 		</p>
-		<a class="branches__btn  btn" href="branches.html">Подробнее</a>
-		<div class="branches__illustration">
-			<picture>
-				  <source media="(min-width: 1000px)" srcset="img/illustration-branches-1000.jpg">
-					<img src="img/illustration-branches-370.jpg" alt="Направления - иллюстрация">
-			</picture>
-		</div>
+		<ul class="branches-list">
+			<li class="branches-list__item">
+				<article class="branches-list__aticle  hatha-yoga">
+					<h2 class="branches-list__article-title  hatha-yoga__title  title__secondary">Хатха йога</h2>
+					<div class="branches-list__article-picture  hatha-yoga__picture">
+						<picture>
+							<source media="(min-width: 768px)" srcset="img/hatha-yoga-800.jpg">
+							<img src="img/illustration-hatha-yoga-mobile.jpg" alt="Хатха йога - иллюстрация">
+						</picture>
+					</div>
+					<p class="hatha-yoga__text"> Хатха-йога — одно из наиболее распространенных направлений йоги. Пожалуй, именно с неё и начинают знакомство с этой древней системой учений, основанной много веков, и даже тысячелетий, назад. Данное направление работает прежде всего с физическим телом - в результате постоянной практики оно становится сильнее, гибче, выносливее, здоровее.
+					</p>
+				</article>
+			</li>
+			<li class="branches-list__item">
+				<article class="branches-list__article  ayengar-yoga">
+					<h2 class="branches-list__article-title  ayengar-yoga__title  title__secondary">Йога Айенгара</h2>
+					<div class="branches-list__article-picture  ayengar-yoga__picture">
+						<picture>
+							<source media="(min-width: 768px)" srcset="img/ayengar-yoga-800.jpg">
+							<img src="img/illustration-ayengar-yoga-mobile.jpg" alt="Хатха йога - иллюстрация">
+						</picture>
+					</div>
+					<p class="ayengar-yoga__text">
+						Характерной чертой метода является подробное, детальное объяснение каждой позы и индивидуальный подход к каждому практикующему. Важным аспектом йоги Айенгара является последовательность асан. Йога Айенгара может быть также использована в лечебных целях.
+						Отличительные характеристики метода:
+						<ol>
+							<li>Последовательность</li>
+							<li>Длительность пребывания в позе</li>
+							<li>Точность в обучении</li>
+							<li>Использование вспомогательных приспособлений</li>
+                        </ol>
+					</p>
+				</article>
+			</li>
+		</ul>
 	</section>
 	<section class="teachers">
 		<h2 class="teachers__title  title__secondary">Наши Преподаватели</h2>
+		<div class="teachers__illustration">
+			<picture>
+				<source media="(min-width: 1024px)" srcset="img/teachers-desktop.jpg">
+				<source media="(min-width: 375px)" srcset="img/teachers-tablet.jpg">
+					<img src="img/teachers-mobile.jpg" alt="Направления - иллюстрация">
+			</picture>
+		</div>
 		<p class="teachers__text">
 			Наши преподаватели люди с разными судьбами, стилем жизни и образованием, но всех их объединяет одно - они очень любят свою работу, так что вы обязательно попадете к профессионалам своего дела, которые будут вас поддерживать и направлять.
 		</p>
 		<a class="teachers__btn  btn" href="yoga-teachers.php">Посмотреть всех )</a>
-		<div class="branches__illustration">
-			<picture>
-				<source media="(min-width: 768px)" srcset="img/teachers-tablet.jpg">
-					<img src="img/teachers-mobile.jpg" alt="Направления - иллюстрация">
-			</picture>
-		</div>
 	</section>
 	<?=$subscribing; ?>
 	<?=$schedule; ?>

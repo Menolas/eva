@@ -1,0 +1,13 @@
+.sub-menu {
+	@include list-style;
+	display: none;
+}
+
+.sub-menu--shown {
+	display: block;
+}
+
+.sub-menu__link {
+	@include link-style;
+	font-weight: 500;
+}

@@ -3,7 +3,16 @@
 }
 
 .teachers__illustration {
-	width: 338px;
+	margin-bottom: 25px;
+}
+
+@media (min-width: 375px) {
+
+	.teachers__illustration {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 338px;
+	}
 }
 
 @media (min-width: 768px) {

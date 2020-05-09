@@ -9,8 +9,7 @@
 	position: relative;
 	width: 45px;
 	height: 45px;
-	background-color: $dark-background;
-	opacity: 0.7;
+	background-color: $green;
 
 	&::before {
 		@include element-style(18px, 18px, transparent);
