@@ -56,14 +56,29 @@
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
 	.teachers {
 		grid-template-columns: auto 487px;
+		grid-template-rows: auto 294px;
 		grid-column-gap: 50px;
 		padding: $block-padding-desktop;
 	}
 
 	.teachers__illustration {
+		margin: 0;
 		width: 487px;
+	}
+
+	.teachers__text {
+		margin-top: 22px;
+	}
+
+	.teachers__btn {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 2;
+		grid-row-end: -1;
+		justify-self: start;
+		align-self: end;
 	}
 }

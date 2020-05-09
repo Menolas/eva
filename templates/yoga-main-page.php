@@ -21,40 +21,42 @@
 		<p class="branches__text">
 			Мы много эксперементировали и практиковали самые разные направления и сегодня в нашей студии мы предлагаем то, что на наш взгляд наиболее практично и полезно для вас.
 		</p>
-		<ul class="branches-list">
-			<li class="branches-list__item">
-				<article class="branches-list__aticle  hatha-yoga">
-					<h2 class="branches-list__article-title  hatha-yoga__title  title__secondary">Хатха йога</h2>
-					<div class="branches-list__article-picture  hatha-yoga__picture">
+		<ul class="branches__list">
+			<li class="branches__item">
+				<article class="branches__article  hatha-yoga">
+					<h2 class="branches__article-title  hatha-yoga__title  title__secondary">Хатха йога</h2>
+					<div class="branches__illustration  hatha-yoga__picture">
 						<picture>
+							<source media="(min-width: 1024px)" srcset="img/hatha-yoga-illustration-desktop.jpg">
 							<source media="(min-width: 768px)" srcset="img/hatha-yoga-illustration-tablet.jpg">
 							<source media="(min-width: 375px)" srcset="img/hatha-yoga-illustration-mobile-wide.jpg">
 							<img src="img/hatha-yoga-illustration-mobile.jpg" alt="Хатха йога - иллюстрация">
 						</picture>
 					</div>
-					<p class="hatha-yoga__text"> Хатха-йога — одно из наиболее распространенных направлений йоги. Пожалуй, именно с неё и начинают знакомство с этой древней системой учений, основанной много веков, и даже тысячелетий, назад. Данное направление работает прежде всего с физическим телом - в результате постоянной практики оно становится сильнее, гибче, выносливее, здоровее.
+					<p class="branches__article-text"> Хатха-йога — одно из наиболее распространенных направлений йоги. Пожалуй, именно с неё и начинают знакомство с этой древней системой учений, основанной много веков, и даже тысячелетий, назад. Данное направление работает прежде всего с физическим телом - в результате постоянной практики оно становится сильнее, гибче, выносливее, здоровее.
 					</p>
 				</article>
 			</li>
-			<li class="branches-list__item">
-				<article class="branches-list__article  ayengar-yoga">
-					<h2 class="branches-list__article-title  ayengar-yoga__title  title__secondary">Йога Айенгара</h2>
-					<div class="branches-list__article-picture  ayengar-yoga__picture">
+			<li class="branches__item">
+				<article class="branches__article  ayengar-yoga">
+					<h2 class="branches__article-title  ayengar-yoga__title  title__secondary">Йога Айенгара</h2>
+					<div class="branches__illustration  ayengar-yoga__picture">
 						<picture>
+							<source media="(min-width: 1024px)" srcset="img/ayengar-yoga-illustration-desktop.jpg">
 							<source media="(min-width: 768px)" srcset="img/ayengar-yoga-illustration-tablet.jpg">
 							<source media="(min-width: 375px)" srcset="img/ayengar-yoga-illustration-mobile-wide.jpg">
 							<img src="img/ayengar-yoga-illustration-mobile.jpg" alt="Хатха йога - иллюстрация">
 						</picture>
 					</div>
-					<p class="ayengar-yoga__text">
+					<p class="branches__article-text">
 						Характерной чертой метода является подробное, детальное объяснение каждой позы и индивидуальный подход к каждому практикующему. Важным аспектом йоги Айенгара является последовательность асан. Йога Айенгара может быть также использована в лечебных целях.
 						Отличительные характеристики метода:
-						<ol>
+						<ul>
 							<li>Последовательность</li>
 							<li>Длительность пребывания в позе</li>
 							<li>Точность в обучении</li>
 							<li>Использование вспомогательных приспособлений</li>
-                        </ol>
+                        </ul>
 					</p>
 				</article>
 			</li>
