@@ -407,6 +407,8 @@ textarea {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 21px;
+  padding-top: 16px;
+  padding-left: 25px;
   background-color: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -427,7 +429,8 @@ textarea {
   text-align: left;
   font-size: 16px;
   line-height: 26px;
-  font-weight: 500; }
+  font-weight: 500;
+  color: #19744C; }
 
 .main-nav__link--active,
 .main-nav__link:hover {
@@ -441,6 +444,17 @@ textarea {
     right: 0;
     height: 1px;
     background-color: #ffffff; }
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    top: 100px;
+    padding-left: 35px; }
+  .main-nav__item {
+    margin-bottom: 10px; }
+    .main-nav__item:last-of-type {
+      margin-bottom: 0; }
+  .main-nav__link {
+    font-size: 18px; } }
 
 @media (min-width: 1024px) {
   .main-nav__toggler {
@@ -461,7 +475,8 @@ textarea {
     border: none;
     background-color: transparent; }
   .main-nav__item {
-    margin-left: 15px; }
+    margin-left: 20px;
+    margin-bottom: 0; }
     .main-nav__item:first-of-type {
       margin-left: 0; }
   .main-nav__link {
@@ -665,35 +680,13 @@ textarea {
 
 @media (min-width: 768px) {
   .branches {
-    display: grid;
-    grid-template-columns: auto 338px;
-    grid-template-rows: auto auto 58px;
-    grid-column-gap: 50px;
     padding: 65px 30px;
     padding-bottom: 0; }
-  .branches__title {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 1;
-    grid-row-end: 1; }
-  .branches__text {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    align-self: center; }
   .branches__btn {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 3;
-    grid-row-end: -1;
-    justify-self: start;
-    align-self: end;
     margin-bottom: 0; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .branches {
-    grid-template-columns: auto 487px;
     padding: 80px 60px;
     padding-bottom: 0; }
   .branches__illustration {
@@ -732,7 +725,7 @@ textarea {
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 2;
-    grid-row-end: -1; }
+    grid-row-end: 2; }
   .teachers__btn {
     grid-column-start: 1;
     grid-column-end: 1;

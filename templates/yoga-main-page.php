@@ -27,8 +27,9 @@
 					<h2 class="branches-list__article-title  hatha-yoga__title  title__secondary">Хатха йога</h2>
 					<div class="branches-list__article-picture  hatha-yoga__picture">
 						<picture>
-							<source media="(min-width: 768px)" srcset="img/hatha-yoga-800.jpg">
-							<img src="img/illustration-hatha-yoga-mobile.jpg" alt="Хатха йога - иллюстрация">
+							<source media="(min-width: 768px)" srcset="img/hatha-yoga-illustration-tablet.jpg">
+							<source media="(min-width: 375px)" srcset="img/hatha-yoga-illustration-mobile-wide.jpg">
+							<img src="img/hatha-yoga-illustration-mobile.jpg" alt="Хатха йога - иллюстрация">
 						</picture>
 					</div>
 					<p class="hatha-yoga__text"> Хатха-йога — одно из наиболее распространенных направлений йоги. Пожалуй, именно с неё и начинают знакомство с этой древней системой учений, основанной много веков, и даже тысячелетий, назад. Данное направление работает прежде всего с физическим телом - в результате постоянной практики оно становится сильнее, гибче, выносливее, здоровее.
@@ -40,8 +41,9 @@
 					<h2 class="branches-list__article-title  ayengar-yoga__title  title__secondary">Йога Айенгара</h2>
 					<div class="branches-list__article-picture  ayengar-yoga__picture">
 						<picture>
-							<source media="(min-width: 768px)" srcset="img/ayengar-yoga-800.jpg">
-							<img src="img/illustration-ayengar-yoga-mobile.jpg" alt="Хатха йога - иллюстрация">
+							<source media="(min-width: 768px)" srcset="img/ayengar-yoga-illustration-tablet.jpg">
+							<source media="(min-width: 375px)" srcset="img/ayengar-yoga-illustration-mobile-wide.jpg">
+							<img src="img/ayengar-yoga-illustration-mobile.jpg" alt="Хатха йога - иллюстрация">
 						</picture>
 					</div>
 					<p class="ayengar-yoga__text">

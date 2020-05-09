@@ -42,10 +42,12 @@
 
 .main-nav__toggler--close .main-nav__toggler-element {
   top: 50%;
+  
   transform: rotate(45deg);
 
   &::before {
   	top: 0;
+  	
   	transform: rotate(-90deg);
   }
 
@@ -63,6 +65,8 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	padding: 21px;
+	padding-top: 16px;
+	padding-left: 25px;
 	background-color: $white;
 	box-sizing: border-box;
 	z-index: 10;
@@ -81,6 +85,7 @@
 	font-size: 16px;
 	line-height: 26px;
 	font-weight: 500;
+	color: $green;
 }
 
 .main-nav__link--active,
@@ -95,6 +100,26 @@
 		right: 0;
 		height: 1px;
 		background-color: $white;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.main-nav__list {
+		top: 100px;
+		padding-left: 35px;
+	}
+
+	.main-nav__item {
+		margin-bottom: 10px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	.main-nav__link {
+		font-size: 18px;
 	}
 }
 
@@ -114,7 +139,8 @@
 	}
 
 	.main-nav__item {
-		margin-left: 15px;
+		margin-left: 20px;
+		margin-bottom: 0;
 
 		&:first-of-type {
 			margin-left: 0;
