@@ -66,8 +66,8 @@ function include_template($name, $data) {
  *
  * @return array
  */
-function get_reviews ($con) {
-  $sql = "SELECT * FROM reviews ORDER BY id ASC;";
+function get_reviews ($con, $branch) {
+  $sql = "SELECT * FROM reviews WHERE reviews.branch = '$branch' ORDER BY id ASC;";
 
   $reviews = db_run_query($con, $sql);
   return $reviews;
@@ -112,7 +112,7 @@ function get_news ($con) {
  * @return array
  */
 function get_news_element ($con, $id) {
-  $sql = "SELECT * FROM news WHERE n.id = $id;";
+  $sql = "SELECT * FROM news WHERE news.id = $id;";
   $news_element = db_run_query($con, $sql);
   return $news_element;
 }
@@ -179,4 +179,19 @@ function get_subscribtions($con) {
 
     $subscribtions = db_run_query($con, $sql);
     return $subscribtions;
+}
+
+/**
+ * Получить преподавателей йоги из базы.
+ *
+ * @param object $con Ссылка для подключения к базе данных *
+ * @param string $request SQL запрос
+ *
+ * @return array
+ */
+function get_instructors ($con, $branch) {
+    $sql = "SELECT * FROM instructors WHERE instructors.branch = '$branch' ORDER BY id ASC;";
+
+    $instructors = db_run_query($con, $sql);
+    return $instructors;
 }

@@ -13,7 +13,7 @@ $logo_full_name = 'Студия фитнеса';
 $news_list = get_news($link);
 $subscribtions = get_subscribtions($link);
 $schedule_list = get_fitness_schedule($link);
-$reviews_list = get_fitness_reviews($link);
+$reviews_list = get_reviews($link, 'фитнес');
 
 $main_menu = include_template('fitness-main-menu.php', [
     'title' => $title]);
@@ -33,6 +33,8 @@ $subscribing = include_template('subscribing.php', [
 $schedule = include_template('schedule.php', [
 	'fitness_background_color' => $fitness_background_color,
 	'text_color_fitness' => $text_color_fitness,
+	'border_color_fitness' => $border_color_fitness,
+	'pseudo_element_fitness' => $pseudo_element_fitness,
     'schedule_list' => $schedule_list,
     'week_days' => $week_days]);
 

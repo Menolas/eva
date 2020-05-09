@@ -29,16 +29,17 @@
 	</section>
 	<section class="teachers">
 		<h2 class="teachers__title  title__secondary">Наши Преподаватели</h2>
+		<div class="branches__illustration">
+			<picture>
+				<source media="(min-width: 1024px)" srcset="img/teachers-fitness-desktop.jpg">
+				<source media="(min-width: 375px)" srcset="img/teachers-fitness-tablet.jpg">
+					<img src="img/teachers-fitness-mobile.jpg" alt="Преподаватели - иллюстрация">
+			</picture>
+		</div>
 		<p class="teachers__text">
 			Наши преподаватели люди с разными судьбами, стилем жизни и образованием, но всех их объединяет одно - они очень любят свою работу, так что вы обязательно попадете к профессионалам своего дела, которые будут вас поддерживать и направлять.
 		</p>
-		<a class="teachers__btn  btn  <?=$fitness_background_color; ?>" href="teachers.html">Посмотреть всех )</a>
-		<div class="branches__illustration">
-			<picture>
-				<source media="(min-width: 1000px)" srcset="img/illustration-teachers-1000.jpg">
-					<img src="img/illustration-teachers-370.jpg" alt="Направления - иллюстрация">
-			</picture>
-		</div>
+		<a class="teachers__btn  btn  <?=$fitness_background_color; ?>" href="fitness-teachers.php">Посмотреть всех )</a>
 	</section>
 	<?=$subscribing; ?>
 	<?=$schedule; ?>

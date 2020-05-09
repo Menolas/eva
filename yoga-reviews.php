@@ -2,18 +2,17 @@
 
 require('init.php');
 
-$title = '"Ом Шанти" - студия йоги';
+$title = '"Ом Шанти" - Новости';
 $logo_svg = 'om';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
-$instructors = get_instructors($link, 'йога');
-
+$reviews_list = get_reviews($link, 'йога');
 $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);
 
-$page_content = include_template('teachers.php', [
-    'instructors' => $instructors]);
+$page_content = include_template('reviews.php', [
+    'reviews_list' => $reviews_list]);
 
 $layout_content = include_template('layout.php', [
     'title' => $title,

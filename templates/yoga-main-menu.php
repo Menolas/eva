@@ -8,7 +8,7 @@
 			<a class="main-nav__link" href="index.php">Главная</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="news.php">Новости</a>
+			<a class="main-nav__link" href="yoga-news.php">Новости</a>
 		</li>
 		<li class="main-nav__item">
 			<a class="main-nav__link" href="yoga-branches.php">Направления</a>
