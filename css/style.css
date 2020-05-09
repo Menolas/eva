@@ -307,8 +307,7 @@ textarea {
 
 .social-block__link svg {
   width: 18px;
-  height: 18px;
-  fill: #19744C; }
+  height: 18px; }
 
 .main-header {
   padding: 13px 21px;
@@ -1842,6 +1841,9 @@ textarea {
     width: 300px;
     height: 300px; } }
 
+.yoga-svg svg {
+  fill: #19744C; }
+
 .background-fitness {
   background-color: #6f148c; }
 
@@ -1854,3 +1856,6 @@ textarea {
 .pseudo-element-fitness::before,
 .pseudo-element-fitness::after {
   background-color: #6f148c; }
+
+.svg-color svg {
+  fill: #6f148c; }

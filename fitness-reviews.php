@@ -7,22 +7,20 @@ $fitness_background_color = 'background-fitness';
 $text_color_fitness = 'text-color-fitness';
 $border_color_fitness = 'border-color-fitness';
 $pseudo_element_fitness = 'pseudo-element-fitness';
-$svg_fitness = 'svg-color';
 $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
-$instructors = get_instructors($link, 'фитнес');
+$reviews_list = get_reviews($link, 'фитнес');
 
 $main_menu = include_template('fitness-main-menu.php', [
     'title' => $title]);
 
-$page_content = include_template('teachers.php', [
+$page_content = include_template('reviews.php', [
 	'fitness_background_color' => $fitness_background_color,
     'text_color_fitness' => $text_color_fitness,
     'border_color_fitness' => $border_color_fitness,
 	'pseudo_element_fitness' => $pseudo_element_fitness,
-	'svg_fitness' => $svg_fitness,
-    'instructors' => $instructors]);
+    'reviews_list' => $reviews_list]);
 
 $layout_content = include_template('layout.php', [
     'title' => $title,

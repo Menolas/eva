@@ -8,19 +8,19 @@
 			<a class="main-nav__link" href="index.php">Главная</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="news.php">Новости</a>
+			<a class="main-nav__link" href="fitness-news.php">Новости</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="yoga-branches.php">Направления</a>
+			<a class="main-nav__link" href="fitness-branches.php">Направления</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="yoga-teachers.php">Преподаватели</a>
+			<a class="main-nav__link" href="fitness-teachers.php">Преподаватели</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="yoga-schedule.php">Расписание</a>
+			<a class="main-nav__link" href="fitness-schedule.php">Расписание</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="contact.php">Контакты</a>
+			<a class="main-nav__link" href="fitness-contact.php">Контакты</a>
 		</li>
 	</ul>
 </nav>

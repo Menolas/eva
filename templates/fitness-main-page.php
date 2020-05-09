@@ -43,6 +43,9 @@
 	</section>
 	<?=$subscribing; ?>
 	<?=$schedule; ?>
-	<?=$reviews; ?>
+	<section class="reviews">
+	    <?=$reviews; ?>
+	    <a class="reviews__btn  btn  <?=$fitness_background_color; ?>" href="fitness-reviews.php">Прочитать все отзывы</a>
+	</section>
 	<div class="map"></div>
 </main>

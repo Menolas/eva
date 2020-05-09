@@ -7,12 +7,14 @@ $logo_svg = 'om';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
+$yoga_svg = 'yoga-svg';
 $instructors = get_instructors($link, 'йога');
 
 $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);
 
 $page_content = include_template('teachers.php', [
+	'yoga_svg' => $yoga_svg,
     'instructors' => $instructors]);
 
 $layout_content = include_template('layout.php', [

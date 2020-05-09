@@ -14,3 +14,7 @@
 .pseudo-element-fitness::after {
     background-color: $violet;
 }
+
+.svg-color svg {
+	fill: $violet;
+}
