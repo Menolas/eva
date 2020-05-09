@@ -46,13 +46,9 @@
   .main-home__greeting--mobile {
   	display: none;
   }
-
-  .main-home__picture-wrap {
-	  width: 708px;
-  }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
 	.main-home {
 		padding-top: 80px;
 	}
@@ -60,9 +56,5 @@
 	.main-home__title,
   .main-home__greeting {
 	  padding: 0 60px;
-  }
-
-  .main-home__picture-wrap {
-	  width: 880px;
   }
 }

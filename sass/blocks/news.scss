@@ -6,6 +6,8 @@
 .news__list {
 	@include list-style;
 	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
 	grid-row-gap: 25px;
 }
 
@@ -88,7 +90,15 @@
 	}
 
 	.news__list {
-		grid-row-gap: 35px;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+		grid-column-gap: 30px;
+		grid-row-gap: 0;
+	}
+
+	.news__item {
+		padding-bottom: 0;
+		border-bottom: none;
 	}
 
 	.news__article {
@@ -109,6 +119,7 @@
 		grid-column-end: -2;
 		grid-row-start: 1;
 		grid-row-end: 1;
+		margin-bottom: 10px;
 		font-size: 20px;
 	}
 
@@ -117,6 +128,8 @@
 		grid-column-end: -2;
 		grid-row-start: 2;
 		grid-row-end: 2;
+		margin-bottom: 8px;
+		line-height: 1;
 	}
 
 	.news__text {
@@ -124,6 +137,10 @@
 		grid-column-end: -2;
 		grid-row-start: 3;
 		grid-row-end: -1;
+	}
+
+	.news__article-link-fb {
+		line-height: 1;
 	}
 }
 
