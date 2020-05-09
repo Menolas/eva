@@ -20,7 +20,7 @@
 			<a class="main-nav__link" href="yoga-schedule.php">Расписание</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="contact.php">Контакты</a>
+			<a class="main-nav__link" href="yoga-contacts.php">Контакты</a>
 		</li>
 	</ul>
 </nav>
