@@ -9,7 +9,7 @@
 				<span class="reviews__reviewer-name  <?=$text_color_fitness; ?>"><?=$reviews_element['name'];?></span>
 				<span class="reviews__date"><?=$reviews_element['date'];?></span>
 			</div>
-			<p class="reviews__text"><?=$reviews_element['review_context'];?></p>
+			<p class="reviews__text"><?=substr($reviews_element['review_context'], 0, 200);?>...</p>
 		</li>
 	<?php endforeach; ?>
 </ul>

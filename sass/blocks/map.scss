@@ -19,6 +19,10 @@
 		background-image: url('../img/map-800.jpg');
 		background-size: 800px 476px;
 	}
+
+	.map iframe {
+		height: 380px;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -27,5 +31,9 @@
 		height: 400px;
 		background-image: url('../img/map-1000.jpg');
 		background-size: 1024px 548px;
+	}
+
+	.map iframe {
+		height: 400px;
 	}
 }

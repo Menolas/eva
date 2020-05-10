@@ -80,18 +80,31 @@
 
 @media (min-width: 1440px) {
 
+	.reviews {
+		padding: 80px 230px;
+	}
+
 	.reviews__title {
 		margin-bottom: 60px;
 	}
 
   .reviews__list {
-    display: grid;
-    grid-template-columns: repeat(2, 600px);
-    grid-template-rows: auto;
-    grid-column-gap: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 980px;
   }
 
   .reviews__item {
+  	margin: 0;
+  	margin-right: 60px;
+  	padding: 0;
+  	width: 460px;
   	border-bottom: none;
+
+  	&:last-of-type {
+  		margin-right: 0;
+  	}
   }
 }
