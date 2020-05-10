@@ -82,3 +82,24 @@
 		align-self: end;
 	}
 }
+
+@media (min-width: 1440px) {
+  
+  .teachers {
+		grid-template-columns: auto 487px;
+		grid-template-rows: auto 294px;
+	}
+
+	.teachers__text {
+		margin-top: 40px;
+	}
+  
+  .teachers__illustration {
+		margin: 0;
+		width: 487px;
+	}
+
+	.teachers__btn {
+		margin-bottom: 55px;
+	}
+}

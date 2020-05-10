@@ -24,7 +24,9 @@
 		<ul class="branches__list">
 			<li class="branches__item">
 				<article class="branches__article  hatha-yoga">
-					<h2 class="branches__article-title  hatha-yoga__title  title__secondary">Хатха йога</h2>
+					<a class="branches__article-link" href="hatha-yoga.php">
+					    <h2 class="branches__article-title  hatha-yoga__title  title__secondary">Хатха йога</h2>
+					</a>
 					<div class="branches__illustration  hatha-yoga__picture">
 						<picture>
 							<source media="(min-width: 1024px)" srcset="img/hatha-yoga-illustration-desktop.jpg">
@@ -35,11 +37,14 @@
 					</div>
 					<p class="branches__article-text"> Хатха-йога — одно из наиболее распространенных направлений йоги. Пожалуй, именно с неё и начинают знакомство с этой древней системой учений, основанной много веков, и даже тысячелетий, назад. Данное направление работает прежде всего с физическим телом - в результате постоянной практики оно становится сильнее, гибче, выносливее, здоровее.
 					</p>
+					<a class="branches__article-link  branches__article-link--bottom" href="hatha-yoga.php">Прочитать поподробнее</a>
 				</article>
 			</li>
 			<li class="branches__item">
 				<article class="branches__article  ayengar-yoga">
-					<h2 class="branches__article-title  ayengar-yoga__title  title__secondary">Йога Айенгара</h2>
+					<a class="branches__article-link" href="ayengar-yoga.php">
+					    <h2 class="branches__article-title  ayengar-yoga__title  title__secondary">Йога Айенгара</h2>
+					</a>
 					<div class="branches__illustration  ayengar-yoga__picture">
 						<picture>
 							<source media="(min-width: 1024px)" srcset="img/ayengar-yoga-illustration-desktop.jpg">
@@ -58,6 +63,7 @@
 							<li>Использование вспомогательных приспособлений</li>
                         </ul>
 					</p>
+					<a class="branches__article-link  branches__article-link--bottom" href="ayengar-yoga.php">Прочитать поподробнее</a>
 				</article>
 			</li>
 		</ul>

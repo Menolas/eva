@@ -5,14 +5,13 @@
 	justify-content: flex-start;
 	align-items: center;
 	color: $white;
-	border-radius: 4px;
 }
 
 .logo-block__name {
 	margin-left: 6px;
 	font-size: 24px;
 	font-weight: 700;
-	line-height: 24px;
+	line-height: 1;
 	text-align: left;
 }
 
@@ -27,13 +26,27 @@
 }
 
 @media (min-width: 1000px) {
+
 	.logo-block__name {
+		margin-left: 8px;
 		font-size: 30px;
-		line-height: 30px;
 	}
 
 	.logo-block svg {
 		width: 48px;
 		height: 50px;
 	}
+}
+
+@media (min-width: 1440px) {
+
+	.logo-block__name {
+		margin-left: 12px;
+		font-size: 50px;
+	}
+
+  .logo-block svg {
+		width: 80px;
+		height: 83px;
+  }
 }

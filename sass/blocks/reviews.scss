@@ -61,6 +61,7 @@
 }
 
 @media (min-width: 768px) {
+
 	.reviews {
 		padding: $block-padding-tablet;
 	}
@@ -70,8 +71,27 @@
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
+
 	.reviews {
 		padding: $block-padding-desktop;
 	}
+}
+
+@media (min-width: 1440px) {
+
+	.reviews__title {
+		margin-bottom: 60px;
+	}
+
+  .reviews__list {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: auto;
+    grid-column-gap: 80px;
+  }
+
+  .reviews__item {
+  	border-bottom: none;
+  }
 }
