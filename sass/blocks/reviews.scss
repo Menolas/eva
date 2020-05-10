@@ -76,6 +76,26 @@
 	.reviews {
 		padding: $block-padding-desktop;
 	}
+
+	.reviews__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 904px;
+  }
+
+  .reviews__item {
+  	margin: 0;
+  	margin-right: 60px;
+  	padding: 0;
+  	width: 435px;
+  	border-bottom: none;
+
+  	&:last-of-type {
+  		margin-right: 0;
+  	}
+  }
 }
 
 @media (min-width: 1440px) {
@@ -89,22 +109,11 @@
 	}
 
   .reviews__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
     width: 980px;
   }
 
   .reviews__item {
-  	margin: 0;
   	margin-right: 60px;
-  	padding: 0;
   	width: 460px;
-  	border-bottom: none;
-
-  	&:last-of-type {
-  		margin-right: 0;
-  	}
   }
 }

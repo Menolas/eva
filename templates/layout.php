@@ -35,7 +35,7 @@
 				<section class="main-footer__contact  contact">
 					<h3 class="contact__title  title__third">Наши контакты</h3>
 					<p  class="contact__address">
-						Адрес: пр.Центральный, 6а 54030, г.Николаев</p>
+						Адрес: пр.Центральный,<br>6а 54030, г.Николаев</p>
 					<p class="contact__phone">Тел: +38(063) 762 8515</p>
 					<p class="contact__email">email: om.shanti.niko@gmail.com</p>
 				</section>
