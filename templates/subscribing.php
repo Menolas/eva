@@ -3,7 +3,7 @@
 		<div class="control-handlers__handler  control-handlers__handler--left  control-handlers__handler--faded  <?=$fitness_background_color; ?>"></div>
 		<div class="control-handlers__handler  control-handlers__handler--right  <?=$fitness_background_color; ?>"></div>
 	</div>
-	<h2 class="subscribing__title  title__secondary">Абонементы</h2>
+	<h2 class="subscribing__title  title__secondary  <?=$text_color_fitness; ?>">Абонементы</h2>
 	<ul class="subscribing__list">
 		<li class="subscribing__item  subscribing__item--active  <?=$border_color_fitness; ?>">
 			<h3 class="subscribing__item-title  title__third  <?=$text_color_fitness; ?>">Хатха Йога</h3>

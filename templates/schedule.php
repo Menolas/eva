@@ -1,5 +1,5 @@
 <section class="schedule">
-	<h2 class="schedule__title  title__secondary">Расписание занятий</h2>
+	<h2 class="schedule__title  title__secondary  <?=$text_color_fitness; ?>">Расписание занятий</h2>
 	<div class="schedule__handler  <?=$fitness_background_color; ?>"></div>
 	<ul class="schedule__list  <?=$pseudo_element_fitness; ?>">
 		<?php foreach ($week_days as $week_day): ?>

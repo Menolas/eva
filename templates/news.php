@@ -10,7 +10,7 @@
 				<p class="news__date"><?=$news_element['timing'];?></p>
 				<p class="news__text">
 					<?=substr($news_element['news_context'], 0, 241);?>...
-					<a class="news__article-link-text" href="#">Прочитать больше</a>
+					<a class="news__article-link-text  <?=$text_color_fitness; ?>" href="#">Прочитать больше</a>
 				</p>
 				<a class="news__article-link-fb  <?=$text_color_fitness; ?>" href="https://www.facebook.com/groups/1540126396290409/">
 					Прочитать новость в Фейсбуке
