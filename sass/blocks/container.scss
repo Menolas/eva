@@ -38,8 +38,13 @@
 
 @media (min-width: 1440px) {
 	.container {
-		width: 1440px;
-		/*min-width: 1600px;
-		max-width: 1600px;*/
+		min-width: 1440px;
+	}
+}
+
+@media (min-width: 1920px) {
+
+	.container {
+        min-width: 1920px;
 	}
 }

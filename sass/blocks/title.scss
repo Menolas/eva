@@ -47,3 +47,27 @@
 		@include font-header(24px, 32px);
 	}
 }
+
+@media (min-width: 1440px) {
+
+	.title__secondary {
+		margin-bottom: 55px;
+	}
+}
+
+@media (min-width: 1800px) {
+
+	.title {
+		font-size: 56px;
+	}
+
+	.title__secondary {
+		font-size: 46px;
+		margin-bottom: 62px;
+	}
+
+	.title__third {
+		margin-bottom: 34px;
+		font-size: 32px;
+	}
+}

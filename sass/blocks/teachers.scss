@@ -88,6 +88,7 @@
   .teachers {
 		grid-template-columns: auto 487px;
 		grid-template-rows: auto 294px;
+		padding: 110px 160px;
 	}
 
 	.teachers__text {
@@ -101,5 +102,24 @@
 
 	.teachers__btn {
 		margin-bottom: 55px;
+	}
+}
+
+@media (min-width: 1800px) {
+
+	.teachers {
+		grid-template-columns: auto 1000px;
+		grid-template-rows: auto 604px;
+	}
+
+	.teachers__illustration {
+		width: 1000px;
+	}
+
+	.teachers__text {
+		margin-top: 70px;
+		font-size: 24px;
+		line-height: 1.7;
+		font-style: italic;
 	}
 }

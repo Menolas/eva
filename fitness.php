@@ -7,6 +7,7 @@ $fitness_background_color = 'background-fitness';
 $text_color_fitness = 'text-color-fitness';
 $border_color_fitness = 'border-color-fitness';
 $pseudo_element_fitness = 'pseudo-element-fitness';
+$fitnes_schedule_style = 'fitness-schedule-titles-style';
 $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
@@ -31,6 +32,7 @@ $subscribing = include_template('subscribing.php', [
     'subscribtions' => $subscribtions]);
 
 $schedule = include_template('schedule.php', [
+	'fitnes_schedule_style' => $fitnes_schedule_style,
 	'fitness_background_color' => $fitness_background_color,
 	'text_color_fitness' => $text_color_fitness,
 	'border_color_fitness' => $border_color_fitness,

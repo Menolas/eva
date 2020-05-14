@@ -111,9 +111,14 @@
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
 	.subscribing {
 		padding: $block-padding-desktop;
+	}
+
+	.subscribing__title {
+		display: block;
+		color: $green;
 	}
 
 	.subscribing__list {
@@ -153,5 +158,27 @@
 
 	.subscribing {
 		padding: 80px 250px;
+	}
+}
+
+@media (min-width: 1800px) {
+  
+  .subscribing {
+		padding: 110px 250px;
+	}
+
+  .subscribing__item {
+  	padding: 65px 32px;
+    width: 300px;
+  }
+
+  .subscribing__description p {
+  	margin-bottom: 12px;
+  	font-size: 24px;
+
+		&:last-of-type {
+			margin-top: 28px;
+			margin-bottom: 0;
+		}
 	}
 }

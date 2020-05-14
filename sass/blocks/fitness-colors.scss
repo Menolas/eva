@@ -18,3 +18,10 @@
 .svg-color svg {
 	fill: $violet;
 }
+
+@media (min-width: 1440px) {
+	.fitness-schedule-titles-style {
+		color: $white;
+		background-color: $violet;
+	}
+}

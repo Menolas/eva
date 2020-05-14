@@ -168,3 +168,14 @@
 		font-size: 22px;
 	}
 }
+
+@media (min-width: 1920px) {
+
+	.main-nav__item {
+		margin-left: 46px;
+	}
+
+	.main-nav__link {
+		font-size: 26px;
+	}
+}

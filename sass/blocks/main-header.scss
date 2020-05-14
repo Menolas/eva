@@ -18,6 +18,13 @@
 
 @media (min-width: 1024px) {
 	.main-header {
-		padding: 40px;
+		padding: 40px 80px;
+	}
+}
+
+@media (min-width: 1920px) {
+
+	.main-header {
+		padding: 40px 180px;
 	}
 }

@@ -14,7 +14,7 @@
 	</div>
 	<section class="news">
 		<?=$news; ?>
-		<a class="news__btn  btn  <?=$fitness_background_color; ?>" href="yoga-news.php">Читать все новости</a>
+		<a class="news__btn  btn" href="yoga-news.php">Читать все новости</a>
 	</section>
 	<section class="branches">
 		<h2 class="branches__title  title__secondary">Направления</h2>
@@ -29,15 +29,18 @@
 					</a>
 					<div class="branches__illustration  hatha-yoga__picture">
 						<picture>
+							<source media="(min-width: 1800px)" srcset="img/hatha-yoga-illustration-tablet.jpg">
 							<source media="(min-width: 1024px)" srcset="img/hatha-yoga-illustration-desktop.jpg">
 							<source media="(min-width: 768px)" srcset="img/hatha-yoga-illustration-tablet.jpg">
 							<source media="(min-width: 375px)" srcset="img/hatha-yoga-illustration-mobile-wide.jpg">
 							<img src="img/hatha-yoga-illustration-mobile.jpg" alt="Хатха йога - иллюстрация">
 						</picture>
 					</div>
-					<p class="branches__article-text"> Хатха-йога — одно из наиболее распространенных направлений йоги. Пожалуй, именно с неё и начинают знакомство с этой древней системой учений, основанной много веков, и даже тысячелетий, назад. Данное направление работает прежде всего с физическим телом - в результате постоянной практики оно становится сильнее, гибче, выносливее, здоровее.
-					</p>
-					<a class="branches__article-link  branches__article-link--bottom" href="hatha-yoga.php">Прочитать поподробнее</a>
+					<div class="branches__article-text">
+						<p> Хатха-йога — одно из наиболее распространенных направлений йоги. Пожалуй, именно с неё и начинают знакомство с этой древней системой учений, основанной много веков, и даже тысячелетий, назад. Данное направление работает прежде всего с физическим телом - в результате постоянной практики оно становится сильнее, гибче, выносливее, здоровее.
+						</p>
+						<a class="branches__link-bottom" href="hatha-yoga.php">Прочитать поподробнее</a>
+					</div>
 				</article>
 			</li>
 			<li class="branches__item">
@@ -47,23 +50,25 @@
 					</a>
 					<div class="branches__illustration  ayengar-yoga__picture">
 						<picture>
+							<source media="(min-width: 1800px)" srcset="img/ayengar-yoga-illustration-tablet.jpg">
 							<source media="(min-width: 1024px)" srcset="img/ayengar-yoga-illustration-desktop.jpg">
 							<source media="(min-width: 768px)" srcset="img/ayengar-yoga-illustration-tablet.jpg">
 							<source media="(min-width: 375px)" srcset="img/ayengar-yoga-illustration-mobile-wide.jpg">
 							<img src="img/ayengar-yoga-illustration-mobile.jpg" alt="Хатха йога - иллюстрация">
 						</picture>
 					</div>
-					<p class="branches__article-text">
-						Характерной чертой метода является подробное, детальное объяснение каждой позы и индивидуальный подход к каждому практикующему. Важным аспектом йоги Айенгара является последовательность асан. Йога Айенгара может быть также использована в лечебных целях.
-						Отличительные характеристики метода:
+					<div class="branches__article-text">
+						<p>
+							Характерной чертой метода является подробное, детальное объяснение каждой позы и индивидуальный подход к каждому практикующему. Важным аспектом йоги Айенгара является последовательность асан. Йога Айенгара может быть также использована в лечебных целях.
+							Отличительные характеристики метода:</p>
 						<ul>
 							<li>Последовательность</li>
 							<li>Длительность пребывания в позе</li>
 							<li>Точность в обучении</li>
 							<li>Использование вспомогательных приспособлений</li>
                         </ul>
-					</p>
-					<a class="branches__article-link  branches__article-link--bottom" href="ayengar-yoga.php">Прочитать поподробнее</a>
+                        <a class="branches__link-bottom" href="ayengar-yoga.php">Прочитать поподробнее</a>
+                    </div>
 				</article>
 			</li>
 		</ul>
@@ -72,6 +77,7 @@
 		<h2 class="teachers__title  title__secondary">Наши Преподаватели</h2>
 		<div class="teachers__illustration">
 			<picture>
+				<source media="(min-width: 1800px)" srcset="img/teachers-desktop-wide.jpg">
 				<source media="(min-width: 1024px)" srcset="img/teachers-desktop.jpg">
 				<source media="(min-width: 375px)" srcset="img/teachers-tablet.jpg">
 					<img src="img/teachers-mobile.jpg" alt="Направления - иллюстрация">

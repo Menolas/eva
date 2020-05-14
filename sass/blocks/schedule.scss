@@ -252,10 +252,14 @@
 @media (min-width: 1440px) {
 
 	.schedule {
-		padding: 80px 180px;
+		padding: 110px 180px;
 		padding-bottom: 0;
 	}
-	
+
+	.schedule__title {
+		color: $green;
+	}
+
 	.schedule__handler {
 		display: none;
 	}
@@ -276,5 +280,31 @@
 	.schedule__item-title {
 		color: $white;
 		background-color: $green;
+	}
+}
+
+@media (min-width: 1800px) {
+
+	.schedule {
+		padding: 110px 250px;
+		padding-bottom: 0;
+	}
+
+	.schedule__item-title {
+		padding: 22px 0;
+    font-size: 24px;
+	}
+
+	.schedule__class-item {
+		padding: 28px 36px;
+		font-size: 21px;
+
+		&:first-of-type {
+			padding: 28px 36px;
+		}
+
+		&:last-of-type {
+			padding: 28px 36px;
+		}
 	}
 }
