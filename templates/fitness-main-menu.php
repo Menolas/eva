@@ -41,7 +41,7 @@
 			<a class="main-nav__link" href="fitness-schedule.php">Расписание</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="fitness-contact.php">Контакты</a>
+			<a class="main-nav__link" href="fitness-contacts.php">Контакты</a>
 		</li>
 	</ul>
 </nav>
