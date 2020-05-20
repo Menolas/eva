@@ -12,12 +12,16 @@ $reviews_list = [$reviews_array[0], $reviews_array[1]];
 $news_list = get_news($link);
 $subscribtions = get_subscribtions($link);
 $schedule_list = get_schedule($link);
+$branches_list = get_branches($link, 'йога');
 
 $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);
 
 $news = include_template('news.php', [
     'news_list' => $news_list]);
+
+$branches = include_template('branches.php', [
+    'branches_list' => $branches_list]);
 
 $subscribing = include_template('subscribing.php', [
     'subscribtions' => $subscribtions]);
@@ -33,6 +37,7 @@ $page_content = include_template('yoga-main-page.php', [
     'reviews_list' => $reviews_list,
     'reviews' => $reviews,
     'news' => $news,
+    'branches' => $branches,
     'subscribing' => $subscribing,
     'schedule' => $schedule]);
 

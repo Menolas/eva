@@ -21,19 +21,13 @@
 		<p class="branches__text">
 			В нашей студии проводятся разные классы для любого уровня подготовки, возраста и потребностей. Вы можете прочитать подробнее в специальном разделе.
 		</p>
-		<a class="branches__btn  btn  <?=$fitness_background_color; ?>" href="branches.html">Подробнее</a>
-		<div class="branches__illustration">
-			<picture>
-				  <source media="(min-width: 1024px)" srcset="img/fitness-branches-desktop.jpg">
-				  <source media="(min-width: 768px)" srcset="img/fitness-branches-tablet.jpg">
-					<img src="img/fitness-branches-mobile.jpg" alt="Направления - иллюстрация">
-			</picture>
-		</div>
+		<?=$branches; ?>
 	</section>
 	<section class="teachers">
 		<h2 class="teachers__title  title__secondary">Наши Преподаватели</h2>
 		<div class="teachers__illustration">
 			<picture>
+				<source media="(min-width: 1800px)" srcset="img/teachers-fitness-desktop-wide.jpg">
 				<source media="(min-width: 1024px)" srcset="img/teachers-fitness-desktop.jpg">
 				<source media="(min-width: 375px)" srcset="img/teachers-fitness-tablet.jpg">
 					<img src="img/teachers-fitness-mobile.jpg" alt="Преподаватели - иллюстрация">

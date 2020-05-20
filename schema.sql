@@ -10,7 +10,9 @@ CREATE TABLE news (
   title CHAR(128) NOT NULL,
   news_context TEXT NOT NULL,
   image CHAR(128),
-  date DATETIME
+  date DATETIME, NOT NULL,
+  timing CHAR(64),
+  fb_link CHAR(128)
 );
 
 CREATE TABLE news_archive (
@@ -19,25 +21,15 @@ CREATE TABLE news_archive (
   title CHAR(128) NOT NULL,
   news_context TEXT NOT NULL,
   image CHAR(128),
-  date DATETIME
 );
 
 CREATE TABLE reviews (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  created_at DATETIME DEFAULT NOW() NOT NULL,
-  email CHAR(64) NOT NULL,
   name CHAR(64) NOT NULL,
   review__context TEXT NOT NULL,
-  avatar CHAR(128)
-);
-
-CREATE TABLE fitness_reviews (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  created_at DATETIME DEFAULT NOW() NOT NULL,
-  email CHAR(64) NOT NULL,
-  name CHAR(64) NOT NULL,
-  review__context TEXT NOT NULL,
-  avatar CHAR(128)
+  avatar CHAR(128),
+  date CHAR(64) NOT NULL,
+  branch CHAR(14)
 );
 
 CREATE TABLE schedule (
@@ -67,9 +59,13 @@ CREATE TABLE instructors (
   created_at DATETIME DEFAULT NOW() NOT NULL,
   email CHAR(64) NOT NULL,
   name CHAR(64) NOT NULL,
-  phone CHAR(14),
-  branch CHAR(64),
-  specification CHAR(64)
+  phone CHAR(14) NOT NULL,
+  branch CHAR(14) NOT NULL,
+  specification CHAR(64) NOT NULL,
+  image CHAR(128) NOT NULL,
+  fb_link CHAR(128),
+  inst_link CHAR(128),
+  biography TEXT NOT NULL
 );
 
 CREATE TABLE subscribtions (
@@ -78,4 +74,14 @@ CREATE TABLE subscribtions (
   branch CHAR(64) NOT NULL,
   number_of_sessions CHAR(64) NOT NULL,
   price INT NOT NULL
+);
+
+CREATE TABLE branches (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title CHAR(128),
+  branch CHAR(14) NOT NULL,
+  image CHAR(128) NOT NULL,
+  description TEXT NOT NULL,
+  context TEXT NOT NULL,
+  spesialisation CHAR(64) NOT NULL
 );

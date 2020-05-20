@@ -135,7 +135,8 @@ function get_schedule ($con) {
 /**
  * Получить расписание фитнес тренировок из базы.
  *
- * @param object $con Ссылка для подключения к базе данных *
+ * @param object $con Ссылка для подключения к базе данных
+ *
  * @param string $request SQL запрос
  *
  * @return array
@@ -169,8 +170,7 @@ function get_day_schedule ($day, $array) {
 /**
  * Получить виды абонементов из базы.
  *
- * @param object $con Ссылка для подключения к базе данных *
- * @param string $request SQL запрос
+ * @param object $con Ссылка для подключения к базе данных
  *
  * @return array
  */
@@ -184,8 +184,8 @@ function get_subscribtions($con) {
 /**
  * Получить преподавателей йоги из базы.
  *
- * @param object $con Ссылка для подключения к базе данных *
- * @param string $request SQL запрос
+ * @param object $con Ссылка для подключения к базе данных
+ * @param string $branch направление по которому работатет инструктор
  *
  * @return array
  */
@@ -194,4 +194,19 @@ function get_instructors ($con, $branch) {
 
     $instructors = db_run_query($con, $sql);
     return $instructors;
+}
+
+/**
+ * Получить направления из базы.
+ *
+ * @param object $con Ссылка для подключения к базе данных *
+ * @param string $branch основное направление
+ *
+ * @return array
+ */
+function get_branches ($con, $branch) {
+    $sql = "SELECT * FROM branches WHERE branches.branch = '$branch' ORDER BY id ASC;";
+
+    $branches = db_run_query($con, $sql);
+    return $branches;
 }
