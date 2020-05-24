@@ -11,13 +11,13 @@
 			<a class="main-nav__link" href="yoga-news.php">Новости</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link">Направления</a>
+			<a class="main-nav__link  main-nav__link--branches">Направления</a>
 			<ul class="sub-menu">
 				<li class="sub-menu__item">
-					<a class="sub-menu__link" href="#">Хатха Йога</a>
+					<a class="sub-menu__link" href="hatha-yoga-article.php">Хатха Йога</a>
 				</li>
 				<li class="sub-menu__item">
-					<a class="sub-menu__link" href="#">Йога Айенгара</a>
+					<a class="sub-menu__link" href="iyengar-yoga-article.php">Йога Айенгара</a>
 				</li>
 			</ul>
 		</li>

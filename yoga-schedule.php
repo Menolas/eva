@@ -8,14 +8,23 @@ $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
 $yoga_svg = 'yoga-svg';
+$inner_page_title = 'Расписание занятий';
+$inner_page_schedule = 'schedule__list--shown';
+$inner_page_schedule_list_per_day = 'schedule__class-list-per-day--shown';
 $schedule_list = get_schedule($link);
 
 $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);
 
-$page_content = include_template('schedule.php', [
+$page_element = include_template('schedule.php', [
+    'inner_page_schedule' => $inner_page_schedule,
+    'inner_page_schedule_list_per_day' => $inner_page_schedule_list_per_day,
 	'schedule_list' => $schedule_list,
     'week_days' => $week_days]);
+
+$page_content = include_template('inner-page.php', [
+    'inner_page_title' => $inner_page_title,
+    'page_element' => $page_element]);
 
 $layout_content = include_template('layout.php', [
     'title' => $title,

@@ -9,13 +9,18 @@ $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
 $yoga_svg = 'yoga-svg';
 $instructors = get_instructors($link, 'йога');
+$inner_page_title = 'Наши преподаватели';
 
 $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);
 
-$page_content = include_template('teachers.php', [
-	'yoga_svg' => $yoga_svg,
+$page_element = include_template('teachers.php', [
+    'yoga_svg' => $yoga_svg,
     'instructors' => $instructors]);
+
+$page_content = include_template('inner-page.php', [
+    'inner_page_title' => $inner_page_title,
+    'page_element' => $page_element]);
 
 $layout_content = include_template('layout.php', [
     'title' => $title,

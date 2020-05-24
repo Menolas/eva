@@ -1,4 +1,3 @@
-<h2 class="reviews__title  title__secondary">Отзывы</h2>
 <ul class="reviews__list">
 	<?php foreach ($reviews_list as $reviews_element): ?>
 		<li class="reviews__item  <?=$border_color_fitness; ?>">

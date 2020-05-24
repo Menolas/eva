@@ -12,19 +12,24 @@ $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $logo_link = 'fitness.php';
+$inner_page_title = 'Наши расписание';
 $schedule_list = get_fitness_schedule($link);
 
 $main_menu = include_template('fitness-main-menu.php', [
-    'title' => $title]);
+    'text_color_fitness' => $text_color_fitness]);
 
-$page_content = include_template('schedule.php', [
+$page_element = include_template('schedule.php', [
     'fitnes_schedule_style' => $fitnes_schedule_style,
     'fitness_background_color' => $fitness_background_color,
     'text_color_fitness' => $text_color_fitness,
     'border_color_fitness' => $border_color_fitness,
     'pseudo_element_fitness' => $pseudo_element_fitness,
-	'schedule_list' => $schedule_list,
+    'schedule_list' => $schedule_list,
     'week_days' => $week_days]);
+
+$page_content = include_template('inner-page.php', [
+    'inner_page_title' => $inner_page_title,
+    'page_element' => $page_element]);
 
 $layout_content = include_template('layout.php', [
     'title' => $title,

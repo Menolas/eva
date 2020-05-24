@@ -88,6 +88,10 @@
 	color: $green;
 }
 
+.main-nav__list--fitness .main-nav__link {
+	color: $violet;
+}
+
 .main-nav__link--active,
 .main-nav__link:hover {
 	position: relative;
@@ -149,6 +153,10 @@
 
 	.main-nav__link {
 		font-size: 20px;
+		color: $white;
+	}
+
+	.main-nav__list--fitness .main-nav__link {
 		color: $white;
 	}
 

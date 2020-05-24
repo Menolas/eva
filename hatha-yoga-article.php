@@ -2,18 +2,19 @@
 
 require('init.php');
 
-$title = '"Ом Шанти" - Новости';
+$title = '"Ом Шанти" - студия йоги';
 $logo_svg = 'om';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
-$news_list = get_news($link);
-$inner_page_title = 'Наши события';
+$yoga_svg = 'yoga-svg';
+$inner_page_title = 'Хатха йога';
+
 $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);
 
-$page_element = include_template('news.php', [
-    'news_list' => $news_list]);
+$page_element = include_template('hatha-yoga.php', [
+    'inner_page_title' => $inner_page_title]);
 
 $page_content = include_template('inner-page.php', [
     'inner_page_title' => $inner_page_title,

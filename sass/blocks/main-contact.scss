@@ -16,8 +16,14 @@
 	width: 100%;
 }
 
+.main-contact .contact__container {
+	display: flex;
+	flex-direction: column;
+}
+
 .main-contact .contact {
 	padding-top: 35px;
+	color: $green;
 }
 
 .main-contact .short-schedule {
@@ -30,7 +36,6 @@
 }
 
 .main-contact .contact p {
-	color: $green;
 	font-weight: 500;
 	font-size: 18px;
 }

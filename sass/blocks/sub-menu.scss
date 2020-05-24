@@ -5,9 +5,24 @@
 
 .sub-menu--shown {
 	display: block;
+	padding-left: 30px;
 }
 
 .sub-menu__link {
 	@include link-style;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	font-weight: 500;
+	font-size: 14px;
+	color: $green;
+}
+
+.sub-menu--fitness .sub-menu__link {
+	color: $violet;
+}
+
+@media (min-width: 1024px) {
+	.sub-menu__link {
+		color: $white;
+	}
 }

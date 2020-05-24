@@ -1,4 +1,3 @@
-<h2 class="news__title  title__secondary">Наши события</h2>
 <ul class="news__list">
 	<?php foreach ($news_list as $news_element): ?>
 		<li class="news__item  <?=$border_color_fitness; ?>">

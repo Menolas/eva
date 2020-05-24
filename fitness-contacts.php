@@ -12,13 +12,16 @@ $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $logo_link = 'fitness.php';
-
+$inner_page_title = 'Контакты';
 $main_menu = include_template('fitness-main-menu.php', [
-    'title' => $title]);
+    'text_color_fitness' => $text_color_fitness]);
 
-$page_content = include_template('contacts.php', [
-	'yoga_svg' => $yoga_svg,
-    'instructors' => $instructors]);
+$page_element = include_template('contacts.php', [
+    'text_color_fitness' => $text_color_fitness]);
+
+$page_content = include_template('inner-page.php', [
+    'inner_page_title' => $inner_page_title,
+    'page_element' => $page_element]);
 
 $layout_content = include_template('layout.php', [
     'fitness_background_color' => $fitness_background_color,

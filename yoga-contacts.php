@@ -8,13 +8,16 @@ $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
 $yoga_svg = 'yoga-svg';
-
+$inner_page_title = 'Контакты';
 $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);
 
-$page_content = include_template('contacts.php', [
-	'yoga_svg' => $yoga_svg,
-    'instructors' => $instructors]);
+$page_element = include_template('contacts.php', [
+    'title' => $title]);
+
+$page_content = include_template('inner-page.php', [
+    'inner_page_title' => $inner_page_title,
+    'page_element' => $page_element]);
 
 $layout_content = include_template('layout.php', [
     'title' => $title,

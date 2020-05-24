@@ -18,7 +18,7 @@ $schedule_list = get_fitness_schedule($link);
 $reviews_list = get_reviews($link, 'фитнес');
 
 $main_menu = include_template('fitness-main-menu.php', [
-    'title' => $title]);
+    'text_color_fitness' => $text_color_fitness]);
 
 $news = include_template('news.php', [
 	'fitness_background_color' => $fitness_background_color,

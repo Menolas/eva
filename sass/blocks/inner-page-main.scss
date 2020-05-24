@@ -1,0 +1,25 @@
+.inner-page-main {
+	padding: $block-padding-mobile;
+}
+
+.inner-page-main__title {
+	margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+
+	.inner-page-main {
+		padding: 70px 60px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.inner-page-main {
+		padding: 80px 100px;
+	}
+
+	.inner-page-main__title {
+		margin-bottom: 55px;
+	}
+}
