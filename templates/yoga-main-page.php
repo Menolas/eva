@@ -41,14 +41,14 @@
 	</section>
 	<?=$subscribing; ?>
 	<section class="schedule">
-		<h2 class="schedule__title  title__secondary  <?=$text_color_fitness; ?>">Расписание занятий</h2>
-		<div class="schedule__handler  <?=$fitness_background_color; ?>"></div>
+		<h2 class="schedule__title  title__secondary">Расписание занятий</h2>
+		<div class="schedule__handler"></div>
 		<?=$schedule; ?>
 	</section>
 	<section class="reviews">
 		<h2 class="reviews__title  title__secondary">Отзывы</h2>
 		<?=$reviews; ?>
-		<a class="reviews__btn  btn  <?=$fitness_background_color; ?>" href="yoga-reviews.php">Прочитать все отзывы</a>
+		<a class="reviews__btn  btn" href="yoga-reviews.php">Прочитать все отзывы</a>
 	</section>
 </main>
 <script src="js/schedule.js"></script>

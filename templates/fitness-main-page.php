@@ -13,6 +13,7 @@
 		</picture>
 	</div>
 	<section class="news">
+		<h2 class="news__title  title__secondary">Наши события</h2>
 		<?=$news; ?>
 		<a class="news__btn  btn  <?=$fitness_background_color; ?>" href="yoga-news.php">Читать все новости</a>
 	</section>
@@ -39,9 +40,15 @@
 		<a class="teachers__btn  btn  <?=$fitness_background_color; ?>" href="fitness-teachers.php">Посмотреть всех )</a>
 	</section>
 	<?=$subscribing; ?>
-	<?=$schedule; ?>
+	<section class="schedule">
+		<h2 class="schedule__title  title__secondary  <?=$text_color_fitness; ?>">Расписание занятий</h2>
+		<div class="schedule__handler  <?=$fitness_background_color; ?>"></div>
+	    <?=$schedule; ?>
+	</section>
 	<section class="reviews">
+		<h2 class="reviews__title  title__secondary">Отзывы</h2>
 	    <?=$reviews; ?>
 	    <a class="reviews__btn  btn  <?=$fitness_background_color; ?>" href="fitness-reviews.php">Прочитать все отзывы</a>
 	</section>
 </main>
+<script src="js/schedule.js"></script>
