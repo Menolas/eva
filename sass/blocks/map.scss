@@ -1,10 +1,9 @@
 .map {
 	width: 100%;
-	height: 300px;
 	background-image: url('../img/map-370.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 370px 291px;
+	overflow: hidden;
 }
 
 .map iframe {
@@ -15,9 +14,7 @@
 @media (min-width: 768px) {
 
 	.map {
-		height: 380px;
 		background-image: url('../img/map-800.jpg');
-		background-size: 800px 476px;
 	}
 
 	.map iframe {
@@ -28,9 +25,7 @@
 @media (min-width: 1024px) {
 
 	.map {
-		height: 400px;
 		background-image: url('../img/map-1000.jpg');
-		background-size: 1024px 548px;
 	}
 
 	.map iframe {

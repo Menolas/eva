@@ -15,6 +15,7 @@
 	font-weight: 500;
 	font-size: 14px;
 	color: $green;
+	white-space: nowrap;
 }
 
 .sub-menu--fitness .sub-menu__link {
@@ -22,7 +23,17 @@
 }
 
 @media (min-width: 1024px) {
-	.sub-menu__link {
-		color: $white;
+
+	.sub-menu {
+		position: absolute;
+		left: 20px;
+		padding: 12px 21px;
+		border: 1px solid $green;
+		border-radius: 4px;
+		background-color: $white;
+	}
+
+	.sub-menu--fitness {
+		border-color: $violet;
 	}
 }

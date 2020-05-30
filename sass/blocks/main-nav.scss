@@ -10,6 +10,7 @@
 	color: $white;
 	font-weight: 700;
 	line-height: 14px;
+	font-size: 18px;
 
 	&::before {
 		@include element-style(100%, 1px, $white);
@@ -64,9 +65,9 @@
 	width: 100%;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding: 21px;
+	padding: 26px;
 	padding-top: 16px;
-	padding-left: 25px;
+	padding-left: 32px;
 	background-color: $white;
 	box-sizing: border-box;
 	z-index: 10;
@@ -92,7 +93,10 @@
 	color: $violet;
 }
 
-.main-nav__link--active,
+.main-nav__item--active .main-nav__link {
+	opacity: 0.7;
+}
+
 .main-nav__link:hover {
 	position: relative;
 
@@ -108,10 +112,35 @@
 }
 
 @media (min-width: 768px) {
+    
+    .main-nav__toggler-label {
+    	font-size: 20px;
+
+    	&::before {
+    		bottom: -5px;
+    	}
+    }
+
+    .main-nav__toggler-element {
+    	top: 13px;
+    	left: 10px;
+    	width: 24px;
+
+    	&::before {
+    		top: 7px;
+    		width: 24px;
+    	}
+
+    	&::after {
+    		top: 14px;
+    		width: 24px;
+    	}
+    }
 
 	.main-nav__list {
 		top: 100px;
-		padding-left: 35px;
+		padding: 50px;
+		padding-left: 45px;
 	}
 
 	.main-nav__item {
@@ -143,6 +172,7 @@
 	}
 
 	.main-nav__item {
+		position: relative;
 		margin-left: 20px;
 		margin-bottom: 0;
 
@@ -158,11 +188,6 @@
 
 	.main-nav__list--fitness .main-nav__link {
 		color: $white;
-	}
-
-	.main-nav__link--active {
-		font-weight: 700;
-		opacity: 0.7;
 	}
 }
 

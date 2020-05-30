@@ -10,18 +10,17 @@ $pseudo_element_fitness = 'pseudo-element-fitness';
 $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
-$inner_page_title = 'Отзывы';
-$reviews_list = get_reviews($link, 'фитнес');
+$logo_link = 'fitness.php';
+$inner_page_title = 'Что такое BODY PUMP?';
 
 $main_menu = include_template('fitness-main-menu.php', [
     'text_color_fitness' => $text_color_fitness]);
 
-$page_element = include_template('reviews.php', [
+$page_element = include_template('body-pump-article.php', [
     'fitness_background_color' => $fitness_background_color,
     'text_color_fitness' => $text_color_fitness,
     'border_color_fitness' => $border_color_fitness,
-    'pseudo_element_fitness' => $pseudo_element_fitness,
-    'reviews_list' => $reviews_list]);
+    'pseudo_element_fitness' => $pseudo_element_fitness]);
 
 $page_content = include_template('inner-page.php', [
     'inner_page_title' => $inner_page_title,
@@ -36,6 +35,7 @@ $layout_content = include_template('layout.php', [
     'logo_svg' => $logo_svg,
     'logo_name' => $logo_name,
     'logo_full_name' => $logo_full_name,
+    'logo_link' => $logo_link,
     'main_menu' => $main_menu,
     'page_content' => $page_content]);
 

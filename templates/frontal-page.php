@@ -16,7 +16,7 @@
 				  <h2 class="front-page__title-secondary  title__secondary">Йога</h2>
 				</a>
 				<div class="front-page__contacts">
-					<a class="front-page__link  front-page__link--contacts" href="contact.html">
+					<a class="front-page__link  front-page__link--contacts" href="contacts.php">
 						<svg class="front-page__decor  front-page__decor--phone">
 							<use xlink:href="img/svg/svg-sprite.svg#phone"></use>
 						</svg>

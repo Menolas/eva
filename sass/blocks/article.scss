@@ -1,0 +1,46 @@
+.article__illustration {
+	margin-bottom: 21px;
+}
+
+.article__secondary-title {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+
+	.article__illustration {
+		margin-bottom: 28px;
+	}
+
+	.article__secondary-title {
+		margin-top: 18px;
+		margin-bottom: 24px;
+		
+	}
+}
+
+@media (min-width: 1024px) {
+  .article__illustration {
+  	float: left;
+  	margin-right: 34px;
+  }
+
+	.clearfix {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+  .article__secondary-title {
+  	margin-top: 0;
+  	white-space: nowrap;
+  }
+}
+
+@media (min-width: 1440px) {
+  .article__illustration {
+  	margin-bottom: 35px;
+  	margin-right: 42px;
+  }
+}

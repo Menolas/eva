@@ -25,16 +25,22 @@
 	fill: $white;
 }
 
-@media (min-width: 1000px) {
-
+@media (min-width: 768px) {
 	.logo-block__name {
 		margin-left: 8px;
-		font-size: 30px;
+		font-size: 28px;
 	}
 
 	.logo-block svg {
 		width: 48px;
 		height: 50px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.logo-block__name {
+		font-size: 30px;
 	}
 }
 
