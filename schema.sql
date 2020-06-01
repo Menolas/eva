@@ -85,3 +85,10 @@ CREATE TABLE branches (
   context TEXT NOT NULL,
   spesialisation CHAR(64) NOT NULL
 );
+
+CREATE TABLE admins (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  login CHAR(64),
+  email CHAR(64),
+  password CHAR(6)
+);

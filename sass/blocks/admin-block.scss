@@ -1,0 +1,21 @@
+.admin-block {
+	position: absolute;
+	right: 16px;
+	bottom: 50px;
+	width: 35px;
+	height: 35px;
+}
+
+.admin-block__enter {
+	display: block;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.admin-block__enter svg {
+	width: 35px;
+	height: 35px;
+	fill: $white;
+}

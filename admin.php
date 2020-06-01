@@ -2,17 +2,18 @@
 
 require('init.php');
 
-$title = '"Спарта" - студия фитнеса';
+$title = '"Спарта" - админ';
 $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $logo_link = 'fitness.php';
-$inner_page_title = 'Административная страничка';
-$main_menu = include_template('fitness-main-menu.php', [
-    'text_color_fitness' => $text_color_fitness]);
+$inner_page_title = 'Админ страничка';
+$admins_list = get_admins_list($link);
+$main_menu = include_template('main-menu.php', [
+    'title' => $title]);
 
-$page_element = include_template('adding-form.php', [
-    'text_color_fitness' => $text_color_fitness]);
+$page_element = include_template('admin.php', [
+    'admins_list' => $admins_list]);
 
 $page_content = include_template('inner-page.php', [
     'inner_page_title' => $inner_page_title,

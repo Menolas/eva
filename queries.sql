@@ -1,3 +1,8 @@
+INSERT INTO admins SET
+login = 'admin',
+email = 'olenakunina@gmail.com',
+password = '123456';
+
 INSERT INTO fitness_schedule SET
 title = 'Петли TRX (по записи)',
 instructor = 'Виктория Кравченко',

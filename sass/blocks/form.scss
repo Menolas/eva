@@ -1,0 +1,16 @@
+.form__title {
+	margin-bottom: 28px;
+	color: $green;
+}
+
+.form__input-wrap {
+	margin-bottom: 22px;
+}
+
+.form input,
+.form textarea {
+	padding: 8px 12px;
+	border: 1px solid $green;
+	border-radius: 4px;
+	background-color: $white;
+}

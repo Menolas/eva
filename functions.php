@@ -59,10 +59,93 @@ function include_template($name, $data) {
 }
 
 /**
- * Получить отзывы о йога студии из базы.
+ * Найти пользователя по id в базе данных.
  *
  * @param object $con Ссылка для подключения к базе данных *
- * @param string $request SQL запрос
+ * @param integer $id ID пользователя
+ *
+ * @return array|false
+ */
+function get_admin_by_id ($con, $id) {
+
+  $sql = "
+    SELECT * FROM admins WHERE id = $id;";
+  $admin = db_run_query($con, $sql);
+
+  if (count($admin)) {
+    return $admin[0];
+  } 
+  return false;
+}
+
+/**
+ * Добавить админа в базу данных.
+ *
+ * @param object $con Ссылка для подключения к базе данных
+ * @param string $email Емейл админа
+ * @param string $login Логин админа
+ * @param string $password Пароль админа
+ *
+ * @return object|false
+ */
+function db_insert_admin ($con, $email, $login, $password) {
+
+  $filtered_email = mysqli_real_escape_string($con, $email);
+  $filtered_login = mysqli_real_escape_string($con, $login);
+  $filtered_password = mysqli_real_escape_string($con, $password);
+  $sql = "
+    INSERT INTO admins SET
+    email = '$filtered_email',
+    login = '$filtered_login',
+    password = '$filtered_password';";
+  $res = mysqli_query($con, $sql);
+
+  if (!$res) {
+    $error = mysqli_error($con);
+    print("Ошибка MySQL" . $error);
+    die();
+  }
+  return $res;
+}
+
+/**
+ * Найти пользователя по логину в базе данных.
+ *
+ * @param object $con Ссылка для подключения к базе данных *
+ * @param string $login логин пользователя
+ *
+ * @return array|false
+ */
+function find_admin_by_login ($con, $login) {
+
+  $filtered_login = mysqli_real_escape_string($con, $login);
+  $sql = "
+    SELECT * FROM admins WHERE login = '$filtered_login';";
+  $admin = db_run_query($con, $sql);
+
+  if (count($admin)) {
+    return $admin[0];
+  } 
+  return false;
+}
+
+/**
+* Получить список всех админов
+* @param object $con Ссылка для подключения к базе данных
+*
+* @return array
+*/
+function get_admins_list ($con) {
+  $sql = "SELECT * FROM admins ORDER BY id ASC;";
+  $admins_list = db_run_query($con, $sql);
+  return $admins_list;
+}
+
+/**
+ * Получить отзывы о йога студии из базы.
+ *
+ * @param object $con Ссылка для подключения к базе данных
+ * @param string $branch одно из направлений по которому работает студия
  *
  * @return array
  */

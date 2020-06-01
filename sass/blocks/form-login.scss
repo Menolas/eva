@@ -1,0 +1,46 @@
+.form-login {
+	display: none;
+	position: absolute;
+	right: -16px;
+	bottom: -50px;
+	padding: 50px;
+	width: 200px;
+	background-color: $dark-background;
+	z-index: 10;
+}
+
+.form-login--shown {
+	display: block;
+}
+
+.form-login input {
+	margin-bottom: 15px;
+	width: 100%;
+	color: $white;
+	border: 1px solid $white;
+	background-color: $dark-background;
+}
+
+.form-login input[type="submit"] {
+	margin: 0 auto;
+	background-color: $white;
+	color: $black;
+	width: 60%;
+}
+
+.form-login__handler {
+	position: absolute;
+	right: 70px;
+	top: 25px;
+
+	&::before {
+		@include element-style(20px, 2px, $white);
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		@include element-style(20px, 2px, $white);
+		transform: rotate(-45deg);
+	}
+}
+
