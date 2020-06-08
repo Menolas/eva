@@ -145,6 +145,19 @@ function get_admins_list ($con) {
  * Получить отзывы о йога студии из базы.
  *
  * @param object $con Ссылка для подключения к базе данных
+ *
+ * @return array
+ */
+function get_all_reviews ($con) {
+  $sql = "SELECT * FROM reviews ORDER BY id ASC;";
+  $reviews = db_run_query($con, $sql);
+  return $reviews;
+}
+
+/**
+ * Получить отзывы о йога студии из базы.
+ *
+ * @param object $con Ссылка для подключения к базе данных
  * @param string $branch одно из направлений по которому работает студия
  *
  * @return array
@@ -262,6 +275,19 @@ function get_subscribtions($con) {
 
     $subscribtions = db_run_query($con, $sql);
     return $subscribtions;
+}
+
+/**
+ * Получить преподавателей йоги из базы.
+ *
+ * @param object $con Ссылка для подключения к базе данных
+ *
+ * @return array
+ */
+function get_all_instructors ($con) {
+    $sql = "SELECT * FROM instructors ORDER BY id ASC;";
+    $instructors = db_run_query($con, $sql);
+    return $instructors;
 }
 
 /**

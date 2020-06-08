@@ -11,17 +11,19 @@ $svg_fitness = 'svg-color';
 $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
-$logo_link = 'fitness.php';
+$logo_link = 'index.php';
+$logo_om_on_sun = 'logo__om-on-sun--shown';
 $inner_page_title = 'Наши преподаватели';
-$instructors = get_instructors($link, 'фитнес');
+$instructors = get_all_instructors($link);
 
 $logo = include_template('logo.php', [
     'logo_svg' => $logo_svg,
     'logo_name' => $logo_name,
     'logo_full_name' => $logo_full_name,
+    'logo_om_on_sun' => $logo_om_on_sun,
     'logo_link' => $logo_link]);
 
-$main_menu = include_template('fitness-main-menu.php', [
+$main_menu = include_template('main-menu.php', [
     'text_color_fitness' => $text_color_fitness]);
 
 $page_element = include_template('teachers.php', [

@@ -7,12 +7,19 @@ $header_background_color = 'main-header__block-wrap--yoga';
 $logo_svg = 'om';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
+$logo_link = '#';
 $reviews_array = get_reviews($link, 'йога');
 $reviews_list = [$reviews_array[0], $reviews_array[1]];
 $news_list = get_news($link);
 $subscribtions = get_subscribtions($link);
 $schedule_list = get_schedule($link);
 $branches_list = get_branches($link, 'йога');
+
+$logo = include_template('logo.php', [
+    'logo_svg' => $logo_svg,
+    'logo_name' => $logo_name,
+    'logo_full_name' => $logo_full_name,
+    'logo_link' => $logo_link]);
 
 $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);
@@ -44,9 +51,7 @@ $page_content = include_template('yoga-main-page.php', [
 $layout_content = include_template('layout.php', [
     'title' => $title,
     'header_background_color' => $header_background_color,
-    'logo_svg' => $logo_svg,
-    'logo_name' => $logo_name,
-    'logo_full_name' => $logo_full_name,
+    'logo' => $logo,
     'main_menu' => $main_menu,
     'page_content' => $page_content]);
 

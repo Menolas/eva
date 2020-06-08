@@ -3,6 +3,14 @@
 	padding-bottom: 0;
 }
 
+.schedule__inner {
+	padding: 0;
+}
+
+.schedule__common {
+	margin-bottom: 28px;
+}
+
 .schedule__title {
 	text-align: center;
 	font-weight: 500;
@@ -177,6 +185,14 @@
   	padding-bottom: 0;
   }
 
+  .schedule__common {
+	margin-bottom: 45px;
+  }
+
+  .schedule__inner {
+	padding: 0;
+  }
+
   .schedule__list {
    	grid-template-columns: auto auto auto;
 		grid-template-rows: auto auto;
@@ -234,6 +250,14 @@
 		padding-bottom: 0;
 	}
 
+	.schedule__common {
+		margin-bottom: 55px;
+	  }
+
+	.schedule__inner {
+		padding: 0;
+	}
+
 	.schedule__handler {
 		display: none;
 	}
@@ -266,6 +290,10 @@
 		padding-bottom: 0;
 	}
 
+	.schedule__inner {
+		padding: 0;
+	}
+
 	.schedule__list {
 		grid-column-gap: 45px;
 		grid-row-gap: 35px;
@@ -278,6 +306,10 @@
 	.schedule {
 		padding: 110px 50px;
 		padding-bottom: 0;
+	}
+
+	.schedule__inner {
+		padding: 0;
 	}
 
 	.schedule__list {

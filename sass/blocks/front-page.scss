@@ -53,11 +53,10 @@
 
 .front-page__title-secondary {
 	margin-bottom: 0;
-	color: $white;
 	font-size: 35px;
 	line-height: 1;
+	color: $white;
 	text-transform: uppercase;
-	opacity: 0.5;
 }
 
 .front-page__contacts,
@@ -122,7 +121,7 @@
 	height: 160px;
 	fill: $white;
 	transform: translate(-50%, -50%);
-	opacity: 0.58;
+	opacity: 0.78;
 	z-index: 0;
 }
 

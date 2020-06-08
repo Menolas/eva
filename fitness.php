@@ -11,11 +11,18 @@ $fitnes_schedule_style = 'fitness-schedule-titles-style';
 $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
+$logo_link = '#';
 $news_list = get_news($link);
 $branches_list = get_branches($link, 'фитнес');
 $subscribtions = get_subscribtions($link);
 $schedule_list = get_fitness_schedule($link);
 $reviews_list = get_reviews($link, 'фитнес');
+
+$logo = include_template('logo.php', [
+    'logo_svg' => $logo_svg,
+    'logo_name' => $logo_name,
+    'logo_full_name' => $logo_full_name,
+    'logo_link' => $logo_link]);
 
 $main_menu = include_template('fitness-main-menu.php', [
     'text_color_fitness' => $text_color_fitness]);
@@ -65,9 +72,7 @@ $layout_content = include_template('layout.php', [
     'title' => $title,
     'fitness_background_color' => $fitness_background_color,
     'text_color_fitness' => $text_color_fitness,
-    'logo_svg' => $logo_svg,
-    'logo_name' => $logo_name,
-    'logo_full_name' => $logo_full_name,
+    'logo' => $logo,
     'main_menu' => $main_menu,
     'page_content' => $page_content]);
 

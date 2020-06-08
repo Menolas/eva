@@ -5,7 +5,7 @@
 	</div>
 	<ul class="main-nav__list  main-nav__list--fitness">
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="index.php">Главная</a>
+			<a class="main-nav__link" href="common-news.php">Новости</a>
 		</li>
 		<li class="main-nav__item">
 			<a class="main-nav__link" href="yoga.php">Йога</a>
@@ -14,13 +14,16 @@
 			<a class="main-nav__link" href="fitness.php">Фитнес</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="fitness-news.php">Новости</a>
+			<a class="main-nav__link" href="common-teachers.php">Преподаватели</a>
+		</li>
+		<li class="main-nav__item">
+			<a class="main-nav__link" href="common-schedule.php">Расписание</a>
 		</li>
 		<li class="main-nav__item">
 			<a class="main-nav__link" href="fitness-contacts.php">Контакты</a>
 		</li>
 		<li class="main-nav__item">
-			<a class="main-nav__link" href="fitness-reviews.php">Отзывы</a>
+			<a class="main-nav__link" href="common-reviews.php">Отзывы</a>
 		</li>
 	</ul>
 </nav>

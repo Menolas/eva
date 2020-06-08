@@ -13,7 +13,7 @@
 			<div class="front-page">
 				<h1 class="front-page__title  title">Спарта</h1>
 				<a class="front-page__link  front-page__link--yoga" href="yoga.php">
-				  <h2 class="front-page__title-secondary  title__secondary">Йога</h2>
+				  <h2 class="front-page__title-secondary  front-page__title-secondary--yoga  title__secondary">Йога</h2>
 				</a>
 				<div class="front-page__contacts">
 					<a class="front-page__link  front-page__link--contacts" href="contacts.php">
@@ -39,7 +39,7 @@
 					<use xlink:href="img/svg/svg-sprite.svg#sun"></use>
 				</svg>
 				<a class="front-page__link  front-page__link--fitness" href="fitness.php">
-				  <h2 class="front-page__title-secondary  title__secondary">Фитнес</h2>
+				  <h2 class="front-page__title-secondary  front-page__title-secondary--fitness  title__secondary">Фитнес</h2>
 				</a>
 			</div>
 		</div>

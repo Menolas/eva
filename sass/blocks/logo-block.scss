@@ -19,21 +19,35 @@
 	display: none;
 }
 
-.logo-block svg {
-	width: 39px;
-	height: 40px;
+.logo__svg {
+	position: relative;
+}
+
+.logo__main-img {
+	width: 55px;
+	height: 56px;
 	fill: $white;
+}
+
+.logo__om-on-sun {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 23px;
+	height: 20px;
+	fill: $violet;
+	transform: translate(-53%, -70%);
+}
+
+.logo__om-on-sun--shown {
+	display: block;
 }
 
 @media (min-width: 768px) {
 	.logo-block__name {
 		margin-left: 8px;
 		font-size: 28px;
-	}
-
-	.logo-block svg {
-		width: 48px;
-		height: 50px;
 	}
 }
 

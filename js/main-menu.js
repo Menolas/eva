@@ -28,6 +28,8 @@ menuBlock.addEventListener('click', function (evt) {
 	}
 });
 
-branchesButton.addEventListener('click', function () {
-	branchesMenu.classList.toggle('sub-menu--shown');
-});
+if (branchesButton) {
+	branchesButton.addEventListener('click', function () {
+		branchesMenu.classList.toggle('sub-menu--shown');
+	});
+};

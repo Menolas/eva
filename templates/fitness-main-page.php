@@ -43,7 +43,7 @@
 	<section class="schedule">
 		<h2 class="schedule__title  title__secondary  <?=$text_color_fitness; ?>">Расписание занятий</h2>
 		<div class="schedule__handler  <?=$fitness_background_color; ?>"></div>
-	    <?=$schedule; ?>
+		<?=$schedule; ?>
 	</section>
 	<section class="reviews">
 		<h2 class="reviews__title  title__secondary">Отзывы</h2>

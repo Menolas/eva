@@ -13,6 +13,13 @@ $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $logo_link = 'fitness.php';
 $inner_page_title = 'Контакты';
+
+$logo = include_template('logo.php', [
+    'logo_svg' => $logo_svg,
+    'logo_name' => $logo_name,
+    'logo_full_name' => $logo_full_name,
+    'logo_link' => $logo_link]);
+
 $main_menu = include_template('main-menu.php', [
     'text_color_fitness' => $text_color_fitness]);
 
@@ -29,10 +36,7 @@ $layout_content = include_template('layout.php', [
     'border_color_fitness' => $border_color_fitness,
     'pseudo_element_fitness' => $pseudo_element_fitness,
     'title' => $title,
-    'logo_svg' => $logo_svg,
-    'logo_name' => $logo_name,
-    'logo_full_name' => $logo_full_name,
-    'logo_link' => $logo_link,
+    'logo' => $logo,
     'main_menu' => $main_menu,
     'page_content' => $page_content]);
 
