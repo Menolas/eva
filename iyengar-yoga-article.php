@@ -7,7 +7,7 @@ $logo_svg = 'om';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
-$yoga_svg = 'yoga-svg';
+$yoga_svg = 'yoga-colors__svg';
 $inner_page_title = 'Йога Айенгара';
 
 $logo = include_template('logo.php', [

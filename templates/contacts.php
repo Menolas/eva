@@ -2,13 +2,13 @@
 
 <section class="contact">
 	<h2 class="contact__title  title__secondary">Всегда на связи</h2>
-	<div class="contact__container  <?=$text_color_fitness; ?>">
+	<div class="contact__container  <?=$text_color; ?>">
 		<p  class="contact__address">
 			Адрес: пр.Центральный, 6а<br>
-		    54030, г.Николаев</p>
-		<p class="contact__phone  <?=$text_color_fitness; ?>">Тел: +38(068) 813 9054</p>
-		<p class="contact__phone  <?=$text_color_fitness; ?>">Тел: +38(063) 762 8515</p>
-		<p class="contact__email  <?=$text_color_fitness; ?>">email: om.shanti.niko@gmail.com</p>
+		    54030, г.Николаев</p><br>
+		<p class="contact__phone">Тел: +38(068) 813 9054</p><br>
+		<p class="contact__phone">Тел: +38(063) 762 8515</p><br>
+		<p class="contact__email">email: om.shanti.niko@gmail.com</p>
 	</div>
 </section>
 <section class="short-schedule">

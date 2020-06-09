@@ -3,12 +3,11 @@
 }
 
 .main-contact__greeting {
-  display: block;
-	margin-bottom: 15px;
-	text-align: center;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 28px;
+   display: block;
+   margin-bottom: 35px;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 28px;
 }
 
 .main-contact .contact,
@@ -43,5 +42,22 @@
 @media (min-width: 768px) {
 	.main-contact {
 		padding: $block-padding-tablet;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.main-contact__greeting {
+		margin-bottom: 56px;
+	}
+}
+
+@media (min-width: 1440px) {
+
+	.main-contact__greeting {
+		margin: 0 auto;
+		margin-bottom: 65px;
+		width: 70%;
+	    text-align: center;
 	}
 }

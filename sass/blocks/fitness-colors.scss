@@ -1,26 +1,27 @@
-.background-fitness {
+.fitness-colors__background {
 	background-color: $violet;
 }
 
-.text-color-fitness {
+.fitness-colors__text {
 	color: $violet;
 }
 
-.border-color-fitness {
+.fitness-colors__border {
 	border-color: $violet;
 }
 
-.pseudo-element-fitness::before,
-.pseudo-element-fitness::after {
-    background-color: $violet;
+.fitness-colors__pseudo-element::before,
+.fitness-colors__pseudo-element::after {
+	background-color: $violet;
 }
 
-.svg-color svg {
+.fitness-colors__svg svg {
 	fill: $violet;
 }
 
 @media (min-width: 1024px) {
-	.fitness-schedule-titles-style {
+
+	.fitness-colors__schedule-titles-style {
 		color: $white;
 		background-color: $violet;
 	}

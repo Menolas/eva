@@ -2,7 +2,7 @@
 	<?php foreach ($instructors as $instructor): ?>
 		<li class="teachers-list__item  <?=$border_color_fitness; ?>">
 	        <article class="teachers-list__article">
-	        	<h2 class="teachers-list__article-title  title__secondary  <?=$text_color_fitness; ?>">
+	        	<h2 class="teachers-list__article-title  title__secondary  <?=$text_color; ?>">
 	        		<?=$instructor['name']; ?>
 	        	</h2>
 	        	<div class="teachers-list__social-block  social-block">

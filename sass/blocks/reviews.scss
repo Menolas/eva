@@ -89,6 +89,11 @@
     width: 904px;
   }
 
+  .reviews__inner-page-list {
+  	flex-direction: column;
+  	width: 100%;
+  }
+
   .reviews__item {
   	margin: 0;
   	margin-right: 60px;
@@ -98,6 +103,16 @@
 
   	&:last-of-type {
   		margin-right: 0;
+  	}
+  }
+
+  .reviews__inner-page-list .reviews__item {
+  	margin-right: 0;
+  	margin-bottom: 42px;
+  	width: 100%;
+
+  	&:last-of-type {
+  		margin-bottom: 0;
   	}
   }
 

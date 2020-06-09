@@ -214,6 +214,26 @@ function get_news_element ($con, $id) {
 }
 
 /**
+ * Найти новость по id в базе данных.
+ *
+ * @param object $con Ссылка для подключения к базе данных *
+ * @param integer $id ID новости
+ *
+ * @return array|false
+ */
+function get_news_by_id ($con, $id) {
+
+  $sql = "
+    SELECT * FROM news WHERE id = $id;";
+  $news_element = db_run_query($con, $sql);
+
+  if (count($news_element)) {
+    return $news_element[0];
+  } 
+  return false;
+}
+
+/**
  * Получить расписание тренировок по йоге из базы.
  *
  * @param object $con Ссылка для подключения к базе данных *

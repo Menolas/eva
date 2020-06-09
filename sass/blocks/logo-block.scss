@@ -65,8 +65,26 @@
 		font-size: 50px;
 	}
 
-  .logo-block svg {
+	.logo__main-img {
 		width: 80px;
 		height: 83px;
-  }
+	}
+
+	.logo__om-on-sun {
+		width: 32px;
+	    height: 30px;
+	}
+}
+
+@media (min-width: 1880px) {
+    
+    .logo__main-img {
+		width: 100px;
+		height: 103px;
+	}
+
+	.logo__om-on-sun {
+		width: 45px;
+	    height: 43px;
+	}
 }

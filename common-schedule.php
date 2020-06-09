@@ -3,12 +3,12 @@
 require('init.php');
 
 $title = '"Спарта" - студия фитнеса';
-$fitness_background_color = 'background-fitness';
-$text_color_fitness = 'text-color-fitness';
-$border_color_fitness = 'border-color-fitness';
-$pseudo_element_fitness = 'pseudo-element-fitness';
-$fitnes_schedule_style = 'fitness-schedule-titles-style';
-$svg_fitness = 'svg-color';
+$fitness_background_color = 'fitness-colors__background';
+$text_color = 'fitness-colors__text';
+$border_color_fitness = 'fitness-colors__border';
+$pseudo_element_fitness = 'fitness-colors__pseudo-element';
+$fitnes_schedule_style = 'fitness-colors__schedule-titles-style';
+$svg_fitness = 'fitness-colors__svg';
 $logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
@@ -28,7 +28,7 @@ $schedule_list = get_fitness_schedule($link);
 
 $schedule_fitness = include_template('schedule.php', [
     'fitness_background_color' => $fitness_background_color,
-    'text_color_fitness' => $text_color_fitness,
+    'text_color' => $text_color,
     'border_color_fitness' => $border_color_fitness,
     'pseudo_element_fitness' => $pseudo_element_fitness,
     'fitnes_schedule_style' => $fitnes_schedule_style,
@@ -60,9 +60,6 @@ $page_content = include_template('inner-page.php', [
 $layout_content = include_template('layout.php', [
     'title' => $title,
     'fitness_background_color' => $fitness_background_color,
-    'text_color_fitness' => $text_color_fitness,
-    'border_color_fitness' => $border_color_fitness,
-    'pseudo_element_fitness' => $pseudo_element_fitness,
     'logo' => $logo,
     'logo_name' => $logo_name,
     'main_menu' => $main_menu,

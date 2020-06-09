@@ -17,6 +17,15 @@
 	fill: $white;
 }
 
+.main-footer__contact {
+	width: 215px;
+}
+
+.main-footer__contact .contact__title,
+.main-footer .short-schedule__title {
+	color: $white;
+}
+
 @media (min-width: 768px) {
 	.main-footer {
     display: grid;
