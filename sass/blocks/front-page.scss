@@ -113,16 +113,28 @@
 	fill: $violet;
 }
 
-.front-page__decor--sun {
+.front-page__logo {
 	position: absolute;
-	top: 180px;
-	left: 65%;
+	top: 20%;
+	left: 40%;
+	width: 160px;
+	height: 160px;
+}
+
+.front-page__decor--sun {
 	width: 160px;
 	height: 160px;
 	fill: $white;
-	transform: translate(-50%, -50%);
 	opacity: 0.78;
-	z-index: 0;
+}
+
+.front-page__decor--om {
+	position: absolute;
+    top: 48%;
+    left: 50%;
+    width: 63px;
+    height: 63px;
+    transform: translate(-50%, -50%);
 }
 
 @media (min-width: 375px) {
@@ -133,10 +145,20 @@
 		background-image: url('../img/front-background-mobile-wide.jpg');
 	}
 
+	.front-page__logo {
+		top: 23%;
+        width: 200px;
+        height: 200px;
+	}
+
 	.front-page__decor--sun {
-		top: 250px;
 		width: 200px;
 	    height: 200px;
+	}
+
+	.front-page__decor--om {
+		width: 80px;
+		height: 80px;
 	}
 
 	.front-page__link--yoga {
@@ -160,8 +182,21 @@
 		background-image: url('../img/front-background-tablet.jpg');
 	}
 
+	.front-page__logo {
+		left: 35%;
+		top: 27%;
+		width: 220px;
+		height: 220px;
+	}
+
 	.front-page__decor--sun {
-		left: 50%;
+		width: 220px;
+		height: 220px;
+	}
+
+	.front-page__decor--om {
+		width: 85px;
+		height: 85px;
 	}
 
 	.front-page__title {
@@ -285,9 +320,20 @@
 		height: 220px;
 	}
 
-	.front-page__decor--sun {
-		top: 50%;
+	.front-page__logo {
+		left: 35%;
+		top: 27%;
 		width: 300px;
 		height: 300px;
+	}
+
+	.front-page__decor--sun {
+		width: 300px;
+		height: 300px;
+	}
+
+	.front-page__decor--om {
+		width: 112px;
+		height: 112px;
 	}
 }

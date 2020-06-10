@@ -1,10 +1,10 @@
 <div class="main-header__logo  logo-block">
 	<a class="logo-block__link" href="<?=$logo_link; ?>">
-		<div class="logo__svg">
-			<svg class="logo__main-img">
+		<div class="logo-block__svg">
+			<svg class="logo-block__main-img">
 				<use xlink:href="img/svg/svg-sprite.svg#<?=$logo_svg; ?>"></use>
 			</svg>
-			<svg class="logo__om-on-sun <?=$logo_om_on_sun; ?>">
+			<svg class="logo-block__om">
 				<use xlink:href="img/svg/svg-sprite.svg#om"></use>
 			</svg>
 		</div>

@@ -19,18 +19,17 @@
 	display: none;
 }
 
-.logo__svg {
+.logo-block__svg {
 	position: relative;
 }
 
-.logo__main-img {
+.logo-block__main-img {
 	width: 55px;
 	height: 56px;
 	fill: $white;
 }
 
-.logo__om-on-sun {
-	display: none;
+.logo-block__om {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -65,12 +64,12 @@
 		font-size: 50px;
 	}
 
-	.logo__main-img {
+	.logo-block__main-img {
 		width: 80px;
 		height: 83px;
 	}
 
-	.logo__om-on-sun {
+	.logo-block__om {
 		width: 32px;
 	    height: 30px;
 	}
@@ -78,12 +77,12 @@
 
 @media (min-width: 1880px) {
     
-    .logo__main-img {
+    .logo-block__main-img {
 		width: 100px;
 		height: 103px;
 	}
 
-	.logo__om-on-sun {
+	.logo-block__om {
 		width: 45px;
 	    height: 43px;
 	}

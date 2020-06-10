@@ -35,9 +35,14 @@
 						</svg>
 					</a>
 				</div>
-				<svg class="front-page__decor  front-page__decor--sun">
-					<use xlink:href="img/svg/svg-sprite.svg#sun"></use>
-				</svg>
+				<div class="front-page__logo">
+					<svg class="front-page__decor  front-page__decor--sun">
+						<use xlink:href="img/svg/svg-sprite.svg#sun"></use>
+					</svg>
+					<svg class="front-page__decor  front-page__decor--om">
+						<use xlink:href="img/svg/svg-sprite.svg#om"></use>
+					</svg>
+				</div>
 				<a class="front-page__link  front-page__link--fitness" href="fitness.php">
 				  <h2 class="front-page__title-secondary  front-page__title-secondary--fitness  title__secondary">Фитнес</h2>
 				</a>

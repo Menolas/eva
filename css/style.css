@@ -164,16 +164,15 @@ textarea {
 .logo-block__description {
   display: none; }
 
-.logo__svg {
+.logo-block__svg {
   position: relative; }
 
-.logo__main-img {
+.logo-block__main-img {
   width: 55px;
   height: 56px;
   fill: #ffffff; }
 
-.logo__om-on-sun {
-  display: none;
+.logo-block__om {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -199,18 +198,18 @@ textarea {
   .logo-block__name {
     margin-left: 12px;
     font-size: 50px; }
-  .logo__main-img {
+  .logo-block__main-img {
     width: 80px;
     height: 83px; }
-  .logo__om-on-sun {
+  .logo-block__om {
     width: 32px;
     height: 30px; } }
 
 @media (min-width: 1880px) {
-  .logo__main-img {
+  .logo-block__main-img {
     width: 100px;
     height: 103px; }
-  .logo__om-on-sun {
+  .logo-block__om {
     width: 45px;
     height: 43px; } }
 
@@ -2303,17 +2302,27 @@ textarea {
 .front-page__decor {
   fill: #6f148c; }
 
-.front-page__decor--sun {
+.front-page__logo {
   position: absolute;
-  top: 180px;
-  left: 65%;
+  top: 20%;
+  left: 40%;
+  width: 160px;
+  height: 160px; }
+
+.front-page__decor--sun {
   width: 160px;
   height: 160px;
   fill: #ffffff;
+  opacity: 0.78; }
+
+.front-page__decor--om {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: 63px;
+  height: 63px;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0.78;
-  z-index: 0; }
+          transform: translate(-50%, -50%); }
 
 @media (min-width: 375px) {
   .front-page {
@@ -2321,10 +2330,16 @@ textarea {
     width: 325px;
     height: 550px;
     background-image: url("../img/front-background-mobile-wide.jpg"); }
-  .front-page__decor--sun {
-    top: 250px;
+  .front-page__logo {
+    top: 23%;
     width: 200px;
     height: 200px; }
+  .front-page__decor--sun {
+    width: 200px;
+    height: 200px; }
+  .front-page__decor--om {
+    width: 80px;
+    height: 80px; }
   .front-page__link--yoga {
     margin-top: 70px; }
   .front-page__contacts {
@@ -2340,8 +2355,17 @@ textarea {
     width: 688px;
     height: 408px;
     background-image: url("../img/front-background-tablet.jpg"); }
+  .front-page__logo {
+    left: 35%;
+    top: 27%;
+    width: 220px;
+    height: 220px; }
   .front-page__decor--sun {
-    left: 50%; }
+    width: 220px;
+    height: 220px; }
+  .front-page__decor--om {
+    width: 85px;
+    height: 85px; }
   .front-page__title {
     font-size: 60px; }
   .front-page__title-secondary {
@@ -2424,10 +2448,17 @@ textarea {
   .front-page__decor--clock {
     width: 220px;
     height: 220px; }
-  .front-page__decor--sun {
-    top: 50%;
+  .front-page__logo {
+    left: 35%;
+    top: 27%;
     width: 300px;
-    height: 300px; } }
+    height: 300px; }
+  .front-page__decor--sun {
+    width: 300px;
+    height: 300px; }
+  .front-page__decor--om {
+    width: 112px;
+    height: 112px; } }
 
 .form-login {
   display: none;
