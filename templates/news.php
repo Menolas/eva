@@ -1,6 +1,6 @@
 <ul class="news__list">
 	<?php foreach ($news_list as $news_element): ?>
-		<li class="news__item  <?=$border_color_fitness; ?>">
+		<li class="news__item  <?=$border_color; ?>">
 			<article class="news__article">
 				<div class="news__picture"><img src="img/<?=$news_element['image'];?>-mobile.jpg" alt="Иллюстрация новости"></div>
 				<a class="news__article-link" href="news-element.php?id=<?=$news_element['id'];?>">

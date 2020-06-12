@@ -15,7 +15,7 @@
 	<section class="news">
 		<h2 class="news__title  title__secondary">Наши события</h2>
 		<?=$news; ?>
-		<a class="news__btn  btn  <?=$fitness_background_color; ?>" href="yoga-news.php">Читать все новости</a>
+		<a class="news__btn  btn  <?=$background_color; ?>" href="yoga-news.php">Читать все новости</a>
 	</section>
 	<section class="branches">
 		<h2 class="branches__title  title__secondary">Направления</h2>
@@ -37,18 +37,18 @@
 		<p class="teachers__text">
 			Наши преподаватели люди с разными судьбами, стилем жизни и образованием, но всех их объединяет одно - они очень любят свою работу, так что вы обязательно попадете к профессионалам своего дела, которые будут вас поддерживать и направлять.
 		</p>
-		<a class="teachers__btn  btn  <?=$fitness_background_color; ?>" href="fitness-teachers.php">Посмотреть всех )</a>
+		<a class="teachers__btn  btn  <?=$background_color; ?>" href="fitness-teachers.php">Посмотреть всех )</a>
 	</section>
 	<?=$subscribing; ?>
 	<section class="schedule">
 		<h2 class="schedule__title  title__secondary  <?=$text_color; ?>">Расписание занятий</h2>
-		<div class="schedule__handler  <?=$fitness_background_color; ?>"></div>
+		<div class="schedule__handler  <?=$background_color; ?>"></div>
 		<?=$schedule; ?>
 	</section>
 	<section class="reviews">
 		<h2 class="reviews__title  title__secondary">Отзывы</h2>
 	    <?=$reviews; ?>
-	    <a class="reviews__btn  btn  <?=$fitness_background_color; ?>" href="fitness-reviews.php">Прочитать все отзывы</a>
+	    <a class="reviews__btn  btn  <?=$background_color; ?>" href="fitness-reviews.php">Прочитать все отзывы</a>
 	</section>
 </main>
 <script src="js/schedule.js"></script>

@@ -1,10 +1,59 @@
 .article__illustration {
 	margin-bottom: 21px;
+	display: flex;
+}
+
+.article__illustration picture {
+	margin: 0 auto;
 }
 
 .article__secondary-title {
 	margin-top: 15px;
 	margin-bottom: 20px;
+}
+
+.article__text p {
+	margin-bottom: 12px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.article__mini-header {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.article__list {
+	@include list-style;
+	margin-top: 16px;
+	margin-bottom: 22px;
+	padding-left: 28px;
+}
+
+.article__list-item {
+	position: relative;
+	margin-bottom: 12px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&::before {
+		@include element-style(8px, 8px, $green);
+		top: 6px;
+		left: -18px;
+		border-radius: 50%;
+	}
+}
+
+.article__list--pilates .article__list-item,
+.article__list--hatha .article__list-item {
+
+	&::before {
+		display: none;
+	}
 }
 
 @media (min-width: 768px) {
@@ -16,7 +65,10 @@
 	.article__secondary-title {
 		margin-top: 18px;
 		margin-bottom: 24px;
-		
+	}
+
+	.article__mini-header {
+		font-size: 18px;
 	}
 }
 

@@ -4,10 +4,10 @@ require('init.php');
 
 $title = '"Ом Шанти" - студия йоги';
 $header_background_color = 'main-header__block-wrap--yoga';
-$logo_svg = 'om';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = '#';
+$svg_color = 'yoga-colors__svg';
 $reviews_array = get_reviews($link, 'йога');
 $reviews_list = [$reviews_array[0], $reviews_array[1]];
 $news_array = get_news($link);
@@ -19,10 +19,10 @@ $schedule_list = get_schedule($link);
 $branches_list = get_branches($link, 'йога');
 
 $logo = include_template('logo.php', [
-    'logo_svg' => $logo_svg,
     'logo_name' => $logo_name,
     'logo_full_name' => $logo_full_name,
-    'logo_link' => $logo_link]);
+    'logo_link' => $logo_link,
+    'svg_color' => $svg_color]);
 
 $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);

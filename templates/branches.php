@@ -16,7 +16,7 @@
 				</div>
 				<div class="branches__article-text">
 					<p><?=$branches_element['description'];?></p>
-					<a class="branches__link-bottom  <?=$text_color; ?>  <?=$pseudo_element_fitness; ?>"
+					<a class="branches__link-bottom  <?=$text_color; ?>  <?=$pseudo_element; ?>"
 					 href="<?=$branches_element['article_link'];?>.php">Прочитать поподробнее</a>
 				</div>
 			</article>

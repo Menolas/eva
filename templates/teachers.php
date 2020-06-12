@@ -1,6 +1,6 @@
 <ul class="teachers-list">
 	<?php foreach ($instructors as $instructor): ?>
-		<li class="teachers-list__item  <?=$border_color_fitness; ?>">
+		<li class="teachers-list__item  <?=$border_color; ?>">
 	        <article class="teachers-list__article">
 	        	<h2 class="teachers-list__article-title  title__secondary  <?=$text_color; ?>">
 	        		<?=$instructor['name']; ?>
@@ -8,13 +8,13 @@
 	        	<div class="teachers-list__social-block  social-block">
 					<ul class="social-block__list">
 						<li class="social-block__item">
-							<a class="social-block__link  <?=$svg_fitness; ?> <?=$yoga_svg; ?>" href="<?=$instructor['fb_link']; ?>">
+							<a class="social-block__link  <?=$svg_fitness; ?> <?=$svg_color; ?>" href="<?=$instructor['fb_link']; ?>">
 								<svg class="<?=$svg_fitness; ?>"><use xlink:href="img/svg/svg-sprite.svg#facebook"></use></svg>
 								Ссылка на профиль в Фейсбуке
 							</a>
 						</li>
 						<li class="social-block__item">
-							<a class="social-block__link  <?=$svg_fitness; ?> <?=$yoga_svg; ?>" href="<?=$instructor['inst_link']; ?>">
+							<a class="social-block__link  <?=$svg_fitness; ?> <?=$svg_color; ?>" href="<?=$instructor['inst_link']; ?>">
 								<svg><use xlink:href="img/svg/svg-sprite.svg#instagram"></use></svg>
 								Ссылка на профиль в Инстаграме
 							</a>

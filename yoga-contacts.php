@@ -2,20 +2,19 @@
 
 require('init.php');
 
-$title = '"Ом Шанти" - студия йоги';
-$logo_svg = 'om';
+$title = '"Ом Шанти" - Наши контакты';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
-$yoga_svg = 'yoga-colors__svg';
+$svg_color = 'yoga-colors__svg';
 $text_color = 'yoga-colors__text';
 $inner_page_title = 'Контакты';
 
 $logo = include_template('logo.php', [
-    'logo_svg' => $logo_svg,
     'logo_name' => $logo_name,
     'logo_full_name' => $logo_full_name,
-    'logo_link' => $logo_link]);
+    'logo_link' => $logo_link,
+    'svg_color' => $svg_color]);
 
 $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);

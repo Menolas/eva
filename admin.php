@@ -3,16 +3,17 @@
 require('init.php');
 
 $title = '"Спарта" - админ';
-$logo_svg = 'sun';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $logo_link = 'fitness.php';
+$svg_color = 'fitness-colors__svg';
 $inner_page_title = 'Админ страничка';
+
 $logo = include_template('logo.php', [
-    'logo_svg' => $logo_svg,
     'logo_name' => $logo_name,
     'logo_full_name' => $logo_full_name,
-    'logo_link' => $logo_link]);
+    'logo_link' => $logo_link,
+    'svg_color' => $svg_color]);
 
 $admins_list = get_admins_list($link);
 $main_menu = include_template('main-menu.php', [

@@ -1,6 +1,6 @@
 <ul class="reviews__list">
 	<?php foreach ($reviews_list as $reviews_element): ?>
-		<li class="reviews__item  <?=$border_color_fitness; ?>">
+		<li class="reviews__item  <?=$border_color; ?>">
 			<div class="reviews__item-personal-block">
 				<div class="reviews__reviewer-potret">
 					<picture>

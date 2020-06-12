@@ -150,6 +150,8 @@
 		grid-column-end: -1;
 		grid-row-start: 1;
 		grid-row-end: 1;
+		justify-self: left;
+		align-self: center;
 	}
 
 	.teachers-list__social-block .social-block__list {
@@ -158,7 +160,19 @@
 
 	.teachers-list__social-block .social-block__item {
 		margin-bottom: 0;
-		margin-right: 35px;
+		margin-right: 12px;
+		width: 28px;
+		height: 28px;
+	}
+
+	.teachers-list__social-block .social-block__link {
+		width: 28px;
+		height: 28px;
+	}
+
+	.teachers-list__social-block svg {
+		width: 28px;
+		height: 28px;
 	}
 
 	.teachers-list__article-picture {

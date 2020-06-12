@@ -19,3 +19,25 @@
 	height: 35px;
 	fill: $white;
 }
+
+@media (min-width: 768px) {
+
+	.admin-block {
+		right: 60px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.admin-block {
+		right: 110px;
+		bottom: 70px;
+	}
+}
+
+@media (min-width: 1440px) {
+
+	.admin-block {
+		bottom: 80px;
+	}
+}

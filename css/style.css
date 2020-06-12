@@ -178,7 +178,6 @@ textarea {
   left: 50%;
   width: 23px;
   height: 20px;
-  fill: #6f148c;
   -webkit-transform: translate(-53%, -70%);
           transform: translate(-53%, -70%); }
 
@@ -1324,6 +1323,9 @@ textarea {
       margin-top: 28px;
       margin-bottom: 0; } }
 
+.subscribing-inner-page .subscribing {
+  background-color: transparent; }
+
 .schedule {
   padding: 50px 16px;
   padding-bottom: 0; }
@@ -2132,7 +2134,9 @@ textarea {
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 1;
-    grid-row-end: 1; }
+    grid-row-end: 1;
+    justify-self: left;
+    align-self: center; }
   .teachers-list__social-block .social-block__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2140,7 +2144,15 @@ textarea {
             flex-direction: row; }
   .teachers-list__social-block .social-block__item {
     margin-bottom: 0;
-    margin-right: 35px; }
+    margin-right: 12px;
+    width: 28px;
+    height: 28px; }
+  .teachers-list__social-block .social-block__link {
+    width: 28px;
+    height: 28px; }
+  .teachers-list__social-block svg {
+    width: 28px;
+    height: 28px; }
   .teachers-list__article-picture {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -2165,18 +2177,63 @@ textarea {
   margin-right: 0; }
 
 .article__illustration {
-  margin-bottom: 21px; }
+  margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.article__illustration picture {
+  margin: 0 auto; }
 
 .article__secondary-title {
   margin-top: 15px;
   margin-bottom: 20px; }
+
+.article__text p {
+  margin-bottom: 12px; }
+  .article__text p:last-of-type {
+    margin-bottom: 0; }
+
+.article__mini-header {
+  font-weight: 600;
+  font-size: 16px; }
+
+.article__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 16px;
+  margin-bottom: 22px;
+  padding-left: 28px; }
+
+.article__list-item {
+  position: relative;
+  margin-bottom: 12px; }
+  .article__list-item:last-of-type {
+    margin-bottom: 0; }
+  .article__list-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #19744C;
+    top: 6px;
+    left: -18px;
+    border-radius: 50%; }
+
+.article__list--pilates .article__list-item::before,
+.article__list--hatha .article__list-item::before {
+  display: none; }
 
 @media (min-width: 768px) {
   .article__illustration {
     margin-bottom: 28px; }
   .article__secondary-title {
     margin-top: 18px;
-    margin-bottom: 24px; } }
+    margin-bottom: 24px; }
+  .article__mini-header {
+    font-size: 18px; } }
 
 @media (min-width: 1024px) {
   .article__illustration {
@@ -2528,11 +2585,37 @@ textarea {
   height: 35px;
   fill: #ffffff; }
 
+@media (min-width: 768px) {
+  .admin-block {
+    right: 60px; } }
+
+@media (min-width: 1024px) {
+  .admin-block {
+    right: 110px;
+    bottom: 70px; } }
+
+@media (min-width: 1440px) {
+  .admin-block {
+    bottom: 80px; } }
+
+.yoga-colors__svg {
+  fill: #19744C; }
+
 .yoga-colors__svg svg {
   fill: #19744C; }
 
 .yoga-colors__text {
   color: #19744C; }
+
+.yoga-colors__background {
+  background-color: #19744C; }
+
+.yoga-colors__border {
+  border-color: #19744C; }
+
+.yoga-colors__pseudo-element::before,
+.yoga-colors__pseudo-element::after {
+  background-color: #19744C; }
 
 .fitness-colors__background {
   background-color: #6f148c; }
@@ -2546,6 +2629,9 @@ textarea {
 .fitness-colors__pseudo-element::before,
 .fitness-colors__pseudo-element::after {
   background-color: #6f148c; }
+
+.fitness-colors__svg {
+  fill: #6f148c; }
 
 .fitness-colors__svg svg {
   fill: #6f148c; }

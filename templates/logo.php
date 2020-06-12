@@ -2,9 +2,9 @@
 	<a class="logo-block__link" href="<?=$logo_link; ?>">
 		<div class="logo-block__svg">
 			<svg class="logo-block__main-img">
-				<use xlink:href="img/svg/svg-sprite.svg#<?=$logo_svg; ?>"></use>
+				<use xlink:href="img/svg/svg-sprite.svg#sun"></use>
 			</svg>
-			<svg class="logo-block__om">
+			<svg class="logo-block__om  <?=$svg_color; ?>">
 				<use xlink:href="img/svg/svg-sprite.svg#om"></use>
 			</svg>
 		</div>

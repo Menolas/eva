@@ -2,23 +2,20 @@
 
 require('init.php');
 
-$title = '"Спарта" - студия фитнеса';
-$fitness_background_color = 'fitness-colors__background';
+$title = 'Клуб "Спарта" - наши контакты';
+$background_color = 'fitness-colors__background';
 $text_color = 'fitness-colors__text';
-$border_color_fitness = 'fitness-colors__border';
-$pseudo_element_fitness = 'fitness-colors__pseudo-element';
-$svg_fitness = 'fitness-colors__svg';
-$logo_svg = 'sun';
+$svg_color = 'fitness-colors__svg';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $logo_link = 'fitness.php';
 $inner_page_title = 'Контакты';
 
 $logo = include_template('logo.php', [
-    'logo_svg' => $logo_svg,
     'logo_name' => $logo_name,
     'logo_full_name' => $logo_full_name,
-    'logo_link' => $logo_link]);
+    'logo_link' => $logo_link,
+    'svg_color' => $svg_color]);
 
 $main_menu = include_template('fitness-main-menu.php', [
     'text_color' => $text_color]);
@@ -31,7 +28,7 @@ $page_content = include_template('inner-page.php', [
     'page_element' => $page_element]);
 
 $layout_content = include_template('layout.php', [
-    'fitness_background_color' => $fitness_background_color,
+    'background_color' => $background_color,
     'title' => $title,
     'logo' => $logo,
     'main_menu' => $main_menu,

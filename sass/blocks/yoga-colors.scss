@@ -1,3 +1,7 @@
+.yoga-colors__svg {
+	fill: $green;
+}
+
 .yoga-colors__svg svg {
 	fill: $green;
 }
@@ -6,4 +10,15 @@
 	color: $green;
 }
 
+.yoga-colors__background {
+	background-color: $green;
+}
 
+.yoga-colors__border {
+	border-color: $green;
+}
+
+.yoga-colors__pseudo-element::before,
+.yoga-colors__pseudo-element::after {
+	background-color: $green;
+}
