@@ -2266,6 +2266,12 @@ textarea {
   background-image: url("../img/front-background-mobile.jpg");
   background-repeat: no-repeat; }
 
+.front-page--yoga-active {
+  background-image: url("../img/front-background-mobile-yoga.jpg"); }
+
+.front-page--fitness-active {
+  background-image: url("../img/front-background-mobile-fitness.jpg"); }
+
 .front-page__title {
   grid-column-start: 1;
   grid-column-end: -1;
@@ -2292,6 +2298,9 @@ textarea {
   margin-top: 45px;
   z-index: 5; }
 
+.front-page__link--yoga:hover {
+  opacity: 0.6; }
+
 .front-page__link--fitness {
   grid-column-start: 1;
   grid-column-end: -1;
@@ -2301,6 +2310,9 @@ textarea {
   justify-self: end;
   margin-bottom: 10px;
   z-index: 5; }
+
+.front-page__link--fitness:hover {
+  opacity: 0.6; }
 
 .front-page__title-secondary {
   margin-bottom: 0;
@@ -2381,12 +2393,19 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
+.front-page__link:hover .front-page__decor {
+  fill: #19744C; }
+
 @media (min-width: 375px) {
   .front-page {
     padding-top: 50px;
     width: 325px;
     height: 550px;
     background-image: url("../img/front-background-mobile-wide.jpg"); }
+  .front-page--yoga-active {
+    background-image: url("../img/front-background-mobile-wide-yoga.jpg"); }
+  .front-page--fitness-active {
+    background-image: url("../img/front-background-mobile-wide-fitness.jpg"); }
   .front-page__logo {
     top: 23%;
     width: 200px;
@@ -2412,6 +2431,10 @@ textarea {
     width: 688px;
     height: 408px;
     background-image: url("../img/front-background-tablet.jpg"); }
+  .front-page--yoga-active {
+    background-image: url("../img/front-background-tablet-yoga.jpg"); }
+  .front-page--fitness-active {
+    background-image: url("../img/front-background-tablet-fitness.jpg"); }
   .front-page__logo {
     left: 35%;
     top: 27%;
@@ -2482,6 +2505,10 @@ textarea {
     width: 920px;
     height: 553px;
     background-image: url("../img/front-background-desktop.jpg"); }
+  .front-page--yoga-active {
+    background-image: url("../img/front-background-desktop-yoga.jpg"); }
+  .front-page--fitness-active {
+    background-image: url("../img/front-background-desktop-fitness.jpg"); }
   .front-page__title {
     font-size: 90px; }
   .front-page__title-secondary {

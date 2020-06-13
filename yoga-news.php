@@ -7,7 +7,7 @@ $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
 $svg_color = 'yoga-colors__svg';
-$news_list = get_news($link);
+$news_list = get_actual_news($link);
 $inner_page_title = 'Наши события';
 
 $logo = include_template('logo.php', [

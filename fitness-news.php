@@ -12,7 +12,7 @@ $logo_full_name = 'Студия фитнеса';
 $logo_link = 'fitness.php';
 $svg_color = 'fitness-colors__svg';
 $inner_page_title = 'Наши события';
-$news_list = get_news($link);
+$news_list = get_actual_news($link);
 
 $logo = include_template('logo.php', [
     'logo_name' => $logo_name,

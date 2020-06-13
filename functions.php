@@ -109,6 +109,99 @@ function db_insert_admin ($con, $email, $login, $password) {
 }
 
 /**
+ * Добавить новость в базу данных.
+ *
+ * @param object $con Ссылка для подключения к базе данных
+ * @param string $title
+ * @param string $news_context
+ * @param string $image
+ * @param string $date
+ * @param string $timing
+ * @param string $fb_link
+ *
+ * @return object|false
+ */
+function db_insert_news ($con, $title, $news_context, $image, $date, $timing, $fb_link) {
+
+  $filtered_title = mysqli_real_escape_string($con, $title);
+  $filtered_news_context = mysqli_real_escape_string($con, $news_context);
+  $filtered_image = mysqli_real_escape_string($con, $image);
+  $filtered_date = mysqli_real_escape_string($con, $date);
+  $filtered_timing = mysqli_real_escape_string($con, $timing);
+  $filtered_fb_link = mysqli_real_escape_string($con, $fb_link);
+  $sql = "
+    INSERT INTO news SET
+    title = '$filtered_title',
+    news_context = '$filtered_news_context',
+    image = '$filtered_image',
+    date = '$filtered_date',
+    timing = '$filtered_timing',
+    fb_link = '$filtered_fb_link';";
+  $res = mysqli_query($con, $sql);
+
+  if (!$res) {
+    $error = mysqli_error($con);
+    print("Ошибка MySQL" . $error);
+    die();
+  }
+  return $res;
+}
+
+/**
+ * Добавить новость в архив
+ *
+ * @param object $con Ссылка для подключения к базе данных
+ * @param string $title
+ * @param string $news_context
+ * @param string $image
+ * @param string $date
+ * @param string $timing
+ * @param string $fb_link
+ *
+ * @return object|false
+ */
+function db_archive_news ($con, $title, $news_context, $image, $date, $timing) {
+
+  $filtered_title = mysqli_real_escape_string($con, $title);
+  $filtered_news_context = mysqli_real_escape_string($con, $news_context);
+  $filtered_image = mysqli_real_escape_string($con, $image);
+  $filtered_date = mysqli_real_escape_string($con, $date);
+  $filtered_timing = mysqli_real_escape_string($con, $timing);
+ 
+  $sql = "
+    INSERT INTO news_archive SET
+    title = '$filtered_title',
+    news_context = '$filtered_news_context',
+    image = '$filtered_image',
+    date = '$filtered_date',
+    timing = '$filtered_timing';";
+  $res = mysqli_query($con, $sql);
+
+  if (!$res) {
+    $error = mysqli_error($con);
+    print("Ошибка MySQL" . $error);
+    die();
+  }
+  return $res;
+}
+
+/**
+ * Вычислить не закончилось ли время для показа новости.
+ *
+ * @param string $time Время окончания показа новости.
+ *
+ * @return boolean
+ */
+function is_time_left ($time) {
+
+  $time_left = strtotime($time) - time();
+  if ($time_left > 0) {
+    return true;
+  }
+  return false;
+}
+
+/**
  * Найти пользователя по логину в базе данных.
  *
  * @param object $con Ссылка для подключения к базе данных *
@@ -184,6 +277,12 @@ function get_fitness_reviews($con) {
   return $fitness_reviews;
 }
 
+function db_delete_news ($con, $id) {
+  $sql = "DELETE FROM news WHERE news.id = $id;";
+  $res = mysqli_query($con, $sql);
+  return $res;
+}
+
 /**
  * Получить все новости из базы.
  *
@@ -197,6 +296,21 @@ function get_news ($con) {
 
   $news = db_run_query($con, $sql);
   return $news;
+}
+
+function get_actual_news ($con) {
+  $actual_news = [];
+  $news_list = get_news($con);
+  foreach ($news_list as $news_element) {
+    if ( is_time_left ($news_element['date'])) {
+      array_push($actual_news, $news_element);
+    } else {
+      db_archive_news($con, $news_element['title'], $news_element['news_context'], $news_element['image'],
+        $news_element['date'], $news_element['timing']);
+      db_delete_news($con, $news_element['id']);
+    }
+  }
+  return $actual_news;
 }
 
 /**

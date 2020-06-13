@@ -5,7 +5,7 @@
 	    <title>"Спарта" - клуб досуга и релакса</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="Keywords" content="фитнес,йога,николаев,спорт,здоровье,танцы,хатха,айенгар,пилатес,беллиденс,восточные танцы,trx,боди-памп,степ,слайд,тренировки">
-	    <meta name="Description" content="Предоставляем комплексные тренировки по йоге и фитнесу с использованием различного оборудования и вспомогательных материалов, проводим семинары, индивидуальные занятия, танцевальные классы. Находимся в городе Николаеве, Украина.">
+	    <meta name="Description" content="Комплексные тренировки по йоге и фитнесу с использованием различного оборудования и вспомогательных материалов, проводим семинары, индивидуальные занятия, танцевальные классы. Находимся в городе Николаеве, Украина.">
 	    <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -31,7 +31,7 @@
 				<div class="front-page__schedule">
 					<a class="front-page__link  front-page__link--schedule" href="common-schedule.php">
 						<svg class="front-page__decor  front-page__decor--clock">
-							<use xlink:href="img/svg/svg-sprite.svg#clock"></use>
+							<use xlink:href="img/svg/svg-sprite.svg#timetable"></use>
 						</svg>
 					</a>
 				</div>
@@ -48,5 +48,6 @@
 				</a>
 			</div>
 		</div>
+		<script src="js/front-page-animation.js"></script>
 	</body>
 </html>
