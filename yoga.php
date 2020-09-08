@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = '"Ом Шанти" - студия йоги';
+$title = 'Студия йоги';
 $header_background_color = 'main-header__block-wrap--yoga';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
@@ -10,10 +10,7 @@ $logo_link = '#';
 $svg_color = 'yoga-colors__svg';
 $reviews_array = get_reviews($link, 'йога');
 $reviews_list = [$reviews_array[0], $reviews_array[1]];
-$news_array = get_actual_news($link);
-$news_last_number = count($news_array) - 1;
-$news_next_number = $news_last_number - 1;
-$news_list = [$news_array[$news_last_number], $news_array[$news_next_number]];
+$news_list = get_news_array($link);
 $subscribtions = get_subscribtions($link);
 $schedule_list = get_schedule($link);
 $branches_list = get_branches($link, 'йога');

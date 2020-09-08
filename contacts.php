@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = 'Клуб "Спарта" - контакты';
+$title = 'Студия йоги и фитнеса - контакты';
 $background_color = 'fitness-colors__background';
 $text_color = 'fitness-colors__text';
 $svg_color = 'fitness-colors__svg';

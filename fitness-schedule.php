@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = 'Клуб "Спарта" - расписание фитнес классов';
+$title = 'Студия фитнеса - расписание классов';
 $background_color = 'fitness-colors__background';
 $text_color = 'fitness-colors__text';
 $border_color = 'fitness-colors__border';

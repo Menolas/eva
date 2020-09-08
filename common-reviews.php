@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = 'Клуб "Спарта" - все отзывы';
+$title = 'Студия йоги и фитнеса - отзывы';
 $background_color = 'fitness-colors__background';
 $text_color = 'fitness-colors__text';
 $border_color = 'fitness-colors__border';

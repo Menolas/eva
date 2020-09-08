@@ -9,6 +9,16 @@
 
 .branches__list {
 	@include list-style;
+	position: relative;
+}
+
+.branches__control-block {
+	display: none;
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	width: 105%;
+	transform: translate(-50%);
 }
 
 .branches__item {
@@ -22,6 +32,7 @@
 .branches__article-link {
 	@include link-style;
 	display: flex;
+	justify-content: center;
 	margin-bottom: 21px;
 	color: $green;
 }

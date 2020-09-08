@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = 'Клуб "Спарта" - класс "Фитнес"';
+$title = 'Студия фитнеса - класс "Фитнес"';
 $background_color = 'fitness-colors__background';
 $text_color = 'fitness-colors__text';
 $border_color = 'fitness-colors__border';

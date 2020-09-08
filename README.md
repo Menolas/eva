@@ -1,2 +1,2 @@
 # eva
-lending for yoga studio
+landing for yoga studio

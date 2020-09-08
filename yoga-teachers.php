@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = '"Ом Шанти" - Наши преподаватели';
+$title = 'Студия йоги - наши преподаватели';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';

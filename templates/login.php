@@ -1,4 +1,4 @@
-<div class="admin-block">
+<div class="admin-block  admin-block--inner-page">
 	<button class="admin-block__enter">
 		<svg>
 			<use xlink:href="img/svg/svg-sprite.svg#login"></use>
@@ -11,4 +11,4 @@
 		<input type="submit" value="Войти">
 	</form>
 </div>
-<a href="log-out.php">Выйти из режима админа</a>
+<a href="logout.php">Выйти из режима админа</a>

@@ -2,8 +2,8 @@
 
 require('init.php');
 
-$title = 'Клуб "Спарта" - событие';
-$fitness_background_color = 'fitness-colors__background';
+$title = 'Студия йоги и фитнеса - событие';
+$background_color = 'fitness-colors__background';
 $text_color = 'fitness-colors__text';
 $border_color = 'fitness-colors__border';
 $pseudo_element = 'fitness-colors__pseudo-element';

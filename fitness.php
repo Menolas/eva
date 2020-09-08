@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = '"Спарта" - клуб физического комфорта';
+$title = 'Студия фитнеса';
 $background_color = 'fitness-colors__background';
 $text_color = 'fitness-colors__text';
 $border_color = 'fitness-colors__border';
@@ -12,7 +12,7 @@ $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $logo_link = '#';
 $svg_color = 'fitness-colors__svg';
-$news_list = get_actual_news($link);
+$news_list = get_news_array($link);
 $branches_list = get_branches($link, 'фитнес');
 $subscribtions = get_subscribtions($link);
 $schedule_list = get_fitness_schedule($link);
@@ -35,6 +35,7 @@ $news = include_template('news.php', [
 
 $branches = include_template('branches.php', [
     'text_color' => $text_color,
+    'background_color' => $background_color,
     'pseudo_element' => $pseudo_element,
     'branches_list' => $branches_list]);
 

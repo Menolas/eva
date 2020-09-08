@@ -49,4 +49,4 @@
 		</li>
 	</ul>
 </section>
-<script src="js/subscribing.js"></script>
+

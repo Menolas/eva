@@ -20,6 +20,11 @@
 	fill: $white;
 }
 
+.admin-block--inner-page .form-login {
+	display: block;
+	position: static;
+}
+
 @media (min-width: 768px) {
 
 	.admin-block {

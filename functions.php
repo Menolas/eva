@@ -8,6 +8,7 @@
 function connect_db () {
 
   $link = mysqli_connect('127.0.0.1', 'root', '', 'sparta');
+  // $link = mysqli_connect('127.0.0.1', 'elena', 'EIIL6W1E', 'elena_sparta');
   mysqli_set_charset($link, 'utf8');
 
   if (!$link) {
@@ -61,7 +62,7 @@ function include_template($name, $data) {
 /**
  * Найти пользователя по id в базе данных.
  *
- * @param object $con Ссылка для подключения к базе данных *
+ * @param object $con Ссылка для подключения к базе данных
  * @param integer $id ID пользователя
  *
  * @return array|false
@@ -79,14 +80,34 @@ function get_admin_by_id ($con, $id) {
 }
 
 /**
- * Добавить админа в базу данных.
+ * Выбрать все емейлы всех админов из таблицы админов
+ *@param object $con Ссылка для подключения к базе данных
+ *@param string $sql SQL запрос
  *
- * @param object $con Ссылка для подключения к базе данных
- * @param string $email Емейл админа
- * @param string $login Логин админа
- * @param string $password Пароль админа
+ *@return array|false
+ */
+
+function get_admins_emails ($con) {
+
+  $sql = "
+    SELECT email FROM admins;";
+  $emails = db_run_query($con, $sql);
+
+  if (count($emails)) {
+    return $emails;
+  }
+  return false;
+}
+
+/**
+ * Добавить админа в базу данных
  *
- * @return object|false
+ *@param object $con Ссылка для подключения к базе данных
+ *@param string $email Емейл админа
+ *@param string $login Логин админа
+ *@param string $password Пароль админа
+ *
+ *@return object|false
  */
 function db_insert_admin ($con, $email, $login, $password) {
 
@@ -313,8 +334,20 @@ function get_actual_news ($con) {
   return $actual_news;
 }
 
+function get_news_array ($con) {
+
+  $news_array = get_actual_news($con);
+  if (count($news_array) > 2) {
+    $news_last_number = count($news_array) - 1;
+    $news_next_number = $news_last_number - 1;
+    $news_array = [$news_array[$news_last_number], $news_array[$news_next_number]];
+  }
+
+  return $news_array;
+}
+
 /**
- * Получить все новости из базы.
+ * Получить новость из базы по id.
  *
  * @param object $con Ссылка для подключения к базе данных *
  * @param int id новости

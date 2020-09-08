@@ -2,11 +2,12 @@
 
 require('init.php');
 
-$title = '"Ом Шанти" - Хатха йога';
+$title = 'Студия йоги - Хатха йога';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
 $svg_color = 'yoga-colors__svg';
+$text_color = 'yoga-colors__text';
 $inner_page_title = 'Хатха йога';
 
 $logo = include_template('logo.php', [
@@ -19,6 +20,7 @@ $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);
 
 $page_element = include_template('hatha-yoga.php', [
+    'text_color' => $text_color,
     'inner_page_title' => $inner_page_title]);
 
 $page_content = include_template('inner-page.php', [

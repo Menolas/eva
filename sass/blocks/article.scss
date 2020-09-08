@@ -14,10 +14,6 @@
 
 .article__text p {
 	margin-bottom: 12px;
-
-	&:last-of-type {
-		margin-bottom: 0;
-	}
 }
 
 .article__mini-header {
@@ -70,6 +66,21 @@
 	.article__mini-header {
 		font-size: 18px;
 	}
+
+	.article__text p {
+		margin-bottom: 22px;
+	}
+
+	.article__list {
+		padding-left: 34px;
+	}
+
+	.article__list-item {
+
+		&::before {
+			top: 8px;
+		}
+	}
 }
 
 @media (min-width: 1024px) {
@@ -88,11 +99,28 @@
   	margin-top: 0;
   	white-space: nowrap;
   }
+
+  .article__mini-header {
+		font-size: 20px;
+	}
 }
 
 @media (min-width: 1440px) {
+
   .article__illustration {
   	margin-bottom: 35px;
   	margin-right: 42px;
+  }
+
+  .article__mini-header {
+		font-size: 24px;
+	}
+
+  .article__text p {
+	margin-bottom: 28px;
+  }
+
+  .article__list {
+	padding-left: 42px;
   }
 }

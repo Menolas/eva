@@ -1,9 +1,11 @@
-<form class="form" method="GET" action="delete-admin.php">
+<form class="form  form--admin-add" method="GET" action="delete-admin.php">
 	<h2 class="form__title  title__secondary">Удалить админа</h2>
 	<fieldset>
 		<?php foreach ($admins_list as $admin): ?>
-			<label for="<?=$admin['login']; ?>"><?=$admin['login']; ?></label>
-			<input type="checkbox" name="admin" id="<?=$admin['login']; ?>">
+			<div class="form__input-wrap">
+				<label for="<?=$admin['login']; ?>"><?=$admin['login']; ?></label>
+				<input type="checkbox" name="admin" id="<?=$admin['login']; ?>">
+			</div>
 		<?php endforeach; ?>
 	</fieldset>
 	<input type="submit" value="Удалить">

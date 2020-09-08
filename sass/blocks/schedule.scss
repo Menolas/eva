@@ -301,7 +301,7 @@
 	}
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1880px) {
 
 	.schedule {
 		padding: 110px 50px;
@@ -312,19 +312,22 @@
 		padding: 0;
 	}
 
+	.schedule__item-title {
+		padding: 22px 0;
+        font-size: 24px;
+	}
+
+	.schedule__class-item {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1920px) {
+
 	.schedule__list {
 		grid-template-columns: repeat(6, 16%);
 		grid-template-rows: auto;
 		grid-column-gap: 0.8%;
 		
-	}
-
-	.schedule__item-title {
-		padding: 22px 0;
-    font-size: 24px;
-	}
-
-	.schedule__class-item {
-		font-size: 18px;
 	}
 }

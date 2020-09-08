@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = '"Ом Шанти" - Отзывы о йога классах';
+$title = 'Студия йоги - отзывы';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';

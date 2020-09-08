@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-	    <meta charset="utf-8">
-	    <title>"Спарта" - клуб досуга и релакса</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <meta name="Keywords" content="фитнес,йога,николаев,спорт,здоровье,танцы,хатха,айенгар,пилатес,беллиденс,восточные танцы,trx,боди-памп,степ,слайд,тренировки">
-	    <meta name="Description" content="Комплексные тренировки по йоге и фитнесу с использованием различного оборудования и вспомогательных материалов, проводим семинары, индивидуальные занятия, танцевальные классы. Находимся в городе Николаеве, Украина.">
+	    <title><?=$title;?></title>
+	    <meta name="keywords" content="фитнес, йога, николаев, спорт, здоровье, танцы, хатха, айенгар, пилатес, беллиденс, восточные танцы, trx, боди-памп, степ, слайд, тренировки">
+	    <meta name="description" content="Студия йоги и фитнеса. Тренировки с использованием различного оборудования, семинары, индивидуальные занятия, танцевальные классы">
 	    <link rel="stylesheet" href="css/style.css">
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<div class="container">
@@ -35,14 +35,14 @@
 						</svg>
 					</a>
 				</div>
-				<div class="front-page__logo">
+				<a class="front-page__logo" href="about.php">
 					<svg class="front-page__decor  front-page__decor--sun">
 						<use xlink:href="img/svg/svg-sprite.svg#sun"></use>
 					</svg>
 					<svg class="front-page__decor  front-page__decor--om">
 						<use xlink:href="img/svg/svg-sprite.svg#om"></use>
 					</svg>
-				</div>
+				</a>
 				<a class="front-page__link  front-page__link--fitness" href="fitness.php">
 				  <h2 class="front-page__title-secondary  front-page__title-secondary--fitness  title__secondary">Фитнес</h2>
 				</a>

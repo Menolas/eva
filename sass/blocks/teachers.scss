@@ -3,14 +3,9 @@
 }
 
 .teachers__illustration {
+	display: flex;
+	justify-content: center;
 	margin-bottom: 25px;
-}
-
-@media (min-width: 375px) {
-
-	.teachers__illustration {
-    margin: 0 auto;
-	}
 }
 
 @media (min-width: 768px) {

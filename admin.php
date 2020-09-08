@@ -2,11 +2,11 @@
 
 require('init.php');
 
-$title = '"Спарта" - админ';
+$title = 'Студия йоги и фитнеса - админ страничка';
 $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $logo_link = 'fitness.php';
-$svg_color = 'fitness-colors__svg';
+$svg_color = 'yoga-colors__svg';
 $inner_page_title = 'Админ страничка';
 
 $logo = include_template('logo.php', [
@@ -29,6 +29,7 @@ $page_content = include_template('inner-page.php', [
 $layout_content = include_template('layout.php', [
     'title' => $title,
     'logo' => $logo,
+    'main_menu' => $main_menu,
     'page_content' => $page_content]);
 
 print($layout_content);

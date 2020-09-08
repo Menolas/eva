@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = 'Студия йоги и фитнеса - наши преподаватели';
+$title = 'Студия йоги и фитнеса - о клубе и внутреннем распорядке';
 $background_color = 'fitness-colors__background';
 $text_color = 'fitness-colors__text';
 $border_color = 'fitness-colors__border';
@@ -11,8 +11,8 @@ $logo_name = 'Спарта';
 $logo_full_name = 'Студия фитнеса';
 $logo_link = 'index.php';
 $svg_color = 'fitness-colors__svg';
-$inner_page_title = 'Наши преподаватели';
-$instructors = get_all_instructors($link);
+$inner_page_title = 'О нас';
+$reviews_list = get_all_reviews($link);
 
 $logo = include_template('logo.php', [
     'logo_name' => $logo_name,
@@ -23,13 +23,12 @@ $logo = include_template('logo.php', [
 $main_menu = include_template('main-menu.php', [
     'text_color' => $text_color]);
 
-$page_element = include_template('teachers.php', [
+$page_element = include_template('about.php', [
     'background_color' => $background_color,
     'text_color' => $text_color,
     'border_color' => $border_color,
     'pseudo_element' => $pseudo_element,
-    'svg_color' => $svg_color,
-    'instructors' => $instructors]);
+    'reviews_list' => $reviews_list]);
 
 $page_content = include_template('inner-page.php', [
     'inner_page_title' => $inner_page_title,

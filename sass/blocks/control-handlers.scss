@@ -10,6 +10,7 @@
 	width: 45px;
 	height: 45px;
 	background-color: $green;
+	opacity: 0.75;
 
 	&::before {
 		@include element-style(18px, 18px, transparent);

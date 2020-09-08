@@ -11,7 +11,11 @@
 					<?=substr($news_element['news_context'], 0, 100);?>...
 					<a class="news__article-link-text  <?=$text_color; ?>" href="news-element.php?id=<?=$news_element['id'];?>">читать дальше</a>
 				</p>
-				<a class="news__article-link-fb  <?=$text_color; ?>" href="https://www.facebook.com/groups/1540126396290409/">
+				<p class="news__text--full">
+					<?=$news_element['news_context'];?>...
+					<a class="news__article-link-text  <?=$text_color; ?>" href="news-element.php?id=<?=$news_element['id'];?>">читать дальше</a>
+				</p>
+				<a class="news__article-link-fb  <?=$text_color; ?>" href="<?=$news_element['fb_link'];?>">
 					Читать в Фейсбуке
 					<svg><use xlink:href="#facebook"></use></svg>
 				</a>

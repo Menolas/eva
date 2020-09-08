@@ -51,4 +51,6 @@
 		<a class="reviews__btn  btn" href="yoga-reviews.php">Прочитать все отзывы</a>
 	</section>
 </main>
+<script src="js/branches.js"></script>
 <script src="js/schedule.js"></script>
+<script src="js/subscribing.js"></script>

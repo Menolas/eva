@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = '"Спарта" - клуб физического комфорта';
+$title = 'Студия йоги и фитнеса';
 
 $page_content = include_template('index.php', [
     'title' => $title]);

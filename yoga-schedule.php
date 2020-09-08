@@ -2,7 +2,7 @@
 
 require('init.php');
 
-$title = '"Ом Шанти" - Расписание йога классов';
+$title = 'Студия йоги - расписание классов';
 $logo_name = 'Шанти';
 $logo_full_name = 'Студия йоги';
 $logo_link = 'yoga.php';
@@ -31,6 +31,7 @@ $main_menu = include_template('yoga-main-menu.php', [
     'title' => $title]);
 
 $page_element = include_template('inner-page-schedule.php', [
+    'inner_page_schedule_style' => $inner_page_schedule_style,
     'inner_page_schedule' => $inner_page_schedule,
 	'schedule' => $schedule,
     'subscribing' => $subscribing]);
